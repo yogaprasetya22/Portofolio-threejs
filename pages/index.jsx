@@ -23,8 +23,11 @@ export default function Home() {
           justifyContent="center"
         >
           <Stack isInline spacing={1} textAlign={'center'}>
-            <Text>Hello ,</Text>
-            <Text color={useColorModeValue('pink.700', 'cyan.500')}>
+            <Text fontSize={'15px'}>Hello,</Text>
+            <Text
+              fontSize={'15px'}
+              color={useColorModeValue('pink.700', 'cyan.500')}
+            >
               Saya Mochammad Yoga Prasetya!
             </Text>
           </Stack>
