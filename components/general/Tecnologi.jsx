@@ -9,5 +9,7 @@ export const technologies = [
   'python',
   'firebase',
   'nextjs',
-  'jwt'
+  'jwt',
+  'tailwind',
+  'chakraui'
 ]

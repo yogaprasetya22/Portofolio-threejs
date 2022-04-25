@@ -21,7 +21,7 @@ const artickel = ({ children, title }) => {
       <>
         {title && (
           <Head>
-            <title>{title} - Jagres kun</title>
+            <title>{title} - Jagres</title>
             <meta name="Jagres" content={title} />
             <meta property="og:title" content={title} />
           </Head>

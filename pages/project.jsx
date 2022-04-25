@@ -3,6 +3,7 @@ import { Container, Box, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
 import cewe from '../public/img/cwe.png'
 import { ProjextGridItem, GridItem } from '../components/grid-item'
 import Section from '../components/section'
+import whatsappClone from '../public/img/whatsapp-clone.png'
 
 const project = () => {
   return (
@@ -21,12 +22,11 @@ const project = () => {
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
             <Section>
               <ProjextGridItem
-                id="percobaan"
-                title="percobaan"
-                thumbnail={cewe}
+                id="whatsapp-clone"
+                title="Whatsapp Clone"
+                thumbnail={whatsappClone}
               >
-                A Markdown note-taking app with 100+ plugins, cross-platform and
-                encrypted data sync support
+                Whatsapp clone yang dibuat menggunakan Next.js dan Firebase
               </ProjextGridItem>
             </Section>
             <Section>

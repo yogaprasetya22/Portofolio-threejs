@@ -12,7 +12,7 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
@@ -44,7 +44,7 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#f0e7db2b', '#29293c59')}
+      bg={useColorModeValue('#9f9f9f2b', '#29293c59')}
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
@@ -85,9 +85,9 @@ const Navbar = props => {
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
+            _hover={{ color: useColorModeValue('#aaa', '#a5a5a5') }}
           >
-            <IoLogoGithub />
-            Github
+            <IoLogoGithub size={30} />
           </LinkItem>
         </Stack>
 
