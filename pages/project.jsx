@@ -49,21 +49,18 @@ const project = () => {
       <Divider />
       <br />
       <Box p={{ base: '10px', md: '35px' }}>
-        <Section delay={0.4}>
-          <Box
-            display={'flex'}
-            justifyContent={'space-around'}
-            alignItems="center"
+        <Flex
+          justifyContent={'space-around'}
+          alignItems="center"
+        >
+          <Flex
+            minW={{ base: '27rem', md: '48rem' }}
+            flexWrap={'wrap'}
+            justifyContent="space-around"
           >
-            <Flex
-              minW={{ base: '27rem', md: '48rem' }}
-              flexWrap={'wrap'}
-              justifyContent="space-around"
-            >
-              <ViewAndCode />
-            </Flex>
-          </Box>
-        </Section>
+            <ViewAndCode />
+          </Flex>
+        </Flex>
       </Box>
     </Layout>
   )
