@@ -54,7 +54,7 @@ const project = () => {
           alignItems="center"
         >
           <Flex
-            minW={{ base: '27rem', md: '48rem' }}
+            minW={{ base: '21rem', md: '48rem' }}
             flexWrap={'wrap'}
             justifyContent="space-around"
           >
