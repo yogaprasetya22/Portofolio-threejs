@@ -1,7 +1,16 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
+import {
+  Box,
+  Text,
+  LinkBox,
+  LinkOverlay,
+  Link,
+  Stack,
+  Flex
+} from '@chakra-ui/react'
 import { Global } from '@emotion/react'
+import { useState } from 'react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
@@ -21,29 +30,42 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
-export const ProjextGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" textAlign="center">
-    <NextLink href={`/project/${id}`}>
-      <LinkBox cursor="pointer">
-        <Box borderRadius={20}>
-          <Image
-            src={thumbnail}
-            alt={title}
-            placeholder="blur"
-            loading="lazy"
-            className={'grid-item-thumbnail'}
-          />
-        </Box>
-        <LinkOverlay href={`/project/${id}`}>
-          <Text mt={2} fontSize={20}>
-            {title}
-          </Text>
-        </LinkOverlay>
-        <Text fontSize={14}>{children}</Text>
-      </LinkBox>
-    </NextLink>
-  </Box>
-)
+export const ProjextGridItem = ({ children, id, title, thumbnail, color }) => {
+  return (
+    <Box w="100%" textAlign="center">
+      <NextLink href={`/project/${id}`}>
+        <LinkBox cursor="pointer">
+          <Box
+            marginBottom={3}
+            width={{ base: 315, md: 370 }}
+            height={{ base: 205, md: 230 }}
+          >
+            <Image
+              layout="fill"
+              src={thumbnail}
+              alt={title}
+              placeholder="blur"
+              loading="lazy"
+              className="grid-item-thumbnail"
+            />
+          </Box>
+          <Box
+            zIndex={3}
+            position="absolute"
+            marginTop={'-90px'}
+            background={color}
+            width={'100%'}
+            height={{ base: '37.6%', md: '34.5%' }}
+            borderBottomRadius={'12px'}
+          >
+            <Text fontSize={18}>{title}</Text>
+            <Text fontSize={14}>{children}</Text>
+          </Box>
+        </LinkBox>
+      </NextLink>
+    </Box>
+  )
+}
 
 export const GridItemStyle = () => (
   <Global

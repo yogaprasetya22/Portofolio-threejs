@@ -4,9 +4,9 @@
 
 ::-webkit-scrollbar-thumb {
     background-color: #7a7a7a;
-    border-radius   : 20px;
-    border          : 1px solid transparent;
-    background-clip : content-box;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-clip: content-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -19,35 +19,35 @@
 
 
 .technologies-container {
-    display        : flex;
+    display: flex;
     justify-content: space-around;
-    align-items    : center;
+    align-items: center;
 
 }
 
 .technologies-container .technologies-wrapper {
-    display        : flex;
-    flex-wrap      : wrap;
-    width          : 70%;
-    max-width      : 700px;
-    margin         : 50px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    max-width: 700px;
+    margin: 50px 10px;
     justify-content: space-around;
 }
 
 
 .icons--active {
-    animation-name    : bounce;
+    animation-name: bounce;
     animation-duration: 0.02s;
 }
 
 .dev-icon {
-    margin                   : 10px;
-    width                    : 60px;
-    height                   : 60px;
-    transition               : 400ms;
-    animation-name           : bounce-continuous;
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    transition: 400ms;
+    animation-name: bounce-continuous;
     animation-timing-function: ease;
-    animation-duration       : 2s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
@@ -68,7 +68,14 @@
 
 @media screen and (max-width: 700px) {
     .dev-icon {
-        width : 50px;
+        width: 50px;
         height: 50px;
     }
+}
+
+.markdown {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: small;
+    outline: none;
 }

@@ -1,9 +1,36 @@
 import Layout from '../components/layout/artickel'
-import { Container, Box, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
+import {
+  Container,
+  Box,
+  useColorModeValue,
+  Flex,
+  Divider
+} from '@chakra-ui/react'
 import cewe from '../public/img/cwe.png'
-import { ProjextGridItem, GridItem } from '../components/grid-item'
+import { ProjextGridItem } from '../components/grid-item'
 import Section from '../components/section'
-import whatsappClone from '../public/img/whatsapp-clone.png'
+import whatsappClone from '../public/img/whatsapp-clone/whatsapp-clone.png'
+
+const DataViewProject = [
+  {
+    id: '1',
+    thumbnail: whatsappClone,
+    title: 'whatsapp-clone',
+    des: 'Whatsapp clone yang dibuat menggunakan Next.js, firebase untuk authentication'
+  },
+  {
+    id: '2',
+    thumbnail: cewe,
+    title: 'percobaan',
+    des: 'Music recommendation app for iOS'
+  },
+  {
+    id: '3',
+    thumbnail: cewe,
+    title: 'percobaan',
+    des: 'A Markdown note-taking app with 100+ plugins, cross-platform and encrypted data sync support'
+  }
+]
 
 const project = () => {
   return (
@@ -18,38 +45,45 @@ const project = () => {
         >
           My Project
         </Box>
-        <Section delay={0.4}>
-          <SimpleGrid columns={[1, 2, 2]} gap={6}>
-            <Section>
-              <ProjextGridItem
-                id="whatsapp-clone"
-                title="Whatsapp Clone"
-                thumbnail={whatsappClone}
-              >
-                Whatsapp clone yang dibuat menggunakan Next.js dan Firebase
-              </ProjextGridItem>
-            </Section>
-            <Section>
-              <ProjextGridItem id="walknote" title="walknote" thumbnail={cewe}>
-                Music recommendation app for iOS
-              </ProjextGridItem>
-            </Section>
-            <Section delay={0.3}>
-              <ProjextGridItem id="jagres" title="jagres" thumbnail={cewe}>
-                A Markdown note-taking app with 100+ plugins, cross-platform and
-                encrypted data sync support
-              </ProjextGridItem>
-            </Section>
-            <Section>
-              <GridItem id="walknote" title="walknote" thumbnail={cewe}>
-                Music recommendation app for iOS
-              </GridItem>
-            </Section>
-          </SimpleGrid>
-        </Section>
       </Container>
+      <Divider />
+      <br />
+      <Section delay={0.4}>
+        <Box
+          display={'flex'}
+          justifyContent={'space-around'}
+          alignItems="center"
+        >
+          <Flex
+            minW={{ base: '27rem', md: '48rem' }}
+            flexWrap={'wrap'}
+            justifyContent="space-around"
+          >
+            <ViewAndCode />
+          </Flex>
+        </Box>
+      </Section>
     </Layout>
   )
 }
 
 export default project
+
+const ViewAndCode = () => {
+  return (
+    <>
+      {DataViewProject.map(e => (
+        <Section delay={0.3} key={e.id}>
+          <ProjextGridItem
+            id={e.title}
+            title={e.title}
+            thumbnail={e?.thumbnail}
+            color={useColorModeValue('#bdd1ff9c', '#2e3436b3')}
+          >
+            {e.des}
+          </ProjextGridItem>
+        </Section>
+      ))}
+    </>
+  )
+}
