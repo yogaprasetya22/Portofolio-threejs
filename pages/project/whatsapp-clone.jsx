@@ -23,7 +23,7 @@ const WhatsappClone = () => {
         <br />
         <Paragraf>
           Whatsapp clone yang dibuat menggunakan Next.js, firebase untuk
-          authentication, penyimpanan data, dibaut pada <Badge>2021</Badge>
+          authentication, penyimpanan data, dibaut pada <Badge>2022</Badge>
         </Paragraf>
         <ImageProject
           src={'/img/whatsapp-clone/whatsapp-clone.png'}
