@@ -101,6 +101,7 @@ const Navbar = props => {
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
+                marginRight={{ base: 5, md: 0 }}
               />
               <MenuList
                 minWidth={550}
