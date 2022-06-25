@@ -47,7 +47,7 @@ export const ImageProject = ({ src, alt }) => {
       </Flex>
       <Modal size={'xl'} onClose={onClose} isOpen={isOpen} isCentered>
         <ModalOverlay
-          bg="#4299e199"
+          bg={useColorModeValue('#9f9f9f2b', '#29293c59')}
           backdropFilter="auto"
           backdropInvert="15%"
           backdropBlur="2px"
@@ -56,7 +56,7 @@ export const ImageProject = ({ src, alt }) => {
           <ModalHeader>{alt}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Image w="full" src={src} alt={alt} mb={4} />
+            <Image minW="full" src={src} alt={alt} mb={4} />
           </ModalBody>
         </ModalContent>
       </Modal>
