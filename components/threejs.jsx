@@ -24,7 +24,7 @@ const VoxelDog = () => {
     new THREE.Vector3(
       25 * Math.sin(0.2 * Math.PI),
       10,
-      20 * Math.cos(0.2 * Math.PI)
+      5 * Math.cos(0.2 * Math.PI)
     )
   )
   const [scene] = useState(new THREE.Scene())
