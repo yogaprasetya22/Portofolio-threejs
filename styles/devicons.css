@@ -75,11 +75,15 @@
     * {
         font-size: x-small;
     }
+
+    .markdown {
+        font-size: xx-small;
+    }
 }
 
 .markdown {
     margin-top: 15px;
     margin-bottom: 10px;
-    font-size: x-small;
+    font-size: small;
     outline: none;
 }
