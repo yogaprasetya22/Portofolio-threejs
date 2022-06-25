@@ -1,7 +1,8 @@
 import { Heading, Box, Image, Flex, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import { useState } from 'react'
-import { CloseIcon } from '@chakra-ui/icons'
+
+
 
 export const Title = ({ children }) => (
   <Box>

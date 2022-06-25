@@ -3,8 +3,7 @@ import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { vs, rainbow } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
-// import { Auth } from '../markdown/Whatsapp'
-
+ 
 const Markdown = ({ src }) => {
   return (
     <ReactMarkdown
