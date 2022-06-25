@@ -4,7 +4,9 @@ import {
   Box,
   useColorModeValue,
   Flex,
-  Divider
+  Divider,
+  Stack,
+  Text
 } from '@chakra-ui/react'
 import cewe from '../public/img/cwe.png'
 import { ProjextGridItem } from '../components/grid-item'
@@ -39,20 +41,21 @@ const project = () => {
         <Box
           borderRadius="lg"
           mb={6}
-          p={1.4}
-          textAlign={'center'}
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          p={3}
+          bg={useColorModeValue('whiteAlpha.700', 'whiteAlpha.200')}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
         >
-          My Project
+          <Stack isInline spacing={1} textAlign={'center'}>
+            <Text fontSize={'15px'}>My Project</Text>
+          </Stack>
         </Box>
       </Container>
       <Divider />
       <br />
       <Box p={{ base: '10px', md: '35px' }}>
-        <Flex
-          justifyContent={'space-around'}
-          alignItems="center"
-        >
+        <Flex justifyContent={'space-around'} alignItems="center">
           <Flex
             minW={{ base: '21rem', md: '48rem' }}
             flexWrap={'wrap'}

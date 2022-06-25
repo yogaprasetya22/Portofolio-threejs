@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Text, useColorModeValue } from "@chakra-ui/react";
 import styled from "@emotion/styled";
+import { Title } from "./layout/project";
 
 const LogoBox = styled.span`
     font-weight: bold;
@@ -35,13 +36,13 @@ const Logo = () => {
                         height={20}
                         alt="logo"
                     /> */}
-                    <Text
+                    <Title
                         color={useColorModeValue("gray.800", "whiteAlpha.900")}
                         fontFamily='M PLUS Rounded 1c", sans-serif'
                         fontWeight="bold"
                     >
                         JAGRES
-                    </Text>
+                    </Title>
                 </LogoBox>
             </a>
         </Link>

@@ -1,5 +1,11 @@
 import Layout from '../components/layout/artickel'
-import { Container, Box, useColorModeValue } from '@chakra-ui/react'
+import {
+  Container,
+  Box,
+  useColorModeValue,
+  Stack,
+  Text
+} from '@chakra-ui/react'
 import Section from '../components/section'
 import dynamic from 'next/dynamic'
 
@@ -14,11 +20,15 @@ const about = () => {
         <Box
           borderRadius="lg"
           mb={6}
-          p={1.4}
-          textAlign={'center'}
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          p={3}
+          bg={useColorModeValue('whiteAlpha.700', 'whiteAlpha.200')}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
         >
-          My Skils
+          <Stack isInline spacing={1} textAlign={'center'}>
+            <Text fontSize={'15px'}>Skills</Text>
+          </Stack>
         </Box>
         <Section delay={0.1}>
           <Box className="technologies-container">
