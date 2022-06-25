@@ -63,17 +63,8 @@ export const ImageProject = ({ src, alt }) => {
       {pop ? (
         <>
           <Blur />
-          <Popup>
+          <Popup onClick={() => setPop(false)}>
             <Box>
-              <Flex cursor="pointer">
-                <CloseIcon
-                  onClick={() => setPop(false)}
-                  position={'absolute'}
-                  right={0}
-                  top={'4.8rem'}
-                  mr={{ base: '10px', md: '15rem' }}
-                />
-              </Flex>
               <Flex maxW={'60vh'} alignItems="center" justifyContent={'center'}>
                 <Image
                   maxW={{
