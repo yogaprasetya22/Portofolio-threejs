@@ -52,7 +52,7 @@ export const ProjextGridItem = ({ children, id, title, thumbnail, color }) => {
           <Box
             zIndex={3}
             position="absolute"
-            marginTop={'-82px'}
+            marginTop={{ base: '-82px', md: '-90px' }}
             background={color}
             width={'100%'}
             height={{ base: '37.6%', md: '34.5%' }}
