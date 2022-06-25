@@ -54,7 +54,7 @@ const project = () => {
       </Container>
       <Divider />
       <br />
-      <Box p={{ base: '10px', md: '35px' }}>
+      <Box p={{ base: '10px', md: '35px' }} >
         <Flex justifyContent={'space-around'} alignItems="center">
           <Flex
             minW={{ base: '21rem', md: '48rem' }}
@@ -82,7 +82,7 @@ const ViewAndCode = () => {
             thumbnail={e?.thumbnail}
             color={useColorModeValue('#bdd1ff9c', '#2e3436b3')}
           >
-            {e.des}
+            <Text>{e.des}</Text>
           </ProjextGridItem>
         </Section>
       ))}
