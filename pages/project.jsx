@@ -16,18 +16,21 @@ import whatsappClone from '../public/img/whatsapp-clone/whatsapp-clone.png'
 const DataViewProject = [
   {
     id: '1',
+    relese: 2022,
     thumbnail: whatsappClone,
     title: 'whatsapp-clone',
-    des: 'Whatsapp clone yang dibuat menggunakan Next.js, firebase untuk authentication'
+    des: `Whatsapp clone yang dibuat menggunakan Next.js, firebase untuk authentication, penyimpanan data`
   },
   {
     id: '2',
+    relese: 2022,
     thumbnail: cewe,
     title: 'percobaan',
     des: 'Music recommendation app for iOS'
   },
   {
     id: '3',
+    relese: 2022,
     thumbnail: cewe,
     title: 'percobaan',
     des: 'A Markdown note-taking app with 100+ plugins, cross-platform and encrypted data sync support'
@@ -54,7 +57,7 @@ const project = () => {
       </Container>
       <Divider />
       <br />
-      <Box p={{ base: '10px', md: '35px' }} >
+      <Box p={{ base: '10px', md: '35px' }}>
         <Flex justifyContent={'space-around'} alignItems="center">
           <Flex
             minW={{ base: '21rem', md: '48rem' }}
@@ -80,9 +83,10 @@ const ViewAndCode = () => {
             id={e.title}
             title={e.title}
             thumbnail={e?.thumbnail}
+            relese={e?.relese}
             color={useColorModeValue('#bdd1ff9c', '#2e3436b3')}
           >
-            <Text>{e.des}</Text>
+            {e.des}
           </ProjextGridItem>
         </Section>
       ))}

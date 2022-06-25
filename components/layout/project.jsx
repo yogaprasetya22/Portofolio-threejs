@@ -1,17 +1,4 @@
-import {
-  Heading,
-  Box,
-  Image,
-  Flex,
-  useDisclosure,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalCloseButton,
-  ModalBody,
-  useColorModeValue
-} from '@chakra-ui/react'
+import { Heading, Box, Image, Flex, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import { useState } from 'react'
 import { CloseIcon } from '@chakra-ui/icons'
@@ -50,7 +37,7 @@ const Blur = styled.div`
   height: 100%;
   top: 0;
   left: 0;
-  background: #dbc0c091;
+  background: #545454b0;
   filter: blur(5px);
 `
 
@@ -78,10 +65,21 @@ export const ImageProject = ({ src, alt }) => {
           <Blur />
           <Popup>
             <Box>
-              <CloseIcon onClick={() => setPop(false)} cursor="pointer" />
+              <Flex cursor="pointer">
+                <CloseIcon
+                  onClick={() => setPop(false)}
+                  position={'absolute'}
+                  right={0}
+                  top={'4.8rem'}
+                  mr={{ base: '10px', md: '15rem' }}
+                />
+              </Flex>
               <Flex maxW={'60vh'} alignItems="center" justifyContent={'center'}>
                 <Image
-                  maxW="45rem"
+                  maxW={{
+                    base: ['28rem', '35rem', '35rem', '36rem'],
+                    md: ['45rem', '50rem']
+                  }}
                   src={data.data}
                   alt={data.des}
                   rounded={5}
@@ -108,22 +106,3 @@ export const Paragraf = ({ children }) => (
     <Para>{children}</Para>
   </Box>
 )
-
-{
-  // const { isOpen, onOpen, onClose } = useDisclosure()
-  /* <Modal size={'10vh'} onClose={onClose} isOpen={isOpen} isCentered>
-        <ModalOverlay
-          bg={useColorModeValue('#9f9f9f2b', '#29293c59')}
-          backdropFilter="auto"
-          backdropInvert="15%"
-          backdropBlur="2px"
-        />
-        <ModalContent>
-          <ModalHeader>{alt}</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            <Image minW="sm" src={src} alt={alt} mb={4} />
-          </ModalBody>
-        </ModalContent>
-      </Modal> */
-}

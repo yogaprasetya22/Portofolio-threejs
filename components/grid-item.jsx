@@ -7,7 +7,8 @@ import {
   LinkOverlay,
   Link,
   Stack,
-  Flex
+  Flex,
+  Badge
 } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 import { useState } from 'react'
@@ -30,7 +31,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
-export const ProjextGridItem = ({ children, id, title, thumbnail, color }) => {
+export const ProjextGridItem = ({ children, id, title, thumbnail, color, relese }) => {
   return (
     <Box w="100%" textAlign="center">
       <NextLink href={`/project/${id}`}>
@@ -58,8 +59,11 @@ export const ProjextGridItem = ({ children, id, title, thumbnail, color }) => {
             height={{ base: '37.6%', md: '34.5%' }}
             borderBottomRadius={'12px'}
           >
-            <Text fontSize={18}>{title}</Text>
-            <Text fontSize={14}>{children}</Text>
+            <Text fontSize={{ base: 15, md: 18 }}>
+              {title}{' '}
+              <Badge>{relese}</Badge>
+            </Text>
+            <Text fontSize={{ base: 10, md: 14 }}>{children}</Text>
           </Box>
         </LinkBox>
       </NextLink>
