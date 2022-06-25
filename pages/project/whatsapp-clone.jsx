@@ -49,11 +49,11 @@ const WhatsappClone = () => {
         <Markdown src={Auth} />
         <Paragraf>
           Pada bagian ini dimana agar terhubungnya aplikasi dengan firebase
-          menggunakan <Mark> initializeApp()</Mark> dan firestore sebagai
-          penyimpanan database dan database tersebut bersifat noSql atau bisa
-          dibilang berupa<Mark> Json</Mark>, kemudian untuk Authenticationya
-          saya mengambil sebuat metode dari dokumentasi firebase yaitu{' '}
-          <Mark>getAuth()</Mark> dan
+          menggunakan <Mark> initializeApp()</Mark> dan <Mark>getFirestore()</Mark>{' '}
+          sebagai penyimpanan database dan database tersebut bersifat noSql atau
+          bisa dibilang berupa<Mark> Json</Mark>, kemudian untuk
+          Authenticationya saya mengambil sebuat metode dari dokumentasi
+          firebase yaitu <Mark>getAuth()</Mark> dan
           <Mark> new GoogleAuthProvider()</Mark> untuk mendapatkan akses dari
           Auth Provider Google.
         </Paragraf>
@@ -62,7 +62,7 @@ const WhatsappClone = () => {
           Kemudian ini ketika user sudah melakukan login menggunakan google dan
           data-data tersebut akan secara otomatis terinput ke database berupa{' '}
           <Mark>displayName, Email, PhotoUrl, LastSeen</Mark> / kapan terakhir
-          user online. dan kemudian data dari user akan disimpan di CurrentUser 
+          user online. dan kemudian data dari user akan disimpan di CurrentUser
           yang nantinya akan di faching di akun tersebut.
         </Paragraf>
         <Bottom />
