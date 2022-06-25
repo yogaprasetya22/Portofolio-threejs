@@ -105,7 +105,7 @@ const Navbar = props => {
               />
               <MenuList
                 minWidth={550}
-                bg={useColorModeValue('#ffffff6b', '#938e8e70')}
+                bg={useColorModeValue('#ffffffb5', '#938e8ed6')}
               >
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
