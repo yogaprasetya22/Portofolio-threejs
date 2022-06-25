@@ -19,12 +19,12 @@ const VoxelDog = () => {
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
-  const [target] = useState(new THREE.Vector3(-0.1, 3.2, 1))
+  const [target] = useState(new THREE.Vector3(-2.4, -15, 1))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
-      20 * Math.sin(0.2 * Math.PI),
+      25 * Math.sin(0.2 * Math.PI),
       10,
-      20 * Math.cos(0.2 * Math.PI)
+      35 * Math.cos(0.2 * Math.PI)
     )
   )
   const [scene] = useState(new THREE.Scene())
@@ -59,7 +59,7 @@ const VoxelDog = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.005 + 12.5
+      const scale = scH * 0.07 + 11.5
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -68,15 +68,17 @@ const VoxelDog = () => {
         0.01,
         50000
       )
-      camera.position.copy(initialCameraPosition)
+
       function update() {
-        if (camera.zoom >= 1.2) {
-          camera.zoom = 1.2
+        if (camera.zoom <= 1) {
+          camera.zoom = 1
         }
-        if (camera.zoom <= 0.8) {
-          camera.zoom = 0.8
+        if (camera.zoom >= 2.2) {
+          camera.zoom = 2.2
         }
       }
+
+      camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
       setCamera(camera)
 
@@ -87,10 +89,7 @@ const VoxelDog = () => {
       // pencahayaan bawah
       const ubin = new THREE.PointLight(0xcccccc, 1.5, 50)
       ubin.position.set(0, -10, 0) // ( kiri-kanan , atas-bawah , depan-belakang )
-      scene.add(
-        ubin
-        // new THREE.PointLightHelper(pointlight, 0.5, 0xffaa)
-      )
+      scene.add(ubin, new THREE.PointLightHelper(ubin, 0.5, 0xffaa))
 
       // pencahayaan atas
       const direk = new THREE.DirectionalLight(0xffffff, 1)
@@ -100,40 +99,41 @@ const VoxelDog = () => {
       scene.add(direk.target)
 
       // pencahayaan kanan
-      const pointlight = new THREE.PointLight(0xcccccc, 0.75, 50)
-      pointlight.position.set(5, 12, -6) // ( kiri-kanan , atas-bawah , depan-belakang )
-      scene.add(
-        pointlight
-        // new THREE.PointLightHelper(pointlight, 0.5, 0xffaa)
-      )
+      // const pointlight = new THREE.PointLight(0xcccccc, 0.75, 50)
+      // pointlight.position.set(5, 12, -6) // ( kiri-kanan , atas-bawah , depan-belakang )
+      // scene.add(
+      //   pointlight,
+      //   new THREE.PointLightHelper(pointlight, 0.5, 0xffaa)
+      // )
 
       // pencahayaan kiri
-      const pointlight1 = new THREE.PointLight(0xcccccc, 0.75, 50)
-      pointlight1.position.set(-15, 12, -6) // ( kiri-kanan , atas-bawah , depan-belakang )
-      scene.add(
-        pointlight1
-        // new THREE.PointLightHelper(pointlight1, 0.5, 0xffaa)
-      )
+      // const pointlight1 = new THREE.PointLight(0xcccccc, 0.75, 50)
+      // pointlight1.position.set(-15, 12, -6) // ( kiri-kanan , atas-bawah , depan-belakang )
+      // scene.add(
+      //   pointlight1,
+      //   new THREE.PointLightHelper(pointlight1, 0.5, 0xffaa)
+      // )
 
       // pencahayaan depan
-      const pointlight2 = new THREE.PointLight(0xffffff, 0.75, 50)
-      pointlight2.position.set(-1, 12, 15) // ( kiri-kanan , atas-bawah , depan-belakang )
-      scene.add(
-        pointlight2
-        // new THREE.PointLightHelper(pointlight2, 0.5, 0xffaa)
-      )
+      // const pointlight2 = new THREE.PointLight(0xffffff, 0.75, 50)
+      // pointlight2.position.set(-1, 12, 15) // ( kiri-kanan , atas-bawah , depan-belakang )
+      // scene.add(
+      //   pointlight2,
+      //   new THREE.PointLightHelper(pointlight2, 0.5, 0xffaa)
+      // )
 
       // pencahayaan belakang
-      const pointlight3 = new THREE.PointLight(0xffffff, 2.5, 50)
-      pointlight3.position.set(4, 10, -13) // ( kiri-kanan , atas-bawah , depan-belakang )
-      scene.add(
-        pointlight3
-        // new THREE.PointLightHelper(pointlight3, 0.5, 0xffaa)
-      )
+      // const pointlight3 = new THREE.PointLight(0xffffff, 2.5, 50)
+      // pointlight3.position.set(4, 10, -13) // ( kiri-kanan , atas-bawah , depan-belakang )
+      // scene.add(
+      //   pointlight3,
+      //   new THREE.PointLightHelper(pointlight3, 0.5, 0xffaa)
+      // )
+
       // pencahayaan matahari atau pencahayaan targeting
-      const spotlight = new THREE.SpotLight(0xdb7430, 3.5)
-      spotlight.position.set(-6.5, 8, -10)
-      scene.add(spotlight)
+      // const spotlight = new THREE.SpotLight(0xdb7430, 3.5)
+      // spotlight.position.set(-6.5, 8, -10)
+      // scene.add(spotlight)
 
       const composer = new EffectComposer(renderer)
       composer.addPass(new RenderPass(scene, camera))
