@@ -9,6 +9,12 @@ import { Link } from '@chakra-ui/react'
 import Layout from '../components/layout/artickel'
 import NextLink from 'next/link'
 import { Paragraf } from '../components/layout/project'
+import Section from '../components/section'
+import dynamic from 'next/dynamic'
+
+const Skills = dynamic(() => import('../components/skils/Skils'), {
+  ssr: false
+})
 
 export default function Home() {
   return (
@@ -32,7 +38,7 @@ export default function Home() {
           </Text>
         </Stack>
       </Box>
-      <Box p={{ base: '10px',md:"50px" }}>
+      <Box p={{ base: '10px', md: '50px' }}>
         <Paragraf>
           Halo, nama saya Mochammad Yoga Prasetya, tapi teman-teman memanggil
           saya Yoga. Saya berasal dari Universitas Pembangunan Jaya dengan prodi
@@ -52,6 +58,11 @@ export default function Home() {
             <Link>Project</Link>
           </NextLink>
         </Paragraf>
+        <Section delay={0.1}>
+          <Box className="technologies-container">
+            <Skills />
+          </Box>
+        </Section>
       </Box>
     </Layout>
   )

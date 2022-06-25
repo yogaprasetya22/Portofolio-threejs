@@ -6,12 +6,7 @@ import {
   Stack,
   Text
 } from '@chakra-ui/react'
-import Section from '../components/section'
-import dynamic from 'next/dynamic'
 
-const Skills = dynamic(() => import('../components/skils/Skils'), {
-  ssr: false
-})
 
 const about = () => {
   return (
@@ -27,14 +22,10 @@ const about = () => {
           justifyContent="center"
         >
           <Stack isInline spacing={1} textAlign={'center'}>
-            <Text fontSize={'15px'}>Skills</Text>
+            <Text fontSize={'15px'}>Exprience</Text>
           </Stack>
         </Box>
-        <Section delay={0.1}>
-          <Box className="technologies-container">
-            <Skills />
-          </Box>
-        </Section>
+       
       </Container>
     </Layout>
   )
