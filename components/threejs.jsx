@@ -89,14 +89,14 @@ const VoxelDog = () => {
       // pencahayaan bawah
       const ubin = new THREE.PointLight(0xcccccc, 1.5, 50)
       ubin.position.set(0, -10, 0) // ( kiri-kanan , atas-bawah , depan-belakang )
-      scene.add(ubin, new THREE.PointLightHelper(ubin, 0.5, 0xffaa))
+      scene.add(ubin)
 
       // pencahayaan atas
-      const direk = new THREE.DirectionalLight(0xffffff, 1)
-      direk.position.set(0, 35, 0)
-      direk.target.position.set(0, 1, 0)
-      direk.target.updateMatrixWorld()
-      scene.add(direk.target)
+      // const direk = new THREE.DirectionalLight(0xffffff, 1)
+      // direk.position.set(0, 35, 0)
+      // direk.target.position.set(0, 1, 0)
+      // direk.target.updateMatrixWorld()
+      // scene.add(direk.target)
 
       // pencahayaan kanan
       // const pointlight = new THREE.PointLight(0xcccccc, 0.75, 50)
