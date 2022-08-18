@@ -27,6 +27,8 @@ export default function Home() {
         display="flex"
         alignItems="center"
         justifyContent="center"
+        shadow={'sm'}
+        dropShadow={'sm'}
       >
         <Stack isInline spacing={1} textAlign={'center'}>
           <Text fontSize={'15px'}>Portfolio,</Text>

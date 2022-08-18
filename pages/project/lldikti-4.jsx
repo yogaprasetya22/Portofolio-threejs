@@ -11,15 +11,14 @@ import {
 import { Auth, Chat } from '../../components/markdown/Whatsapp'
 import { Bottom } from '../../components/BottomView'
 
-const WhatsappClone = () => {
+const Lldikti = () => {
   return (
     <Layout title={'Whatsapp Clone'}>
       <Box p={{ base: '10px', md: '35px' }}>
         <Title>Whatsapp Clone</Title>
         <Paragraf>
-          Saya membuat aplikasi <Mark>Web Whatsapp Clone</Mark> dengan tujuan
-          pembelajaran yang mana nantinya untuk pengalaman saya dalam membuat
-          sebuah aplikasi menggunakan teknologi firebase dan juga next.js
+          Saya membuat aplikasi <Mark>Web LLDIKTI 4</Mark> dengan tujuan
+          perlombaan dalam pemerintah LLDIKTI menggunakan teknologi Laravel sebagai framework dan juga gabungan react sebagai ui dari website tersebut
         </Paragraf>
         <br />
         <Paragraf>
@@ -67,13 +66,12 @@ const WhatsappClone = () => {
           yang nantinya akan di fetching di akun tersebut.
         </Paragraf>
         <Bottom
-          link={'https://whatsapp-clone-jagres.vercel.app/'}
-          github={'https://github.com/yogaprasetya22/wahtsapp_clone'}
+          link={'https://lldikti-4-yoga.herokuapp.com/'}
+          github={'https://github.com/yogaprasetya22/lLLDIKTI_4'}
         />
       </Box>
     </Layout>
   )
 }
 
-export default WhatsappClone
-
+export default Lldikti

@@ -31,9 +31,26 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
-export const ProjextGridItem = ({ children, id, title, thumbnail, color, relese }) => {
+export const ProjextGridItem = ({
+  children,
+  id,
+  title,
+  thumbnail,
+  color,
+  relese
+}) => {
   return (
-    <Box w="100%" textAlign="center">
+    <Box
+      w="100%"
+      textAlign="center"
+      shadow={'xl'}
+      dropShadow={'xl'}
+      rounded="xl"
+      transition={'all 0.2s ease-in-out'}
+      _hover={{
+        transform: 'scale(1.02)',
+      }}
+    >
       <NextLink href={`/project/${id}`}>
         <LinkBox cursor="pointer">
           <Box
@@ -60,8 +77,7 @@ export const ProjextGridItem = ({ children, id, title, thumbnail, color, relese 
             borderBottomRadius={'12px'}
           >
             <Text fontSize={{ base: 15, md: 18 }}>
-              {title}{' '}
-              <Badge>{relese}</Badge>
+              {title} <Badge>{relese}</Badge>
             </Text>
             <Text fontSize={{ base: 10, md: 14 }}>{children}</Text>
           </Box>

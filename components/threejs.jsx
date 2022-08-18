@@ -19,11 +19,11 @@ const VoxelDog = () => {
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
-  const [target] = useState(new THREE.Vector3(-2.4, -25, 1))
+  const [target] = useState(new THREE.Vector3(-1.5, -25, -1.9))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
-      25 * Math.sin(0.2 * Math.PI),
-      10,
+      36 * Math.sin(0.8 * Math.PI),
+      55,
       25 * Math.cos(0.2 * Math.PI)
     )
   )
@@ -59,13 +59,15 @@ const VoxelDog = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.12 + 11.5
+      const scale = scH * 0.09 + 11.5
+      const scalex = scale + 13.5
+
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
-        scale,
+        scalex,
         -scale,
-        0.01,
+        0.21,
         50000
       )
 
@@ -74,9 +76,9 @@ const VoxelDog = () => {
         if (camera.zoom <= 0.7) {
           camera.zoom = 0.7
         }
-        if (camera.zoom >= 2.6) {
-          camera.zoom = 2.6
-        }
+        // if (camera.zoom >= 2.4) {
+        //   camera.zoom = 2.4
+        // }
       }
 
       camera.position.copy(initialCameraPosition)
@@ -88,53 +90,9 @@ const VoxelDog = () => {
       scene.add(hemi)
 
       // pencahayaan bawah
-      const ubin = new THREE.PointLight(0xcccccc, 1.5, 50)
+      const ubin = new THREE.PointLight(0xcccccc, 1.5, 100)
       ubin.position.set(0, -10, 0) // ( kiri-kanan , atas-bawah , depan-belakang )
       scene.add(ubin)
-
-      // pencahayaan atas
-      // const direk = new THREE.DirectionalLight(0xffffff, 1)
-      // direk.position.set(0, 35, 0)
-      // direk.target.position.set(0, 1, 0)
-      // direk.target.updateMatrixWorld()
-      // scene.add(direk.target)
-
-      // pencahayaan kanan
-      // const pointlight = new THREE.PointLight(0xcccccc, 0.75, 50)
-      // pointlight.position.set(5, 12, -6) // ( kiri-kanan , atas-bawah , depan-belakang )
-      // scene.add(
-      //   pointlight,
-      //   new THREE.PointLightHelper(pointlight, 0.5, 0xffaa)
-      // )
-
-      // pencahayaan kiri
-      // const pointlight1 = new THREE.PointLight(0xcccccc, 0.75, 50)
-      // pointlight1.position.set(-15, 12, -6) // ( kiri-kanan , atas-bawah , depan-belakang )
-      // scene.add(
-      //   pointlight1,
-      //   new THREE.PointLightHelper(pointlight1, 0.5, 0xffaa)
-      // )
-
-      // pencahayaan depan
-      // const pointlight2 = new THREE.PointLight(0xffffff, 0.75, 50)
-      // pointlight2.position.set(-1, 12, 15) // ( kiri-kanan , atas-bawah , depan-belakang )
-      // scene.add(
-      //   pointlight2,
-      //   new THREE.PointLightHelper(pointlight2, 0.5, 0xffaa)
-      // )
-
-      // pencahayaan belakang
-      // const pointlight3 = new THREE.PointLight(0xffffff, 2.5, 50)
-      // pointlight3.position.set(4, 10, -13) // ( kiri-kanan , atas-bawah , depan-belakang )
-      // scene.add(
-      //   pointlight3,
-      //   new THREE.PointLightHelper(pointlight3, 0.5, 0xffaa)
-      // )
-
-      // pencahayaan matahari atau pencahayaan targeting
-      // const spotlight = new THREE.SpotLight(0xdb7430, 3.5)
-      // spotlight.position.set(-6.5, 8, -10)
-      // scene.add(spotlight)
 
       const composer = new EffectComposer(renderer)
       composer.addPass(new RenderPass(scene, camera))
@@ -168,9 +126,9 @@ const VoxelDog = () => {
 
         if (frame <= 100) {
           const p = initialCameraPosition
-          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 25
+          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 5
 
-          camera.position.y = 10
+          camera.position.y = 15
           camera.position.x =
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
           camera.position.z =
