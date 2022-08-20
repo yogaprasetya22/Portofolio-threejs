@@ -27,10 +27,10 @@ export default function Home() {
         display="flex"
         alignItems="center"
         justifyContent="center"
-        shadow={'sm'}
-        dropShadow={'sm'}
+        shadow={'md'}
+        dropShadow={'md'}
       >
-        <Stack isInline spacing={1} textAlign={'center'}>
+        <Stack isInline spacing={1} textAlign={'center'} fontWeight="bold">
           <Text fontSize={'15px'}>Portfolio,</Text>
           <Text
             fontSize={'15px'}
@@ -60,8 +60,8 @@ export default function Home() {
             <Link>Project</Link>
           </NextLink>
         </Paragraf>
-        <Section delay={0.1}>
-          <Box className="technologies-container">
+        <Section delay={0.1} >
+          <Box className="technologies-container" mt={'5rem'}>
             <Skills />
           </Box>
         </Section>

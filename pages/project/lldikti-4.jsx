@@ -18,7 +18,9 @@ const Lldikti = () => {
         <Title>Whatsapp Clone</Title>
         <Paragraf>
           Saya membuat aplikasi <Mark>Web LLDIKTI 4</Mark> dengan tujuan
-          perlombaan dalam pemerintah LLDIKTI menggunakan teknologi Laravel sebagai framework dan juga gabungan react sebagai ui dari website tersebut
+          perlombaan dalam pemerintah LLDIKTI menggunakan teknologi Laravel
+          sebagai framework dan juga gabungan react sebagai ui dari website
+          tersebut
         </Paragraf>
         <br />
         <Paragraf>
@@ -66,7 +68,7 @@ const Lldikti = () => {
           yang nantinya akan di fetching di akun tersebut.
         </Paragraf>
         <Bottom
-          link={'https://lldikti-4-yoga.herokuapp.com/'}
+          link={'http://lldikti-4-yoga.herokuapp.com/'}
           github={'https://github.com/yogaprasetya22/lLLDIKTI_4'}
         />
       </Box>

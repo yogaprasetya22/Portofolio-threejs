@@ -48,7 +48,7 @@ export const ProjextGridItem = ({
       rounded="xl"
       transition={'all 0.2s ease-in-out'}
       _hover={{
-        transform: 'scale(1.02)',
+        transform: 'scale(1.02)'
       }}
     >
       <NextLink href={`/project/${id}`}>
@@ -76,10 +76,12 @@ export const ProjextGridItem = ({
             height={{ base: '37.6%', md: '34.5%' }}
             borderBottomRadius={'12px'}
           >
-            <Text fontSize={{ base: 15, md: 18 }}>
+            <Text fontSize={{ base: 15, md: 18 }} fontWeight="bold">
               {title} <Badge>{relese}</Badge>
             </Text>
-            <Text fontSize={{ base: 10, md: 14 }}>{children}</Text>
+            <Text fontSize={{ base: 10, md: 14 }} fontWeight='medium'>
+              {children}
+            </Text>
           </Box>
         </LinkBox>
       </NextLink>

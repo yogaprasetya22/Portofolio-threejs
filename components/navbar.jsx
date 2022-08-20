@@ -12,10 +12,15 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
+  Text,
+  Divider
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button'
+import {
+  ThemeToggleButton,
+  ThemeToggleButtonMobile
+} from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
@@ -93,7 +98,6 @@ const Navbar = props => {
 
         <Box flex={1} align="right">
           <ThemeToggleButton />
-
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
@@ -122,6 +126,11 @@ const Navbar = props => {
                 >
                   Github
                 </MenuItem>
+                <Divider border={'2px'}/>
+                <Box display={'flex'} p={2} gap='1rem' alignItems={'center'}>
+                  <Text>Hello world :</Text>
+                  <ThemeToggleButtonMobile />
+                </Box>
               </MenuList>
             </Menu>
           </Box>

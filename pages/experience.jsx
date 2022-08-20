@@ -21,11 +21,10 @@ const about = () => {
           alignItems="center"
           justifyContent="center"
         >
-          <Stack isInline spacing={1} textAlign={'center'}>
+          <Stack isInline spacing={1} textAlign={'center'} fontWeight="bold">
             <Text fontSize={'15px'}>Exprience</Text>
           </Stack>
         </Box>
-       
       </Container>
     </Layout>
   )

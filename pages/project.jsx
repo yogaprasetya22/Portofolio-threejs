@@ -12,13 +12,14 @@ import cewe from '../public/img/cwe.png'
 import { ProjextGridItem } from '../components/grid-item'
 import Section from '../components/section'
 import whatsappClone from '../public/img/whatsapp-clone/whatsapp-clone.png'
+import instagramClone from '../public/img/instagram-clone/thumbnile.png'
 
 const DataViewProject = [
   {
     id: '1',
     relese: 2022,
     thumbnail: whatsappClone,
-    title: 'whatsapp-clone',
+    title: 'Whatsapp-clone',
     des: `Whatsapp clone yang dibuat menggunakan Next.js, firebase untuk authentication, penyimpanan data`
   },
   {
@@ -28,12 +29,20 @@ const DataViewProject = [
     title: 'lldikti-4',
     des: 'Music recommendation app for iOS'
   },
+
   {
     id: '3',
     relese: 2022,
+    thumbnail: instagramClone,
+    title: 'Instagram-clone',
+    des: 'Instagram clone yang dibuat menggunakan Next.js, firebase untuk authentication, penyimpanan data'
+  },
+  {
+    id: '4',
+    relese: 2022,
     thumbnail: cewe,
-    title: 'percobaan',
-    des: 'A Markdown note-taking app with 100+ plugins, cross-platform and encrypted data sync support'
+    title: 'lldikti-4',
+    des: 'Music recommendation app for iOS'
   }
 ]
 
@@ -49,10 +58,10 @@ const project = () => {
           display="flex"
           alignItems="center"
           justifyContent="center"
-          shadow={'sm'}
-          dropShadow={'sm'}
+          shadow={'md'}
+          dropShadow={'md'}
         >
-          <Stack isInline spacing={1} textAlign={'center'}>
+          <Stack isInline spacing={1} textAlign={'center'} fontWeight="bold">
             <Text fontSize={'15px'}>My Project</Text>
           </Stack>
         </Box>
