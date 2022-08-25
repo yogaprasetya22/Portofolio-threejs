@@ -1,12 +1,19 @@
 import { Heading, Box, Image, Flex, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import { useState } from 'react'
+// import Section from '../section'
+import dynamic from 'next/dynamic'
 
-
+const Section = dynamic(() => import('../section'), { ssr: false })
 
 export const Title = ({ children }) => (
   <Box>
-    <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
+    <Heading
+      display="inline-block"
+      as="h3"
+      fontSize={20}
+      mb={{ base: 0, md: 4 }}
+    >
       {children}
     </Heading>
   </Box>
@@ -94,7 +101,9 @@ const Para = styled.p`
 `
 
 export const Paragraf = ({ children }) => (
-  <Box display={{ md: 'flex' }}>
-    <Para>{children}</Para>
-  </Box>
+  <Section delay={0.1}>
+    <Box display={{ md: 'flex' }}>
+      <Para>{children}</Para>
+    </Box>
+  </Section>
 )

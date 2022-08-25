@@ -128,7 +128,7 @@ const Navbar = props => {
                 </MenuItem>
                 <Divider border={'2px'}/>
                 <Box display={'flex'} p={2} gap='1rem' alignItems={'center'}>
-                  <Text>Hello world :</Text>
+                  <Text>Switch Theme :</Text>
                   <ThemeToggleButtonMobile />
                 </Box>
               </MenuList>

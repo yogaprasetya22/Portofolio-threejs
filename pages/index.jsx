@@ -41,7 +41,7 @@ export default function Home() {
           </Text>
         </Stack>
       </Box>
-      <Box p={{ base: '10px', md: '50px' }}>
+      <Box p={{ base: '10px', md: '50px' }} mt={{ base: '0', md: '-2rem' }}>
         <Paragraf>
           Halo, nama saya Mochammad Yoga Prasetya, tapi teman-teman memanggil
           saya Yoga. Saya berasal dari Universitas Pembangunan Jaya dengan prodi
@@ -62,7 +62,7 @@ export default function Home() {
           </NextLink>
         </Paragraf>
         <Section delay={0.1}>
-          <Skill/>
+          <Skill />
         </Section>
       </Box>
     </Layout>
