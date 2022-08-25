@@ -27,7 +27,7 @@ const DataViewProjectPrivate = [
     id: '2',
     relese: 2022,
     thumbnail: instagramClone,
-    title: 'Instagram-clone',
+    title: 'instagram-clone',
     des: 'Instagram clone yang dibuat menggunakan Next.js, firebase untuk authentication, penyimpanan data'
   }
 ]
