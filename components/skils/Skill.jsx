@@ -39,7 +39,7 @@ const Skill = () => {
             </ContainerSkill>
             <ContainerSkill url="https://www.javascript.com/">
               <JavascriptIcons width="1.7rem" h="1.7rem" />
-              Javascript
+              JavaScript
             </ContainerSkill>
             <ContainerSkill url="https://www.w3schools.com/html/">
               <HtmlIcons width="1.7rem" h="1.7rem" />
