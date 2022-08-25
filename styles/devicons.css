@@ -17,24 +17,6 @@
 
 
 
-
-.technologies-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-.technologies-container .technologies-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    max-width: 700px;
-    margin: 50px 10px;
-    justify-content: space-around;
-}
-
-
 .icons--active {
     animation-name: bounce;
     animation-duration: 0.02s;

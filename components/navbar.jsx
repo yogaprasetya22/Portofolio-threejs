@@ -109,7 +109,8 @@ const Navbar = props => {
               />
               <MenuList
                 minWidth={550}
-                bg={useColorModeValue('#ffffffb5', '#938e8ed6')}
+                bg={useColorModeValue('#eaeaeaf2', '#938e8ed6')}
+                backdropBlur={10}
               >
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
@@ -126,8 +127,8 @@ const Navbar = props => {
                 >
                   Github
                 </MenuItem>
-                <Divider border={'2px'}/>
-                <Box display={'flex'} p={2} gap='1rem' alignItems={'center'}>
+                <Divider border={'2px'} />
+                <Box display={'flex'} p={2} gap="1rem" alignItems={'center'}>
                   <Text>Switch Theme :</Text>
                   <ThemeToggleButtonMobile />
                 </Box>
