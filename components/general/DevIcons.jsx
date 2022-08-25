@@ -1,13 +1,13 @@
 import { useColorModeValue } from '@chakra-ui/react'
 
 const DevIcon = ({ name }) => {
-  const animationDelay = Math.random() * 1.7
+  const animationDelay = Math.random() * 1.2
   const svg = {
     react: (
       <svg
         viewBox="0 0 128 128"
-        className="dev-icon"
-        style={{ animationDelay: `${animationDelay}s` }}
+        className="icon"
+        style={{ display: 'block' }}
       >
         <g fill="#61DAFB">
           <circle cx="64" cy="47.5" r="9.3"></circle>
@@ -18,8 +18,8 @@ const DevIcon = ({ name }) => {
     javascript: (
       <svg
         viewBox="0 0 128 128"
-        className="dev-icon"
-        style={{ animationDelay: `${animationDelay}s` }}
+        className="icon"
+        style={{ display: 'block' }}
       >
         <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
         <path
@@ -30,9 +30,9 @@ const DevIcon = ({ name }) => {
     ),
     nextjs: (
       <svg
-        className="dev-icon"
+        className="icon"
         style={{
-          animationDelay: `${animationDelay}s`,
+          display: 'block',
           filter: useColorModeValue('invert(0)', 'invert(100%)')
         }}
         viewBox="0 0 512 309"
@@ -42,8 +42,8 @@ const DevIcon = ({ name }) => {
     ),
     chakraui: (
       <svg
-        className="dev-icon"
-        style={{ animationDelay: `${animationDelay}s` }}
+        className="icon"
+        style={{ display: 'block' }}
         viewBox="0 0 257 257"
       >
         <rect width="257" height="257" fill="url(#mark)" rx="128.5"></rect>
@@ -67,8 +67,8 @@ const DevIcon = ({ name }) => {
     ),
     tailwind: (
       <svg
-        className="dev-icon"
-        style={{ animationDelay: `${animationDelay}s` }}
+        className="icon"
+        style={{ display: 'block' }}
         width="40"
         height="25"
         fill="none"
@@ -86,8 +86,8 @@ const DevIcon = ({ name }) => {
       <svg
         width="64px"
         height="64px"
-        className="dev-icon"
-        style={{ animationDelay: `${animationDelay}s` }}
+        className="icon"
+        style={{ display: 'block' }}
         viewBox="0 0 2500 1250"
       >
         <g fillRule="evenodd" clipRule="evenodd">
@@ -121,8 +121,8 @@ const DevIcon = ({ name }) => {
     ),
     firebase: (
       <svg
-        className="dev-icon"
-        style={{ animationDelay: `${animationDelay}s` }}
+        className="icon"
+        style={{ display: 'block' }}
         viewBox="0 0 32 32"
       >
         <path
@@ -143,8 +143,8 @@ const DevIcon = ({ name }) => {
     html: (
       <svg
         viewBox="0 0 128 128"
-        className="dev-icon"
-        style={{ animationDelay: `${animationDelay}s` }}
+        className="icon"
+        style={{ display: 'block' }}
       >
         <path
           fill="#E44D26"
@@ -168,8 +168,8 @@ const DevIcon = ({ name }) => {
     css: (
       <svg
         viewBox="0 0 128 128"
-        className="dev-icon"
-        style={{ animationDelay: `${animationDelay}s` }}
+        className="icon"
+        style={{ display: 'block' }}
       >
         <path
           fill="#131313"
@@ -205,8 +205,8 @@ const DevIcon = ({ name }) => {
     python: (
       <svg
         viewBox="0 0 128 128"
-        className="dev-icon"
-        style={{ animationDelay: `${animationDelay}s` }}
+        className="icon"
+        style={{ display: 'block' }}
       >
         <g fillRule="evenodd" clipRule="evenodd">
           <path
@@ -228,8 +228,8 @@ const DevIcon = ({ name }) => {
     nodejs: (
       <svg
         viewBox="0 0 128 128"
-        className="dev-icon"
-        style={{ animationDelay: `${animationDelay}s` }}
+        className="icon"
+        style={{ display: 'block' }}
       >
         <path
           fill="#83CD29"
@@ -260,9 +260,9 @@ const DevIcon = ({ name }) => {
     express: (
       <svg
         viewBox="0 0 128 128"
-        className="dev-icon"
+        className="icon"
         style={{
-          animationDelay: `${animationDelay}s`,
+          display: 'block',
           filter: useColorModeValue('invert(0)', 'invert(100%)')
         }}
       >
@@ -272,8 +272,8 @@ const DevIcon = ({ name }) => {
     mongodb: (
       <svg
         viewBox="0 0 128 128"
-        className="dev-icon"
-        style={{ animationDelay: `${animationDelay}s` }}
+        className="icon"
+        style={{ display: 'block' }}
       >
         <path
           fillRule="evenodd"

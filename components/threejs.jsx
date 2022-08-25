@@ -72,7 +72,6 @@ const VoxelDog = () => {
       )
 
       function update() {
-        console.log(camera.zoom)
         if (camera.zoom <= 0.7) {
           camera.zoom = 0.7
         }

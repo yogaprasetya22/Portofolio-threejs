@@ -1,6 +1,7 @@
 import {
   Box,
   Container,
+  Flex,
   Stack,
   Text,
   useColorModeValue
@@ -11,10 +12,10 @@ import NextLink from 'next/link'
 import { Paragraf } from '../components/layout/project'
 import Section from '../components/section'
 import dynamic from 'next/dynamic'
+import Skill from '../components/skils/Skill'
 
-const Skills = dynamic(() => import('../components/skils/Skils'), {
-  ssr: false
-})
+
+
 
 export default function Home() {
   return (
@@ -60,12 +61,12 @@ export default function Home() {
             <Link>Project</Link>
           </NextLink>
         </Paragraf>
-        <Section delay={0.1} >
-          <Box className="technologies-container" mt={'5rem'}>
-            <Skills />
-          </Box>
+        <Section delay={0.1}>
+          <Skill/>
         </Section>
       </Box>
     </Layout>
   )
 }
+
+
