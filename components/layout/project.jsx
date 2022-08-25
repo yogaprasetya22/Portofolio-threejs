@@ -12,7 +12,7 @@ export const Title = ({ children }) => (
       display="inline-block"
       as="h3"
       fontSize={20}
-      mb={{ base: 0, md: 4 }}
+      mb={{ base: 0, md: 3 }}
     >
       {children}
     </Heading>

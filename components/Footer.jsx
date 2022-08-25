@@ -1,5 +1,11 @@
 import React from 'react'
-import { Box, StackDivider, useColorModeValue, VStack } from '@chakra-ui/react'
+import {
+  Box,
+  StackDivider,
+  useColorModeValue,
+  VStack,
+  Text
+} from '@chakra-ui/react'
 
 const Footer = () => {
   return (
@@ -11,16 +17,18 @@ const Footer = () => {
       }
     >
       <Box fontSize="sm" mt={70}></Box>
-      <Box
+      <Text
         align="center"
         opacity={0.4}
         fontSize="sm"
-        color={useColorModeValue('black.900', 'gray.200')}
+        color={useColorModeValue('blackAlpha.900', 'gray.200')}
       >
         &copy; {new Date().getFullYear()} M Yoga Prasetya. All Rights Reserved.
-      </Box>
+      </Text>
     </VStack>
   )
 }
 
 export default Footer
+
+

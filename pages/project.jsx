@@ -19,7 +19,7 @@ const DataViewProjectPrivate = [
     id: '1',
     relese: 2022,
     thumbnail: whatsappClone,
-    title: 'Whatsapp-clone',
+    title: 'whatsapp-clone',
     des: `Whatsapp clone yang dibuat menggunakan Next.js, firebase untuk authentication, penyimpanan data`
   },
 

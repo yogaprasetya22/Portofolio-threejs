@@ -61,6 +61,7 @@ export default function Home() {
             <Link>Project</Link>
           </NextLink>
         </Paragraf>
+        <br />
         <Section delay={0.1}>
           <Skill />
         </Section>
