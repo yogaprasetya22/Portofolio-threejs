@@ -47,6 +47,7 @@ export const ProjextGridItem = ({
       dropShadow={'xl'}
       rounded="xl"
       transition={'all 0.2s ease-in-out'}
+      mb={{ base: 8, md: 0 }}
       _hover={{
         transform: 'scale(1.02)'
       }}
@@ -79,7 +80,7 @@ export const ProjextGridItem = ({
             <Text fontSize={{ base: 15, md: 18 }} fontWeight="bold">
               {title} <Badge>{relese}</Badge>
             </Text>
-            <Text fontSize={{ base: 10, md: 14 }} fontWeight='medium'>
+            <Text fontSize={{ base: 10, md: 14 }} fontWeight="medium">
               {children}
             </Text>
           </Box>
