@@ -4,7 +4,8 @@ import {
   Box,
   useColorModeValue,
   Stack,
-  Text
+  Text,
+  Divider
 } from '@chakra-ui/react'
 
 
@@ -26,6 +27,11 @@ const about = () => {
           </Stack>
         </Box>
       </Container>
+      <br />
+      <Divider/>
+       <Box p={{ base: '10px', md: '35px' }}>
+        
+       </Box>
     </Layout>
   )
 }

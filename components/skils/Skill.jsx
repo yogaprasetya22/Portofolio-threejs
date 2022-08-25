@@ -14,7 +14,10 @@ import {
   NodejsIcons,
   ExpressIcons,
   MongodbIcons,
-  PythonIcons
+  PythonIcons,
+  PHPIcons,
+  LaravelIcons,
+  MySqlIcons
 } from '../general/ChakraIcons'
 
 const Skill = () => {
@@ -23,67 +26,106 @@ const Skill = () => {
       <Stack spacing={5} pt={5}>
         <Box>
           <Title>My Skills</Title>
-          <Text fontSize={'xs'} fontWeight={'semibold'}>
+          <Text fontSize={'sm'} fontWeight={'semibold'}>
             Some of the technologies I learned and use
           </Text>
         </Box>
         <Box>
           <Title>Programming Language</Title>
           <Flex gap={2} pt={2}>
-            <ContainerSkill>
+            <ContainerSkill url="https://www.python.org/">
               <PythonIcons width="1.7rem" h="1.7rem" />
               Python
             </ContainerSkill>
-            <ContainerSkill>
+            <ContainerSkill url="https://www.javascript.com/">
               <JavascriptIcons width="1.7rem" h="1.7rem" />
               Javascript
             </ContainerSkill>
-            <ContainerSkill>
+            <ContainerSkill url="https://www.w3schools.com/html/">
               <HtmlIcons width="1.7rem" h="1.7rem" />
               HTML5
             </ContainerSkill>
-            <ContainerSkill>
-              <CSSIcons width="1.7rem" h="1.7rem" />
-              CSS
+            <ContainerSkill url="https://www.php.net/">
+              <PHPIcons
+                width="1.7rem"
+                h="1.7rem"
+                filter={useColorModeValue('invert(0)', 'invert(100%)')}
+              />
+              PHP
             </ContainerSkill>
           </Flex>
         </Box>
         <Box>
-          <Title>Framework</Title>
+          <Title>Frameworks</Title>
           <Flex gap={2} pt={2}>
-            <ContainerSkill>
-              <PythonIcons width="1.7rem" h="1.7rem" />
-              Python
-            </ContainerSkill>
-            <ContainerSkill>
-              <JavascriptIcons width="1.7rem" h="1.7rem" />
-              Javascript
+            <ContainerSkill url="https://expressjs.com/">
+              <ExpressIcons width="1.7rem" h="1.7rem" />
+              Express
             </ContainerSkill>
           </Flex>
         </Box>
         <Box>
           <Title>Frameworks (Full Stack)</Title>
           <Flex gap={2} pt={2}>
-            <ContainerSkill>
-              <ReactIcons width="1.7rem" h="1.7rem" />
-              React Js
+            <ContainerSkill url="https://nextjs.org/">
+              <NextJsIcons
+                width="1.7rem"
+                h="1.7rem"
+                filter={useColorModeValue('invert(0)', 'invert(100%)')}
+              />
+              Next.js
             </ContainerSkill>
-            <ContainerSkill>
-              <JavascriptIcons width="1.7rem" h="1.7rem" />
-              Javascript
+            <ContainerSkill url="https://laravel.com/">
+              <LaravelIcons width="1.7rem" h="1.7rem" />
+              Laravel
+            </ContainerSkill>
+            <ContainerSkill url="https://nodejs.org/en/">
+              <NodejsIcons width="1.7rem" h="1.7rem" />
+              Node.js
             </ContainerSkill>
           </Flex>
         </Box>
         <Box>
-          <Title>Tools</Title>
+          <Title>Javascript UI</Title>
           <Flex gap={2} pt={2}>
-            <ContainerSkill>
+            <ContainerSkill url="https://reactjs.org/">
               <ReactIcons width="1.7rem" h="1.7rem" />
-              React Js
+              React.js
             </ContainerSkill>
-            <ContainerSkill>
-              <JavascriptIcons width="1.7rem" h="1.7rem" />
-              Javascript
+          </Flex>
+        </Box>
+        <Box>
+          <Title>Front-End Frameworks</Title>
+          <Flex gap={2} pt={2}>
+            <ContainerSkill url="https://tailwindcss.com/">
+              <TailwindsIcons width="1.7rem" h="1.7rem" />
+              Tailwinds
+            </ContainerSkill>
+            <ContainerSkill url="https://www.w3schools.com/css/">
+              <CSSIcons width="1.7rem" h="1.7rem" />
+              CSS
+            </ContainerSkill>
+          </Flex>
+        </Box>
+        <Box>
+          <Title>Task Processing</Title>
+          <Flex gap={2} pt={2}>
+            <ContainerSkill url="https://firebase.google.com/">
+              <FirebaseIcons width="1.7rem" h="1.7rem" />
+              Firebase
+            </ContainerSkill>
+          </Flex>
+        </Box>
+        <Box>
+          <Title>Database</Title>
+          <Flex gap={2} pt={2}>
+            <ContainerSkill url="https://www.mongodb.com/">
+              <MongodbIcons width="1.7rem" h="1.7rem" />
+              MongoDb
+            </ContainerSkill>
+            <ContainerSkill url="https://www.mysql.com/">
+              <MySqlIcons width="1.7rem" h="1.7rem" />
+              MySql
             </ContainerSkill>
           </Flex>
         </Box>
@@ -94,19 +136,24 @@ const Skill = () => {
 
 export default Skill
 
-const ContainerSkill = ({ children }) => (
-  <Box fontSize={'sm'} fontWeight={'semibold'}>
+const ContainerSkill = ({ children, url }) => (
+  <Link href={url} target='_blank' fontSize={'sm'} fontWeight={'semibold'}>
     <Flex
+      textColor={useColorModeValue('#2e3436b3', '#898989')}
       width="auto"
       justifyContent={'start'}
       alignItems="center"
-      border={`2px solid ${useColorModeValue('#bdd1ff9c', '#2e3436b3')}`}
+      border={`2px solid ${useColorModeValue('#767b879c', '#2e3436b3')}`}
       p={2}
       gap={2}
+      _hover={{
+        textColor: useColorModeValue('#000', '#fff'),
+        cursor: 'pointer'
+      }}
     >
       {children}
     </Flex>
-  </Box>
+  </Link>
 )
 
 const Title = ({ children }) => <Text fontWeight={'bold'}>{children}</Text>
