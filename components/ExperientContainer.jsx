@@ -23,8 +23,8 @@ const ExperientContainer = ({ children, h, src, title, date }) => {
               justifyContent="center"
               alignItems={'center'}
               gap={1}
-              px="-5rem"
-              ml="-5rem"
+              px={{ base: '0', md: '-5rem' }}
+              ml={{ base: '0', md: '-5rem' }}
               position={'relative'}
               // bg="red"
             >
@@ -62,7 +62,7 @@ const ExperientContainer = ({ children, h, src, title, date }) => {
           </Stack>
         </Box>
         <Box flex="7">
-          <Stack spacing={4} ml="-3rem">
+          <Stack spacing={4} ml={{ base: '0', md: '-3rem' }}>
             <Box w="full">
               {' '}
               <Heading
@@ -109,10 +109,12 @@ const ExperientContainer = ({ children, h, src, title, date }) => {
 export default ExperientContainer
 
 const Paraf = styled.p`
-  width: 40rem;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   color: ${props => props.color};
+  @media (max-width: 798px) {
+    width: 30rem;
+  }
 `
