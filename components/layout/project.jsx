@@ -94,6 +94,52 @@ export const ImageProject = ({ src, alt }) => {
     </>
   )
 }
+export const ImageExperience = ({ src, alt }) => {
+  const [pop, setPop] = useState(false)
+  const [data, setData] = useState({})
+  const Val = (data, des) => {
+    setPop(true)
+    setData({ data: data, des: des })
+  }
+  return (
+    <>
+      <Flex pt={4}>
+        <Image
+          maxW="20rem"
+          rounded={'md'}
+          src={src}
+          alt={alt}
+          mb={4}
+          onClick={() => Val(src, alt)}
+          cursor="pointer"
+        />
+      </Flex>
+      {pop ? (
+        <>
+          <Blur />
+          <Popup onClick={() => setPop(false)}>
+            <Box>
+              <Flex maxW={'60vh'} alignItems="center" justifyContent={'center'}>
+                <Image
+                  maxW={{
+                    base: ['28rem', '35rem', '35rem', '36rem'],
+                    md: ['45rem', '50rem']
+                  }}
+                  src={data.data}
+                  alt={data.des}
+                  rounded={5}
+                  objectFit="cover"
+                />
+              </Flex>
+            </Box>
+          </Popup>
+        </>
+      ) : (
+        <></>
+      )}
+    </>
+  )
+}
 
 const Para = styled.p`
   text-align: justify;

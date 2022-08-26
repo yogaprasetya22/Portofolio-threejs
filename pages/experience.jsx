@@ -5,9 +5,16 @@ import {
   useColorModeValue,
   Stack,
   Text,
-  Divider
+  Divider,
+  Flex,
+  Icon,
+  Heading,
+  Image,
+  Link
 } from '@chakra-ui/react'
-
+import ExperientContainer from '../components/ExperientContainer'
+import { ImageExperience, Title } from '../components/layout/project'
+import styled from '@emotion/styled'
 
 const about = () => {
   return (
@@ -28,12 +35,21 @@ const about = () => {
         </Box>
       </Container>
       <br />
-      <Divider/>
-       <Box p={{ base: '10px', md: '35px' }}>
-        
-       </Box>
+      <Divider />
+      <ExperientContainer h="22" src={'https://i.imgur.com/qXQQQ.png'} title='Experince' date='7 agustus 2022'>
+        Bekerja sebagai Frontend Developer di Ordent onsite di Bandung,
+        Indonesia. Ini adalah pengalaman kerja pertama saya (Bekerja di tempat
+        di Bandung). Saya bekerja sebagai Frontend Developer untuk.
+      </ExperientContainer>
+      <ExperientContainer h="22" src={'https://i.imgur.com/qXQQQ.png'} title='Experince' date='7 agustus 2022'>
+        Bekerja sebagai Frontend Developer di Ordent onsite di Bandung,
+        Indonesia. Ini adalah pengalaman kerja pertama saya (Bekerja di tempat
+        di Bandung). Saya bekerja sebagai Frontend Developer untuk.
+      </ExperientContainer>
     </Layout>
   )
 }
 
 export default about
+
+

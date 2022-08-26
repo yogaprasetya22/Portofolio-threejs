@@ -84,8 +84,8 @@ const VoxelDog = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const hemi = new THREE.HemisphereLight(0xffffbb, 0x080820, 3)
-      hemi.position.set(4, 18, 10)
+      const hemi = new THREE.HemisphereLight(0xd46c31, 0x080820, 3)
+      hemi.position.set(14, 48, 10)
       scene.add(hemi)
 
       // pencahayaan bawah
