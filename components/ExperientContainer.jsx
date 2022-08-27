@@ -11,10 +11,11 @@ import {
 } from '@chakra-ui/react'
 import { ImageExperience, Title } from '../components/layout/project'
 import styled from '@emotion/styled'
+import { CommentsIcons, HeartsIcons } from './general/ChakraIcons'
 
 const ExperientContainer = ({ children, h, src, title, date }) => {
   return (
-    <Box p={{ base: '10px', md: '35px' }}>
+    <Box p={{ base: '10px', md: '17px' }}>
       <Flex>
         <Box flex="1">
           <Stack spacing={4}>
@@ -73,7 +74,7 @@ const ExperientContainer = ({ children, h, src, title, date }) => {
               >
                 <Link
                   href="/project/whatsapp-clone"
-                  color={'white'}
+                  color={useColorModeValue('gray.700', 'gray.200')}
                   _hover={{ color: 'cyan.400', textUnderlineOffset: 1 }}
                 >
                   {title}
@@ -85,7 +86,7 @@ const ExperientContainer = ({ children, h, src, title, date }) => {
                 fontWeight={'bold'}
                 mb={2}
                 mt={7}
-                color={useColorModeValue('gray.400', 'gray.600')}
+                color={useColorModeValue('gray.600', 'gray.500')}
               >
                 {date} -
                 <Text pl={1} color={'cyan.400'}>
@@ -98,6 +99,58 @@ const ExperientContainer = ({ children, h, src, title, date }) => {
                 </Paraf>
               </Box>
               <ImageExperience src={src} alt={title} />
+            </Box>
+            <Box display={'flex'} gap="3">
+              <Flex
+                gap="1"
+                fontFamily={'monospace'}
+                fontWeight="semibold"
+                fontSize={'sm'}
+                alignItems="center"
+                color={useColorModeValue('gray.600', 'gray.500')}
+              >
+                <Icon
+                  viewBox="0 0 24 24"
+                  color={useColorModeValue('gray.400', 'white')}
+                  w={5}
+                  h={5}
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                  ></path>
+                </Icon>
+                <Text fontSize={'md'}>6</Text> Likes
+              </Flex>
+              <Flex
+                gap="1"
+                fontFamily={'monospace'}
+                fontWeight="semibold"
+                fontSize={'sm'}
+                alignItems="center"
+                color={useColorModeValue('gray.600', 'gray.500')}
+              >
+                <Icon
+                  viewBox="0 0 24 24"
+                  color={useColorModeValue('gray.400', 'white')}
+                  w={5}
+                  h={5}
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                  ></path>
+                </Icon>
+                <Text fontSize={'md'}>6</Text> Commments
+              </Flex>
             </Box>
           </Stack>
         </Box>
@@ -114,7 +167,10 @@ const Paraf = styled.p`
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   color: ${props => props.color};
-  @media (max-width: 798px) {
+  @media (max-width: 768px) {
+    width: 40rem;
+  }
+  @media (max-width: 968px) {
     width: 30rem;
   }
 `

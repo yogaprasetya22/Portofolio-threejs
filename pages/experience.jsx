@@ -36,12 +36,12 @@ const about = () => {
       </Container>
       <br />
       <Divider />
-      <ExperientContainer h="22" src={'https://i.imgur.com/qXQQQ.png'} title='Experince' date='7 agustus 2022'>
+      <ExperientContainer h="24" src={'https://i.imgur.com/qXQQQ.png'} title='Experince' date='7 agustus 2022'>
         Bekerja sebagai Frontend Developer di Ordent onsite di Bandung,
         Indonesia. Ini adalah pengalaman kerja pertama saya (Bekerja di tempat
         di Bandung). Saya bekerja sebagai Frontend Developer untuk.
       </ExperientContainer>
-      <ExperientContainer h="22" src={'https://i.imgur.com/qXQQQ.png'} title='Experince' date='7 agustus 2022'>
+      <ExperientContainer h="24" src={'https://i.imgur.com/qXQQQ.png'} title='Experince' date='7 agustus 2022'>
         Bekerja sebagai Frontend Developer di Ordent onsite di Bandung,
         Indonesia. Ini adalah pengalaman kerja pertama saya (Bekerja di tempat
         di Bandung). Saya bekerja sebagai Frontend Developer untuk.

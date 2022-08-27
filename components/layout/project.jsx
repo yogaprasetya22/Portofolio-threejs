@@ -1,8 +1,10 @@
 import { Heading, Box, Image, Flex, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 // import Section from '../section'
 import dynamic from 'next/dynamic'
+
+// import { Dialog, Transition } from '@headlessui/react'
 
 const Section = dynamic(() => import('../section'), { ssr: false })
 
@@ -153,3 +155,57 @@ export const Paragraf = ({ children }) => (
     </Box>
   </Section>
 )
+
+// const TamplateDialog = ({ children, open, setOpen, src }) => (
+//   <Transition.Root show={open} as={Fragment}>
+//     <Dialog
+//       as={'div'}
+//       className="fixed z-50 inset-0 overflow-y-auto"
+//       onClose={setOpen}
+//     >
+//       <Box
+//         display={{ base: 'flex', sm: 'block' }}
+//         alignItems={'end'}
+//         justifyContent="center"
+//         minH={{ base: '500px', sm: 'full' }}
+//         pt={{ base: 4, sm: 0 }}
+//         px={{ base: 4, sm: 0 }}
+//         pb={20}
+//         textAlign="center"
+//       >
+//         <Transition.Child
+//           as={Fragment}
+//           enter="transition ease-out duration-150"
+//           enterFrom="opacity-0"
+//           enterTo="opacity-100"
+//           leave="transition ease-in-out duration-150 transform"
+//           leaveFrom="opacity-100"
+//           leaveTo="opacity-0"
+//         >
+//           <Dialog.Overlay
+//             className={
+//               'fixed inset-0 bg-gray-700 bg-opacity-50 transition-opacity'
+//             }
+//           />
+//         </Transition.Child>
+//         <span
+//           className="hidden sm:inline-block sm:align-middle sm:h-screen"
+//           aria-hidden="true"
+//         >
+//           &#8203;
+//         </span>
+//         <Transition.Child
+//           as={Fragment}
+//           enter="transition ease-out duration-300"
+//           enterFrom="opacity-0"
+//           enterTo="opacity-100"
+//           leave="transition ease-in duration-200"
+//           leaveFrom="opacity-100"
+//           leaveTo="opacity-0"
+//         >
+//           <Image src="https://i.imgur.com/qXQQQ.png" />
+//         </Transition.Child>
+//       </Box>
+//     </Dialog>
+//   </Transition.Root>
+// )
