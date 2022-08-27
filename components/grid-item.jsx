@@ -77,7 +77,11 @@ export const ProjextGridItem = ({
             height={{ base: '37.6%', md: '34.5%' }}
             borderBottomRadius={'12px'}
           >
-            <Text fontSize={{ base: 15, md: 18 }} fontWeight="bold">
+            <Text
+              fontSize={{ base: 15, md: 18 }}
+              fontWeight="bold"
+              style={{ userSelect: 'none' }}
+            >
               {title} <Badge>{relese}</Badge>
             </Text>
             <Text fontSize={{ base: 10, md: 14 }} fontWeight="medium">

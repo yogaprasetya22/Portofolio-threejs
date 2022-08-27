@@ -7,13 +7,23 @@ import {
   Flex,
   Icon,
   Heading,
-  Link
+  Link,
+  Img
 } from '@chakra-ui/react'
 import { ImageExperience, Title } from '../components/layout/project'
 import styled from '@emotion/styled'
 import { CommentsIcons, HeartsIcons } from './general/ChakraIcons'
+import { useState } from 'react'
 
 const ExperientContainer = ({ children, h, src, title, date }) => {
+  const [likes, setLikes] = useState(false)
+  const handleLike = e => {
+    switch (e.detail) {
+      case 2: {
+        setLikes(true)
+      }
+    }
+  }
   return (
     <Box p={{ base: '10px', md: '17px' }}>
       <Flex>
@@ -98,7 +108,17 @@ const ExperientContainer = ({ children, h, src, title, date }) => {
                   {children}
                 </Paraf>
               </Box>
-              <ImageExperience src={src} alt={title} />
+              {/* <ImageExperience src={src} alt={title} /> */}
+              <Img
+                style={{ userSelect: 'none' }}
+                src={src}
+                alt={title}
+                maxW="20rem"
+                rounded={'md'}
+                cursor="pointer"
+                mt={3}
+                onClick={e => handleLike(e)}
+              />
             </Box>
             <Box display={'flex'} gap="3">
               <Flex
@@ -108,22 +128,45 @@ const ExperientContainer = ({ children, h, src, title, date }) => {
                 fontSize={'sm'}
                 alignItems="center"
                 color={useColorModeValue('gray.600', 'gray.500')}
+                style={{ userSelect: 'none' }}
               >
-                <Icon
-                  viewBox="0 0 24 24"
-                  color={useColorModeValue('gray.400', 'white')}
-                  w={5}
-                  h={5}
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                  ></path>
-                </Icon>
+                {likes ? (
+                  <>
+                    <Icon
+                      onClick={() => setLikes(!likes)}
+                      viewBox="0 0 24 24"
+                      color={useColorModeValue('gray.400', 'red')}
+                      w={5}
+                      h={5}
+                    >
+                      <path
+                        fill="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      ></path>
+                    </Icon>
+                  </>
+                ) : (
+                  <>
+                    <Icon
+                      onClick={() => setLikes(!likes)}
+                      viewBox="0 0 24 24"
+                      color={useColorModeValue('gray.400', 'white')}
+                      w={5}
+                      h={5}
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      ></path>
+                    </Icon>
+                  </>
+                )}
                 <Text fontSize={'md'}>6</Text> Likes
               </Flex>
               <Flex
@@ -133,6 +176,7 @@ const ExperientContainer = ({ children, h, src, title, date }) => {
                 fontSize={'sm'}
                 alignItems="center"
                 color={useColorModeValue('gray.600', 'gray.500')}
+                style={{ userSelect: 'none' }}
               >
                 <Icon
                   viewBox="0 0 24 24"
