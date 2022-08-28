@@ -58,7 +58,8 @@ export const ImageProject = ({ src, alt }) => {
           onClick={onClose}
           bg="none"
           maxW="52rem"
-          h={{ base: 'full', md: 'auto' }}
+          h={{ base: '90vh', md: 'auto' }}
+          overflow="hidden"
           alignItems={'center'}
           justifyContent={'center'}
         >
