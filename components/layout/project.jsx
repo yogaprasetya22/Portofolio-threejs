@@ -93,7 +93,7 @@ export const ImageProject = ({ src, alt }) => {
   )
 }
 
-export const CommentModel = ({ src,title,des }) => {
+export const CommentModel = ({ src, title, des }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const finalRef = useRef(null)
   return (
@@ -148,11 +148,7 @@ export const CommentModel = ({ src,title,des }) => {
                 p="10px"
                 px="1rem"
               >
-                <Heading
-                  as="h6"
-                  fontSize="lg"
-                  fontFamily={'monospace'}
-                >
+                <Heading as="h6" fontSize="lg" fontFamily={'monospace'}>
                   <Text
                     href="/project/whatsapp-clone"
                     color={useColorModeValue('gray.700', 'gray.200')}

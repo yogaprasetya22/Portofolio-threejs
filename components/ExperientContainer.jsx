@@ -94,6 +94,7 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
               <Icon
                 viewBox="0 0 222.334 222.334"
                 color={useColorModeValue('gray.400', 'gray.600')}
+          
                 w={5}
                 h={5}
               >
@@ -166,6 +167,7 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
                 src={src}
                 alt={title}
                 maxW="13.4rem"
+                maxH={'13.7rem'}
                 rounded={'md'}
                 cursor="pointer"
                 objectFit={'cover'}
