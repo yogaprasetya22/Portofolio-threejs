@@ -6,17 +6,26 @@ import {
   Stack,
   Text,
   Divider,
-  Flex,
-  Icon,
-  Heading,
-  Image,
-  Link
+  Button
 } from '@chakra-ui/react'
 import ExperientContainer from '../components/ExperientContainer'
-import { ImageExperience, Title } from '../components/layout/project'
-import styled from '@emotion/styled'
+import { PostingExperience } from '../components/layout/Post'
+import { useEffect, useState } from 'react'
+import { collection, onSnapshot, orderBy, query } from 'firebase/firestore'
+import { db } from '../firebase'
+import { useSession } from 'next-auth/react'
 
 const about = () => {
+  const [posts, setPosts] = useState([])
+  const { data: session } = useSession()
+  useEffect(() => {
+    onSnapshot(
+      query(collection(db, 'posts'), orderBy('timestamp', 'desc')),
+      snapshot => {
+        setPosts(snapshot.docs)
+      }
+    )
+  }, [db])
   return (
     <Layout title="Skils">
       <Container>
@@ -36,20 +45,23 @@ const about = () => {
       </Container>
       <br />
       <Divider />
-      <ExperientContainer h="23" src={'https://i.imgur.com/qXQQQ.png'} title='Experince' date='7 agustus 2022'>
-        Bekerja sebagai Frontend Developer di Ordent onsite di Bandung,
-        Indonesia. Ini adalah pengalaman kerja pertama saya (Bekerja di tempat
-        di Bandung). Saya bekerja sebagai Frontend Developer untuk.
-      </ExperientContainer>
-      <ExperientContainer h="23" src={'https://i.imgur.com/qXQQQ.png'} title='Experince' date='7 agustus 2022'>
-        Bekerja sebagai Frontend Developer di Ordent onsite di Bandung,
-        Indonesia. Ini adalah pengalaman kerja pertama saya (Bekerja di tempat
-        di Bandung). Saya bekerja sebagai Frontend Developer untuk.
-      </ExperientContainer>
+      {session?.user.uid === '112588840329457790265' && <PostingExperience />}
+      <>
+        {posts.map(data => (
+          <ExperientContainer
+            h="23"
+            key={data.id}
+            id={data.id}
+            src={data.data().image}
+            title={data.data().title}
+            date="7 agustus 2022"
+          >
+            {data.data().des}
+          </ExperientContainer>
+        ))}
+      </>
     </Layout>
   )
 }
 
 export default about
-
-
