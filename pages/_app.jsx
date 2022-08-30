@@ -8,13 +8,13 @@ import '../styles/devicons.css'
 function MyApp({ Component, router, pageProps: { session, ...pageProps } }) {
   return (
     <ChakraProvider theme={theme}>
-      <Layout router={router}>
-        <AnimatePresence exitBeforeEnter initial={true}>
-          <SessionProvider session={session} refetchInterval={5 * 60}>
+      <SessionProvider session={session} refetchInterval={5 * 60}>
+        <Layout router={router}>
+          <AnimatePresence exitBeforeEnter initial={true}>
             <Component {...pageProps} key={router.route} />
-          </SessionProvider>
-        </AnimatePresence>
-      </Layout>
+          </AnimatePresence>
+        </Layout>
+      </SessionProvider>
     </ChakraProvider>
   )
 }

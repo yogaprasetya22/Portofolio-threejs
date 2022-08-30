@@ -49,7 +49,7 @@ const about = () => {
       <>
         {posts.map(data => (
           <ExperientContainer
-            h="23"
+            h="21.4"
             key={data.id}
             id={data.id}
             src={data.data().image}

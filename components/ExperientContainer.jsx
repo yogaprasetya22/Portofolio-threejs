@@ -94,7 +94,6 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
               <Icon
                 viewBox="0 0 222.334 222.334"
                 color={useColorModeValue('gray.400', 'gray.600')}
-          
                 w={5}
                 h={5}
               >
@@ -180,7 +179,7 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
             </Box>
             <Box display={'flex'} gap="3">
               <Flex
-                gap="1"
+                gap="2"
                 fontFamily={'monospace'}
                 fontWeight="semibold"
                 fontSize={'sm'}
@@ -227,12 +226,11 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
                     </Icon>
                   </>
                 )}
-                {likes.length > 0 && (
-                  <Text fontSize={'md'}>
-                    {likes.length} {likes.length > 1 ? 'likes' : 'like'}
-                  </Text>
-                )}
-              </Flex> 
+                <Text fontSize={'md'}>
+                  {likes.length}
+                  <LikePar>{likes.length > 1 ? 'likes' : 'like'}</LikePar>
+                </Text>
+              </Flex>
               <CommentModel src={src} title={title} des={children} />
             </Box>
           </Stack>
@@ -256,4 +254,8 @@ const Paraf = styled.p`
   @media (max-width: 968px) {
     width: 30rem;
   }
+`
+const LikePar = styled.p`
+ padding-left: 4px;
+ display: inline-flex;
 `
