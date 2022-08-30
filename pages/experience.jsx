@@ -26,6 +26,7 @@ const about = () => {
       }
     )
   }, [db])
+  console.log(posts)
   return (
     <Layout title="Skils">
       <Container>
@@ -59,6 +60,9 @@ const about = () => {
             {data.data().des}
           </ExperientContainer>
         ))}
+        {/* {posts?.map((data, i) => (
+          <Box key={i}>{console.log(data.data())}</Box>
+        ))} */}
       </>
     </Layout>
   )
