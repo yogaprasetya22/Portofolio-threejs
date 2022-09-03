@@ -11,7 +11,7 @@ import {
 import ExperientContainer from '../components/ExperientContainer'
 import { PostingExperience } from '../components/layout/Post'
 import { useEffect, useState } from 'react'
-import { collection, onSnapshot, orderBy, query } from 'firebase/firestore'
+import { collection, onSnapshot, orderBy, query } from '@firebase/firestore'
 import { db } from '../firebase'
 import { useSession } from 'next-auth/react'
 
