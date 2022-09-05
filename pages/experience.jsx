@@ -26,6 +26,9 @@ const about = () => {
       }
     )
   }, [db])
+  console.log({
+    apiKey: process.env.BASE_URL
+  })
   return (
     <Layout title="Skils">
       <Container>

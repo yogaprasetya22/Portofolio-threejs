@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3005",
     "build": "next build",
     "start": "next start",
     "prettier": "prettier --write .",

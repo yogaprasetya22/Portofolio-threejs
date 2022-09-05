@@ -5,7 +5,11 @@ import Layout from '../components/layout/main'
 import theme from '../lib/theme'
 import '../styles/devicons.css'
 
-function MyApp({ Component, router, pageProps: { session, ...pageProps } }) {
+export default function MyApp({
+  Component,
+  router,
+  pageProps: { session, ...pageProps }
+}) {
   return (
     <ChakraProvider theme={theme}>
       <Layout router={router}>
@@ -18,5 +22,3 @@ function MyApp({ Component, router, pageProps: { session, ...pageProps } }) {
     </ChakraProvider>
   )
 }
-
-export default MyApp
