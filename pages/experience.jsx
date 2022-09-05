@@ -27,7 +27,7 @@ const about = () => {
     )
   }, [db])
   console.log({
-    apiKey: process.env.BASE_URL
+    apiKey: process.env.GOOGLE_CLIENT_ID
   })
   return (
     <Layout title="Skils">
