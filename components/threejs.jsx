@@ -91,7 +91,7 @@ const VoxelDog = () => {
       // pencahayaan bawah
       const ubin = new THREE.PointLight(0xcccccc, 1.5, 100)
       ubin.position.set(0, -10, 0) // ( kiri-kanan , atas-bawah , depan-belakang )
-      scene.add(ubin)
+      // scene.add(ubin)
 
       const composer = new EffectComposer(renderer)
       composer.addPass(new RenderPass(scene, camera))

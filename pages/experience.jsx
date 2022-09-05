@@ -16,8 +16,8 @@ import { db } from '../firebase'
 import { useSession } from 'next-auth/react'
 
 const about = () => {
-  const [posts, setPosts] = useState([])
   const { data: session } = useSession()
+  const [posts, setPosts] = useState([])
   useEffect(() => {
     onSnapshot(
       query(collection(db, 'posts'), orderBy('timestamp', 'desc')),
@@ -26,7 +26,6 @@ const about = () => {
       }
     )
   }, [db])
-  console.log(posts)
   return (
     <Layout title="Skils">
       <Container>
@@ -48,7 +47,7 @@ const about = () => {
       <Divider />
       {session?.user.uid === '112588840329457790265' && <PostingExperience />}
       <>
-        {posts.map(data => (
+        {posts?.map(data => (
           <ExperientContainer
             h="21.4"
             key={data.id}
