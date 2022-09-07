@@ -54,7 +54,7 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
   }, [likes, session])
 
   const likesPost = async () => {
-    if(!session) return router.push('/auth/signin')
+    if (!session) return router.push('/auth/signin')
     if (haslike) {
       await deleteDoc(doc(db, 'posts', id, 'likes', session?.user.uid), {
         username: session.user.username
@@ -226,10 +226,10 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
                     </Icon>
                   </>
                 )}
-                <Text fontSize={'md'}>
+                <Box fontSize={'md'}>
                   {likes.length}
                   <LikePar>{likes.length > 1 ? 'likes' : 'like'}</LikePar>
-                </Text>
+                </Box>
               </Flex>
               <CommentModel src={src} title={title} des={children} />
             </Box>
@@ -256,6 +256,6 @@ const Paraf = styled.p`
   }
 `
 const LikePar = styled.p`
- padding-left: 4px;
- display: inline-flex;
+  padding-left: 4px;
+  display: inline-flex;
 `
