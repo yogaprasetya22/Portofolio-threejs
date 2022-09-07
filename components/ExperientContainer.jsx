@@ -162,15 +162,18 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
               </Box>
               {/* <ImageExperience src={src} alt={title} /> */}
               <Img
-                style={{ WebkitUserSelect: 'none' }}
+                
                 src={src}
                 alt={title}
-                maxW="13.4rem"
+                // maxW="20.5rem"
+                minH={'13rem'}
                 maxH={'13.7rem'}
                 rounded={'md'}
                 cursor="pointer"
-                objectFit={'cover'}
+                objectFit={'contain'}
                 mt={3}
+                userSelect="none"
+                
                 onClick={e => handleLike(e)}
               />
               {/* {!load && (
