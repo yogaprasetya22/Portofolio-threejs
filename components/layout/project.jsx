@@ -13,7 +13,10 @@ import {
   Button,
   Stack,
   Textarea,
-  Link
+  Link,
+  Skeleton,
+  SkeletonCircle,
+  SkeletonText
 } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import { useRef } from 'react'
@@ -22,6 +25,7 @@ import { PlusSquareIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
 import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
 const Section = dynamic(() => import('../section'), { ssr: false })
 
@@ -62,33 +66,48 @@ export const Paragraf = ({ children }) => (
 
 export const ImageProject = ({ src, alt }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const [loading, setLoading] = useState(false)
   const finalRef = useRef(null)
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (src) setLoading(true)
+    }, 800)
+  }, [src])
   return (
     <>
-      <Flex pt={4} alignItems="center" justifyContent={'center'}>
-        <Image
-          maxW="full"
-          src={src}
-          alt={alt}
-          mb={4}
-          onClick={onOpen}
-          cursor="pointer"
-        />
-      </Flex>
-      <Modal finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay bg="blackAlpha.300" backdropFilter="blur(4px) " />
-        <ModalContent
-          onClick={onClose}
-          bg="none"
-          maxW="55rem"
-          h={{ base: '90vh', md: 'auto' }}
-          overflow="hidden"
-          alignItems={'center'}
-          justifyContent={'center'}
-        >
-          <Image src={src} />
-        </ModalContent>
-      </Modal>
+      {!loading ? (
+        <Skeleton width={'full'} height="12rem" my={4}>
+          <Box>Keren</Box>
+        </Skeleton>
+      ) : (
+        <>
+          <Flex pt={4} alignItems="center" justifyContent={'center'}>
+            <Image
+              maxW="full"
+              src={src}
+              alt={alt}
+              mb={4}
+              onClick={onOpen}
+              cursor="pointer"
+            />
+          </Flex>
+          <Modal finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
+            <ModalOverlay bg="blackAlpha.300" backdropFilter="blur(4px) " />
+            <ModalContent
+              onClick={onClose}
+              bg="none"
+              maxW="55rem"
+              h={{ base: '90vh', md: 'auto' }}
+              overflow="hidden"
+              alignItems={'center'}
+              justifyContent={'center'}
+            >
+              <Image src={src} />
+            </ModalContent>
+          </Modal>
+        </>
+      )}
     </>
   )
 }
