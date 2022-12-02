@@ -43,7 +43,7 @@ export default function Home() {
       </Box>
       <Box p={{ base: '10px', md: '50px' }} mt={{ base: '0', md: '-2rem' }}>
         <Paragraf>
-          Halo, nama saya Mochammad Yoga Prasetya, tapi teman-teman memanggil
+          Halo, nama saya Mochammad Yoga Prasetya, tapi teman-teman sering memanggil
           saya Yoga. Saya berasal dari Universitas Pembangunan Jaya dengan prodi
           Sistem Informasi. Saya senang mempelajari sesuatu yang baru dan
           mendapatkan masukan untuk menjadikan diri saya lebih baik dan

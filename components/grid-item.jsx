@@ -8,7 +8,8 @@ import {
   Link,
   Stack,
   Flex,
-  Badge
+  Badge,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 import { useState } from 'react'
@@ -77,13 +78,13 @@ export const ProjextGridItem = ({
             height={{ base: '37.6%', md: '34.5%' }}
             borderBottomRadius={'12px'}
           >
-            <Text
+            <Box
               fontSize={{ base: 15, md: 18 }}
               fontWeight="bold"
               style={{ userSelect: 'none' }}
             >
-              {title} <Badge>{relese}</Badge>
-            </Text>
+              <Text bg={useColorModeValue("purple.600","blue.400")}> {title} <Badge>{relese}</Badge></Text>
+            </Box>
             <Text fontSize={{ base: 10, md: 14 }} fontWeight="medium">
               {children}
             </Text>

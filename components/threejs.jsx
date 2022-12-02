@@ -23,7 +23,7 @@ const VoxelDog = () => {
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
       36 * Math.sin(0.8 * Math.PI),
-      55,
+      15,
       25 * Math.cos(0.2 * Math.PI)
     )
   )
@@ -68,7 +68,7 @@ const VoxelDog = () => {
         scalex,
         -scale,
         0.21,
-        50000
+        5000
       )
 
       function update() {
@@ -84,7 +84,7 @@ const VoxelDog = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const hemi = new THREE.HemisphereLight(0xd46c31, 0x080820, 3)
+      const hemi = new THREE.HemisphereLight(0xd98d28, 0x080820, 3)
       hemi.position.set(14, 48, 10)
       scene.add(hemi)
 
@@ -107,8 +107,8 @@ const VoxelDog = () => {
       setControls(controls)
 
       loadGLTFModel(scene, '/scene.glb', {
-        receiveShadow: false,
-        castShadow: false
+        receiveShadow: true,
+        castShadow: true
       }).then(() => {
         animate()
         setLoading(false)

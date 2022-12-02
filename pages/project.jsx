@@ -13,6 +13,7 @@ import { ProjextGridItem } from '../components/grid-item'
 import Section from '../components/section'
 import whatsappClone from '../public/img/whatsapp-clone/whatsapp-clone.png'
 import instagramClone from '../public/img/instagram-clone/thumbnile.png'
+import lldikti4 from '../public/img/lldikti/thumbnile.png'
 
 const DataViewProjectPrivate = [
   {
@@ -36,15 +37,15 @@ const DataViewProjectPublic = [
   {
     id: '1',
     relese: 2022,
-    thumbnail: cewe,
-    title: 'lldikti-4',
-    des: 'Music recommendation app for iOS'
+    thumbnail: lldikti4,
+    title: 'lomba-lldikti',
+    des: 'Lomba UI/UX pada website Se Jawa Barat.'
   },
   {
     id: '2',
     relese: 2022,
     thumbnail: cewe,
-    title: 'lldikti-4',
+    title: 'percobaan',
     des: 'Music recommendation app for iOS'
   }
 ]

@@ -5,45 +5,50 @@ import { getProviders, signIn, signOut, useSession } from 'next-auth/react'
 
 const SingInProvider = ({ providers }) => {
   const { data: sessions } = useSession()
+  console.log(sessions)
   return (
     <Center p={8}>
       <Stack spacing={2} align={'center'} maxW={'md'} w={'full'}>
         {/* Google */}
-        {!sessions ? (
-          <>
-            {Object.values(providers).map(provider => (
-              <Box key={provider.name}>
+        {/* {sessions && (
+          <> */}
+            {!sessions ? (
+              <>
+                {Object.values(providers).map(provider => (
+                  <Box key={provider.name}>
+                    <Button
+                      w={'full'}
+                      variant={'outline'}
+                      leftIcon={<FcGoogle />}
+                      onClick={() =>
+                        signIn(provider.id, {
+                          callbackUrl: '/experience'
+                        })
+                      }
+                    >
+                      <Center>
+                        <Text>Sign in with Google</Text>
+                      </Center>
+                    </Button>
+                  </Box>
+                ))}
+              </>
+            ) : (
+              <Box>
                 <Button
                   w={'full'}
-                  variant={'outline'}
-                  leftIcon={<FcGoogle />}
-                  onClick={() =>
-                    signIn(provider.id, {
-                      callbackUrl: '/experience'
-                    })
-                  }
+                  colorScheme={'facebook'}
+                  leftIcon={<FiLogOut />}
+                  onClick={signOut}
                 >
                   <Center>
-                    <Text>Sign in with Google</Text>
+                    <Text>Log out</Text>
                   </Center>
                 </Button>
               </Box>
-            ))}
-          </>
-        ) : (
-          <Box>
-            <Button
-              w={'full'}
-              colorScheme={'facebook'}
-              leftIcon={<FiLogOut />}
-              onClick={signOut}
-            >
-              <Center>
-                <Text>Log out</Text>
-              </Center>
-            </Button>
-          </Box>
-        )}
+            )}
+          {/* </> */}
+        {/* )} */}
       </Stack>
     </Center>
   )

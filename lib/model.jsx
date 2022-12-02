@@ -16,6 +16,7 @@ export function loadGLTFModel(
                 obj.name = "scene";
                 obj.position.y = 0;
                 obj.position.x = 0;
+                obj.position.z = 0;
                 obj.receiveShadow = receiveShadow;
                 obj.castShadow = castShadow;
                 scene.add(obj);

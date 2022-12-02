@@ -13,9 +13,9 @@ import { Bottom } from '../../components/BottomView'
 
 const Lldikti = () => {
   return (
-    <Layout title={'Whatsapp Clone'}>
+    <Layout title={'LLDIKTI-4'}>
       <Box p={{ base: '10px', md: '35px' }}>
-        <Title>Whatsapp Clone</Title>
+        <Title>LLDIKTI-4</Title>
         <Paragraf>
           Saya membuat aplikasi <Mark>Web LLDIKTI 4</Mark> dengan tujuan
           perlombaan dalam pemerintah LLDIKTI menggunakan teknologi Laravel

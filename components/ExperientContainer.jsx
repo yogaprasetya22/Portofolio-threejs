@@ -162,7 +162,6 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
               </Box>
               {/* <ImageExperience src={src} alt={title} /> */}
               <Img
-                
                 src={src}
                 alt={title}
                 // maxW="20.5rem"
@@ -171,9 +170,10 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
                 rounded={'md'}
                 cursor="pointer"
                 objectFit={'contain'}
+                shadow={'lg'}
+                dropShadow={'lg'}
                 mt={3}
                 userSelect="none"
-                
                 onClick={e => handleLike(e)}
               />
               {/* {!load && (
