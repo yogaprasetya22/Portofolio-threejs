@@ -11,7 +11,7 @@ import {
 import ExperientContainer from '../components/ExperientContainer'
 import { PostingExperience } from '../components/layout/Post'
 import { useEffect, useState } from 'react'
-import { collection, onSnapshot, orderBy, query } from '@firebase/firestore'
+import { collection, onSnapshot, orderBy, query } from 'firebase/firestore'
 import { db } from '../firebase'
 import { useSession } from 'next-auth/react'
 
@@ -65,7 +65,6 @@ const about = () => {
             date="7 agustus 2022"
           >
             {data.data().des}
-            {console.log(data.data())}
           </ExperientContainer>
         ))}
         {/* {posts?.map((data, i) => (
