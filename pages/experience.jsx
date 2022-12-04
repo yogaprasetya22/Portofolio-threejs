@@ -19,16 +19,20 @@ const about = () => {
   const { data: session } = useSession()
   const [posts, setPosts] = useState([])
   useEffect(() => {
-    onSnapshot(
-      query(collection(db, 'posts'), orderBy('timestamp', 'desc')),
-      snapshot => {
-        // console.log("snapshot : ",snapshot.docs)
-        setPosts(snapshot?.docs)
-        snapshot.docs.map(doc => {
-          console.log('doc map: ', doc.data())
-        })
-      }
-    )
+    try {
+      onSnapshot(
+        query(collection(db, 'posts'), orderBy('timestamp', 'desc')),
+        snapshot => {
+          // console.log("snapshot : ",snapshot.docs)
+          setPosts(snapshot?.docs)
+          snapshot.docs.map(doc => {
+            console.log('doc map: ', doc.data())
+          })
+        }
+      )
+    } catch (error) {
+      console.log('err : ', error)
+    }
   }, [db])
   return (
     <Layout title="Skils">
