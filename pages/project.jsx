@@ -121,7 +121,7 @@ const ViewAndCodePublic = () => {
             title={e.title}
             thumbnail={e?.thumbnail}
             relese={e?.relese}
-            color={useColorModeValue('#bdd1ff9c', '#2e3436b3')}
+            color={useColorModeValue('#bdd1ffd1', '#2e3436b3')}
           >
             {e.des}
           </ProjextGridItem>

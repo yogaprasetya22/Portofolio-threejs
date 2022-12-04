@@ -146,20 +146,25 @@ export const CommentModel = ({ src, title, des }) => {
         <Text fontSize={'md'}>6</Text> Commments
       </Flex>
       <Modal finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
+        
         <ModalOverlay bg="blackAlpha.300" backdropFilter="blur(4px) " />
         <ModalContent
-          onClick={onClose}
-          maxW="46rem"
+          maxW="76rem"
           h={{ base: '90vh', md: 'auto' }}
           overflow="hidden"
           alignItems={'center'}
-          justifyContent={'center'}
         >
-          <Box w="full">
-            <Flex flexDirection={'row'} justifyContent="space-between">
-              <Box bg="black" w="full">
-                <Image src={src} h="25rem" objectFit={'contain'} />
-              </Box>
+          <Box
+            h={'80vh'}
+            bg="transparent"
+            w="full"
+            display={'flex'}
+            alignItems={'center'}
+          >
+            <Flex w="full" h="full" justifyContent="space-around">
+              <Flex bg="black" w="full" alignItems={'center'}>
+                <Image src={src} h="full" w={'full'} objectFit={'contain'} />
+              </Flex>
               <Box
                 bg={useColorModeValue('#f9f7f1', '#181825')}
                 w="full"

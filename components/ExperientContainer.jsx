@@ -93,7 +93,7 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
             >
               <Icon
                 viewBox="0 0 222.334 222.334"
-                color={useColorModeValue('gray.400', 'gray.600')}
+                color={useColorModeValue('#4dccd9', '#ff63c398')}
                 w={5}
                 h={5}
               >
@@ -118,7 +118,7 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
                   ml: '-.4px',
                   rounded: 'lg',
                   height: `${h}rem`,
-                  bg: useColorModeValue('gray.400', 'gray.600')
+                  bg: useColorModeValue('#4dccd9', '#ff63c398')
                 }}
               ></Box>
             </Flex>
@@ -151,7 +151,7 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
                 color={useColorModeValue('gray.600', 'gray.500')}
               >
                 {date} -
-                <Text pl={1} color={'cyan.400'}>
+                <Text pl={1} color={useColorModeValue('#ff63c398', '#4dccd9')}>
                   Sekarang
                 </Text>
               </Flex>
@@ -196,7 +196,7 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
                       onClick={likesPost}
                       cursor="pointer"
                       viewBox="0 0 24 24"
-                      color={useColorModeValue('gray.400', 'red')}
+                      color={useColorModeValue('pink.600', 'red')}
                       w={5}
                       h={5}
                     >

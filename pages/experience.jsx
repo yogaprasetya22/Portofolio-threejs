@@ -22,8 +22,11 @@ const about = () => {
     onSnapshot(
       query(collection(db, 'posts'), orderBy('timestamp', 'desc')),
       snapshot => {
-        console.log(snapshot.docs)
+        // console.log("snapshot : ",snapshot.docs)
         setPosts(snapshot?.docs)
+        snapshot.docs.map(doc => {
+          console.log('doc map: ', doc.data())
+        })
       }
     )
   }, [db])
@@ -58,6 +61,7 @@ const about = () => {
             date="7 agustus 2022"
           >
             {data.data().des}
+            {console.log(data.data())}
           </ExperientContainer>
         ))}
         {/* {posts?.map((data, i) => (

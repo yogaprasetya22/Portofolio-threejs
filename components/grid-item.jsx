@@ -83,11 +83,27 @@ export const ProjextGridItem = ({
               fontWeight="bold"
               style={{ userSelect: 'none' }}
             >
-              <Text bg={useColorModeValue("purple.600","blue.400")}> {title} <Badge>{relese}</Badge></Text>
+              <Flex
+                bg={useColorModeValue('#4dccd971', '#ff63c371')}
+                alignItems="center"
+                justifyContent={'center'}
+                w={'full'}
+                gap="3px"
+                fontSize={{ base: 15, md: 18 }}
+              >
+                {title}
+                <Badge>{relese}</Badge>
+              </Flex>
             </Box>
-            <Text fontSize={{ base: 10, md: 14 }} fontWeight="medium">
-              {children}
-            </Text>
+            <Flex
+              height={{ base: '5rem', md: '3rem' }}
+              alignItems="center"
+              justifyContent={'center'}
+            >
+              <Text fontSize={{ base: 13, md: 14 }} fontWeight="medium">
+                {children}
+              </Text>
+            </Flex>
           </Box>
         </LinkBox>
       </NextLink>
