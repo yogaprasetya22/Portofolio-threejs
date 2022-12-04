@@ -45,7 +45,7 @@ const WhatsappClone = () => {
         <Paragraf>
           dan selanjutnya pada login menggunakan google yang mana saya
           menggunakan alur login firebase SDK, dan penyimpanan data pada chating
-          juga menggunakan firestore dari firebase.
+          juga menggunakan firestore dari firebase. 
         </Paragraf>
         <Markdown src={Auth} />
         <Paragraf>
