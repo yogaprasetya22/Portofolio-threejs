@@ -99,8 +99,9 @@ export const ProjextGridItem = ({
               height={{ base: '5rem', md: '3rem' }}
               alignItems="center"
               justifyContent={'center'}
+              padding={2}
             >
-              <Text fontSize={{ base: 13, md: 14 }} fontWeight="medium">
+              <Text fontSize={{ base: 11.5, md: 14 }} fontWeight="medium">
                 {children}
               </Text>
             </Flex>
