@@ -17,26 +17,52 @@ import { useSession } from 'next-auth/react'
 
 const about = () => {
   const { data: session } = useSession()
-  const [posts, setPosts] = useState([])
-  useEffect(() => {
-    const PostsUser = () => {
-      try {
-        onSnapshot(
-          query(collection(db, 'posts'), orderBy('timestamp', 'desc')),
-          snapshot => {
-            // console.log("snapshot : ",snapshot.docs)
-            setPosts(snapshot?.docs)
-            snapshot.docs.map(doc => {
-              console.log('doc map: ', doc.data())
-            })
-          }
-        )
-      } catch (error) {
-        console.log('err : ', error)
-      }
+  // const [posts, setPosts] = useState([])
+  const posts = [
+    {
+      caption: 'www',
+      image:
+        'https://firebasestorage.googleapis.com/v0/b/portfolio-dd69a.appspot.com/o/posts%2FYgjGm4NTfzReNj0ybguE%2Fimage?alt=media&token=cebe3a60-0c70-4aea-b0b7-44378876c6f4',
+      profile:
+        'https://lh3.googleusercontent.com/a/AGNmyxbS8l447_XY6jfdoVK06R7OcxH-9xSJU35g8qPsCw=s96-c',
+      timestamp: {
+        nanoseconds: 421000000,
+        seconds: 1679930420
+      },
+      username: 'MYogaPrasetya'
+    },
+    {
+      caption: 'adad',
+      image:
+        'https://firebasestorage.googleapis.com/v0/b/portfolio-dd69a.appspot.com/o/posts%2FHoBPy0ZPzUggxyc2tgim%2Fimage?alt=media&token=deee5036-f5b4-43c7-87e0-2aac51f2f7a4',
+      profile:
+        'https://lh3.googleusercontent.com/a/AGNmyxbS8l447_XY6jfdoVK06R7OcxH-9xSJU35g8qPsCw=s96-c',
+      timestamp: {
+        nanoseconds: 421000000,
+        seconds: 1679930420
+      },
+      username: 'MYogaPrasetya'
     }
-    PostsUser()
-  }, [db])
+  ]
+  // useEffect(() => {
+  //   const PostsUser = () => {
+  //     try {
+  //       onSnapshot(
+  //         query(collection(db, 'posts'), orderBy('timestamp', 'desc')),
+  //         snapshot => {
+  //           // console.log("snapshot : ",snapshot.docs)
+  //           setPosts(snapshot?.docs)
+  //           snapshot.docs.map(doc => {
+  //             console.log('doc map: ', doc.data())
+  //           })
+  //         }
+  //       )
+  //     } catch (error) {
+  //       console.log('err : ', error)
+  //     }
+  //   }
+  //   PostsUser()
+  // }, [db])
   return (
     <Layout title="Skils">
       <Container>
@@ -58,7 +84,19 @@ const about = () => {
       <Divider />
       {session?.user.uid === '112588840329457790265' && <PostingExperience />}
       <>
-        {posts?.map(data => (
+        {posts?.map((data, i) => (
+          <ExperientContainer
+            h="21.4"
+            key={i}
+            id={i}
+            src={data.image}
+            title={data.caption}
+            date="7 agustus 2022"
+          >
+            awdasdawd
+          </ExperientContainer>
+        ))}
+        {/* {posts?.map(data => (
           <ExperientContainer
             h="21.4"
             key={data.id}
@@ -69,7 +107,7 @@ const about = () => {
           >
             {data.data().des}
           </ExperientContainer>
-        ))}
+        ))} */}
         {/* {posts?.map((data, i) => (
           <Box key={i}>{console.log(data.data())}</Box>
         ))} */}

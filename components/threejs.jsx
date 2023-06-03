@@ -60,7 +60,7 @@ const VoxelDog = () => {
       // 640 -> 240
       // 8   -> 6
       const scale = scH * 0.09 + 11.5
-      const scalex = scale + 13.5
+      const scalex = scale + 5.5
 
       const camera = new THREE.OrthographicCamera(
         -scale,
@@ -84,7 +84,7 @@ const VoxelDog = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const hemi = new THREE.HemisphereLight(0xd98d28, 0x080820, 3)
+      const hemi = new THREE.HemisphereLight(0xeaeaea, 0x080820, 3)
       hemi.position.set(14, 48, 10)
       scene.add(hemi)
 

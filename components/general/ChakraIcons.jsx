@@ -133,6 +133,7 @@ export const FirebaseIcons = createIcon({
 export const HtmlIcons = createIcon({
   displayName: 'HtmlIcons',
   viewBox: '0 0 128 128',
+  
   path: (
     <>
       <path

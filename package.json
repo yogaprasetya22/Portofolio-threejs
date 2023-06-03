@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "portfolio-three",
   "scripts": {
     "dev": "next dev -p 3005",
     "build": "next build",
@@ -32,5 +32,22 @@
     "eslint-config-next": "12.0.7",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.5.1"
-  }
+  },
+  "description": "<p align='center' ><a href='https://m-yogaprasetya.vercel.app/'>My Aplications</a>\r </p>",
+  "version": "1.0.0",
+  "main": "firebase.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yogaprasetya22/Portofolio-threejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yogaprasetya22/Portofolio-threejs/issues"
+  },
+  "homepage": "https://github.com/yogaprasetya22/Portofolio-threejs#readme"
 }

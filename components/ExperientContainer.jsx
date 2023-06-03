@@ -41,40 +41,40 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
   const [load, setLoad] = useState(false)
   const router = useRouter()
 
-  useEffect(() => {
-    onSnapshot(collection(db, 'posts', id, 'likes'), snapshot => {
-      setLikes(snapshot.docs)
-    })
-  }, [db, id])
+  // useEffect(() => {
+  //   onSnapshot(collection(db, 'posts', id, 'likes'), snapshot => {
+  //     setLikes(snapshot.docs)
+  //   })
+  // }, [db, id])
 
-  useEffect(() => {
-    if (session) {
-      setHaslike(likes.findIndex(like => like.id === session?.user.uid) !== -1)
-    }
-  }, [likes, session])
+  // useEffect(() => {
+  //   if (session) {
+  //     setHaslike(likes.findIndex(like => like.id === session?.user.uid) !== -1)
+  //   }
+  // }, [likes, session])
 
-  const likesPost = async () => {
-    if (!session) return router.push('/auth/signin')
-    if (haslike) {
-      await deleteDoc(doc(db, 'posts', id, 'likes', session?.user.uid), {
-        username: session.user.username
-      })
-    } else {
-      await setDoc(doc(db, 'posts', id, 'likes', session?.user.uid), {
-        username: session.user.username
-      })
-    }
-  }
+  // const likesPost = async () => {
+  //   if (!session) return router.push('/auth/signin')
+  //   if (haslike) {
+  //     await deleteDoc(doc(db, 'posts', id, 'likes', session?.user.uid), {
+  //       username: session.user.username
+  //     })
+  //   } else {
+  //     await setDoc(doc(db, 'posts', id, 'likes', session?.user.uid), {
+  //       username: session.user.username
+  //     })
+  //   }
+  // }
 
-  const handleLike = async e => {
-    switch (e.detail) {
-      case 2: {
-        await setDoc(doc(db, 'posts', id, 'likes', session.user.uid), {
-          username: session.user.username
-        })
-      }
-    }
-  }
+  // const handleLike = async e => {
+  //   switch (e.detail) {
+  //     case 2: {
+  //       await setDoc(doc(db, 'posts', id, 'likes', session.user.uid), {
+  //         username: session.user.username
+  //       })
+  //     }
+  //   }
+  // }
 
   return (
     <Box p={{ base: '10px', md: '17px' }}>
@@ -174,7 +174,7 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
                 dropShadow={'lg'}
                 mt={3}
                 userSelect="none"
-                onClick={e => handleLike(e)}
+                // onClick={e => handleLike(e)}
               />
               {/* {!load && (
                 <Skeleton height={'14rem'} width={'14rem'} rounded={'md'} />
@@ -190,7 +190,7 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
                 color={useColorModeValue('gray.600', 'gray.500')}
                 style={{ userSelect: 'none' }}
               >
-                {haslike ? (
+                {/* {haslike ? (
                   <>
                     <Icon
                       onClick={likesPost}
@@ -228,7 +228,7 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
                       ></path>
                     </Icon>
                   </>
-                )}
+                )} */}
                 <Box fontSize={'md'}>
                   {likes.length}
                   <LikePar>{likes.length > 1 ? 'likes' : 'like'}</LikePar>
