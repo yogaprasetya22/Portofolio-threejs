@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../../components/layout/artickel'
 import Markdown from '../../components/layout/markdown'
 import {
+  BadgeUi,
   ImageProject,
   Mark,
   Paragraf,
@@ -17,14 +18,25 @@ const WhatsappClone = () => {
       <Box p={{ base: '10px', md: '35px' }}>
         <Title>Whatsapp Clone</Title>
         <Paragraf>
-          Saya membuat aplikasi <Mark>Web Whatsapp Clone</Mark> dengan tujuan
-          pembelajaran yang mana nantinya untuk pengalaman saya dalam membuat
-          sebuah aplikasi menggunakan teknologi firebase dan juga next.js
+          Selamat datang di portfolio{' '}
+          <Mark>
+            <Mark> Whatsapp Clone</Mark>
+          </Mark>{' '}
+          dengan
+          <Mark>
+            {' '}
+            <Mark> Next.js </Mark>{' '}
+          </Mark>
+          <BadgeUi>19 Aug 2022</BadgeUi>
         </Paragraf>
-        <br />
         <Paragraf>
-          Whatsapp clone yang dibuat menggunakan Next.js, firebase untuk
-          authentication, penyimpanan data, dibaut pada <Badge>2022</Badge>
+          Saya bangga mempersembahkan karya saya, yaitu sebuah aplikasi chatting
+          yang serupa dengan <Mark>Whatsapp </Mark> melalui aplikasi clone yang
+          saya buat menggunakan <Mark> Next.js </Mark>! Aplikasi ini
+          memperlihatkan fitur-fitur utama seperti pengiriman pesan teks.
+          Dibangun dengan menggunakan teknologi <Mark> Next.js </Mark> dan{' '}
+          <Mark>Firebase</Mark>. Saya dengan hati-hati mengembangkan aplikasi
+          ini dengan fokus pada keamanan dan privasi pengguna.
         </Paragraf>
         <ImageProject
           src={'/img/whatsapp-clone/whatsapp-clone.png'}
@@ -32,7 +44,8 @@ const WhatsappClone = () => {
         />
         <Paragraf>
           Pada aplikasi yang saya buat adalah sebuah cloningan dari whatsapp web
-          versi saya dengan menggunakan next.js sebagai framework dari react.js.
+          versi saya dengan menggunakan <Mark> Next.js </Mark> sebagai framework
+          dari react.js.
         </Paragraf>
         <ImageProject
           src={'/img/whatsapp-clone/menu_login.png'}
@@ -44,27 +57,27 @@ const WhatsappClone = () => {
         />
         <Paragraf>
           dan selanjutnya pada login menggunakan google yang mana saya
-          menggunakan alur login firebase SDK, dan penyimpanan data pada chating
-          juga menggunakan firestore dari firebase. 
+          menggunakan alur login <Mark> Firebase </Mark> SDK, dan penyimpanan
+          data pada chating juga menggunakan firestore dari{' '}
+          <Mark> Firebase </Mark>.
         </Paragraf>
         <Markdown src={Auth} />
         <Paragraf>
-          Pada bagian ini dimana agar terhubungnya aplikasi dengan firebase
+          Pada bagian ini dimana agar terhubungnya aplikasi dengan{' '}
+          <Mark> Firebase </Mark>
           menggunakan <Mark> initializeApp()</Mark> dan{' '}
           <Mark>getFirestore()</Mark> sebagai penyimpanan database dan database
           tersebut bersifat noSql atau bisa dibilang berupa<Mark> Json</Mark>,
           kemudian untuk Authenticationya saya mengambil sebuat metode dari
-          dokumentasi firebase yaitu <Mark>getAuth()</Mark> dan
+          dokumentasi <Mark> Firebase </Mark> yaitu <Mark>getAuth()</Mark> dan
           <Mark> new GoogleAuthProvider()</Mark> untuk mendapatkan akses dari
           Auth Provider Google.
         </Paragraf>
-        <Markdown src={Chat} />
         <Paragraf>
-          Kemudian ini ketika user sudah melakukan login menggunakan google dan
+          Kemudian ketika user sudah melakukan login menggunakan google dan
           data-data tersebut akan secara otomatis terinput ke database berupa{' '}
-          <Mark>displayName, Email, PhotoUrl, LastSeen</Mark> / kapan terakhir
-          user online. dan kemudian data dari user akan disimpan di CurrentUser
-          yang nantinya akan di fetching di akun tersebut.
+          dan kapan terakhir user online. dan kemudian data dari user akan
+          disimpan akun tersebut.
         </Paragraf>
         <Bottom
           link={'https://whatsapp-clone-jagres.vercel.app/'}
@@ -76,4 +89,3 @@ const WhatsappClone = () => {
 }
 
 export default WhatsappClone
-

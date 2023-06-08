@@ -39,11 +39,23 @@ export const Title = ({ children }) => (
     >
       {children}
     </Heading>
+    <br />
+    <br />
   </Box>
 )
 
 const color = () => {
   const clr = useColorModeValue('#4dccd9', '#ff63c3')
+  return clr
+}
+
+const colorbg = () => {
+  const clr = useColorModeValue('#000000', '#eaeaea')
+  return clr
+}
+
+const bgcolor = () => {
+  const clr = useColorModeValue('#eaeaea', '#494949')
   return clr
 }
 
@@ -54,6 +66,19 @@ export const Mark = styled.span`
 const Para = styled.p`
   text-align: justify;
   text-indent: 1em;
+  line-height: 2;
+`
+
+export const BadgeUi = styled.span`
+  background-color: ${bgcolor};
+  color: ${colorbg};
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  box-shadow: 2px 3px 3px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 3px 3px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 3px -3px rgba(0, 0, 0, 0.75);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8em;
 `
 
 export const Paragraf = ({ children }) => (
@@ -61,6 +86,7 @@ export const Paragraf = ({ children }) => (
     <Box display={{ md: 'flex' }}>
       <Para>{children}</Para>
     </Box>
+    <br />
   </Section>
 )
 
@@ -146,7 +172,6 @@ export const CommentModel = ({ src, title, des }) => {
         <Text fontSize={'md'}>6</Text> Commments
       </Flex>
       <Modal finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
-        
         <ModalOverlay bg="blackAlpha.300" backdropFilter="blur(4px) " />
         <ModalContent
           maxW="76rem"

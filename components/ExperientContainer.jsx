@@ -77,7 +77,7 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
   // }
 
   return (
-    <Box p={{ base: '10px', md: '17px' }}>
+    <Box p={{ base: '10px', md: '17px' }} >
       <Flex>
         <Box flex="1">
           <Stack spacing={4}>
@@ -106,7 +106,7 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
                   d="M111.167 0C49.87 0 0 49.87 0 111.167s49.87 111.167 111.167 111.167 111.167-49.87 111.167-111.167S172.464 0 111.167 0zm0 214.1c-56.758 0-102.933-46.175-102.933-102.933S54.409 8.235 111.167 8.235 214.1 54.409 214.1 111.167 167.925 214.1 111.167 214.1z"
                 ></path>
               </Icon>
-              <Box
+              <Box 
                 _before={{
                   content: '""',
                   display: 'flex',
@@ -229,12 +229,12 @@ const ExperientContainer = ({ children, h, src, title, date, id }) => {
                     </Icon>
                   </>
                 )} */}
-                <Box fontSize={'md'}>
+                {/* <Box fontSize={'md'}>
                   {likes.length}
                   <LikePar>{likes.length > 1 ? 'likes' : 'like'}</LikePar>
-                </Box>
+                </Box> */}
               </Flex>
-              <CommentModel src={src} title={title} des={children} />
+              {/* <CommentModel src={src} title={title} des={children} /> */}
             </Box>
           </Stack>
         </Box>
