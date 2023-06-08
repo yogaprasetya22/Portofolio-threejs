@@ -1,8 +1,9 @@
-import { Container, Link, Stack, Flex, Box, Badge } from '@chakra-ui/react'
+import { Container, Link, Stack, Flex, Box, Badge, Center } from '@chakra-ui/react'
 import React from 'react'
 import Layout from '../../components/layout/artickel'
 import Markdown from '../../components/layout/markdown'
 import {
+  BadgeUi,
   ImageProject,
   Mark,
   Paragraf,
@@ -16,56 +17,23 @@ const Lldikti = () => {
     <Layout title={'LLDIKTI-4'}>
       <Box p={{ base: '10px', md: '35px' }}>
         <Title>LLDIKTI-4</Title>
-        <Paragraf>
-          Saya membuat aplikasi <Mark>Web LLDIKTI 4</Mark> dengan tujuan
-          perlombaan dalam pemerintah LLDIKTI menggunakan teknologi Laravel
-          sebagai framework dan juga gabungan react sebagai ui dari website
-          tersebut
-        </Paragraf>
         <br />
+        <Center>
+          <Paragraf>
+            Selamat datang di portfolio{' '}
+            <Mark>
+              <Mark> Instagram Clone</Mark>
+            </Mark>{' '}
+            dengan
+            <Mark> Next.js </Mark> <BadgeUi>21 Aug 2022</BadgeUi>
+          </Paragraf>
+        </Center>
         <Paragraf>
-          Whatsapp clone yang dibuat menggunakan Next.js, firebase untuk
-          authentication, penyimpanan data, dibaut pada <Badge>2022</Badge>
-        </Paragraf>
-        <ImageProject
-          src={'/img/whatsapp-clone/whatsapp-clone.png'}
-          alt={'Whatsapp Clone'}
-        />
-        <Paragraf>
-          Pada aplikasi yang saya buat adalah sebuah cloningan dari whatsapp web
-          versi saya dengan menggunakan next.js sebagai framework dari react.js.
-        </Paragraf>
-        <ImageProject
-          src={'/img/whatsapp-clone/menu_login.png'}
-          alt={'Login'}
-        />
-        <ImageProject
-          src={'/img/whatsapp-clone/google_login.png'}
-          alt={'Login'}
-        />
-        <Paragraf>
-          dan selanjutnya pada login menggunakan google yang mana saya
-          menggunakan alur login firebase SDK, dan penyimpanan data pada chating
-          juga menggunakan firestore dari firebase.
-        </Paragraf>
-        <Markdown src={Auth} />
-        <Paragraf>
-          Pada bagian ini dimana agar terhubungnya aplikasi dengan firebase
-          menggunakan <Mark> initializeApp()</Mark> dan{' '}
-          <Mark>getFirestore()</Mark> sebagai penyimpanan database dan database
-          tersebut bersifat noSql atau bisa dibilang berupa<Mark> Json</Mark>,
-          kemudian untuk Authenticationya saya mengambil sebuat metode dari
-          dokumentasi firebase yaitu <Mark>getAuth()</Mark> dan
-          <Mark> new GoogleAuthProvider()</Mark> untuk mendapatkan akses dari
-          Auth Provider Google.
-        </Paragraf>
-        <Markdown src={Chat} />
-        <Paragraf>
-          Kemudian ini ketika user sudah melakukan login menggunakan google dan
-          data-data tersebut akan secara otomatis terinput ke database berupa{' '}
-          <Mark>displayName, Email, PhotoUrl, LastSeen</Mark> / kapan terakhir
-          user online. dan kemudian data dari user akan disimpan di CurrentUser
-          yang nantinya akan di fetching di akun tersebut.
+          Saya bangga mempersembahkan karya saya, yaitu sebuah aplikasi
+          <Mark> Instagram Clone</Mark> yang dibangun menggunakan{' '}
+          <Mark> Next.js</Mark>. Dalam proyek ini, saya menjelajahi potensi{' '}
+          <Mark> Next.js </Mark> untuk menciptakan pengalaman yang sama dengan
+          Instagram.
         </Paragraf>
         <Bottom
           link={'http://lldikti-4-yoga.herokuapp.com/'}

@@ -1,4 +1,12 @@
-import { Container, Link, Stack, Flex, Box, Badge } from '@chakra-ui/react'
+import {
+  Container,
+  Link,
+  Stack,
+  Flex,
+  Box,
+  Badge,
+  Center
+} from '@chakra-ui/react'
 import React from 'react'
 import Layout from '../../components/layout/artickel'
 import Markdown from '../../components/layout/markdown'
@@ -17,22 +25,22 @@ const WhatsappClone = () => {
     <Layout title={'Whatsapp Clone'}>
       <Box p={{ base: '10px', md: '35px' }}>
         <Title>Whatsapp Clone</Title>
+        <br />
+        <Center>
+          <Paragraf>
+            Selamat datang di portfolio <Mark> Whatsapp Clone</Mark>
+            dengan
+            <Mark>
+              {' '}
+              <Mark> Next.js </Mark>{' '}
+            </Mark>
+            <BadgeUi>19 Aug 2022</BadgeUi>
+          </Paragraf>
+        </Center>
         <Paragraf>
-          Selamat datang di portfolio{' '}
-          <Mark>
-            <Mark> Whatsapp Clone</Mark>
-          </Mark>{' '}
-          dengan
-          <Mark>
-            {' '}
-            <Mark> Next.js </Mark>{' '}
-          </Mark>
-          <BadgeUi>19 Aug 2022</BadgeUi>
-        </Paragraf>
-        <Paragraf>
-          Saya bangga mempersembahkan karya saya, yaitu sebuah aplikasi chatting
-          yang serupa dengan <Mark>Whatsapp </Mark> melalui aplikasi clone yang
-          saya buat menggunakan <Mark> Next.js </Mark>! Aplikasi ini
+          Saya bangga memperlihatkan project kecil, yaitu sebuah aplikasi
+          chatting yang serupa dengan <Mark>Whatsapp</Mark>, melalui aplikasi
+          clone yang saya buat menggunakan <Mark> Next.js </Mark>! Aplikasi ini
           memperlihatkan fitur-fitur utama seperti pengiriman pesan teks.
           Dibangun dengan menggunakan teknologi <Mark> Next.js </Mark> dan{' '}
           <Mark>Firebase</Mark>. Saya dengan hati-hati mengembangkan aplikasi

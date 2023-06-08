@@ -39,8 +39,6 @@ export const Title = ({ children }) => (
     >
       {children}
     </Heading>
-    <br />
-    <br />
   </Box>
 )
 
