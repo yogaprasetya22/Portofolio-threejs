@@ -85,7 +85,7 @@ const ExperientContainer = ({
 
   return (
     <Box p={{ base: '10px', md: '17px' }}>
-      <Flex>
+      <Flex pl={{ base: '10px', md: '17px' }}>
         <Box flex="1">
           <Stack spacing={4}>
             <Flex
