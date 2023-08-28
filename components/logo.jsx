@@ -24,7 +24,6 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  // const footPrintImg = `/images/footprint${useColorModeValue("","-dark")}.png`;
   const footPrintImg = `/img/logo${useColorModeValue('', '-dark')}.png`
 
   return (
