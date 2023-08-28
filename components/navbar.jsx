@@ -135,18 +135,18 @@ const Navbar = props => {
                 </MenuItem>
                 <Divider border={'2px'} />
                 <Box
-                  display={'flex'}
                   py={3}
-                  pr={10}
+                  pr={14}
                   pl={3}
+                  display={'flex'}
                   gap="1rem"
                   alignItems={'center'}
                   justifyContent={'space-between'}
                 >
-                  <Stack direction={'row'} spacing={2}>
+                  <Box display={'flex'} gap="1rem" alignItems={'center'}>
                     <Text>Switch Theme :</Text>
                     <ThemeToggleButtonMobile />
-                  </Stack>
+                  </Box>
                   <TranslateButtonMobile />
                 </Box>
               </MenuList>
