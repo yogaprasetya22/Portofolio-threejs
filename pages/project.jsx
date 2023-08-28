@@ -8,7 +8,6 @@ import {
   Stack,
   Text
 } from '@chakra-ui/react'
-import cewe from '../public/img/cwe.png'
 import { ProjextGridItem } from '../components/grid-item'
 import Section from '../components/section'
 import { useTranslation } from 'react-i18next'

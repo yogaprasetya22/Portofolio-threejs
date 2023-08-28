@@ -6,11 +6,8 @@ import {
   Stack,
   Text,
   Divider,
-  Button
 } from '@chakra-ui/react'
 import ExperientContainer from '../components/ExperientContainer'
-import { PostingExperience } from '../components/layout/Post'
-import { useEffect, useState } from 'react'
 
 const about = () => {
   const posts = [
