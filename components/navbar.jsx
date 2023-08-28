@@ -135,7 +135,7 @@ const Navbar = props => {
                 </MenuItem>
                 <Divider border={'2px'} />
                 <Box
-                  py={3}
+                  py={3} 
                   pr={14}
                   pl={3}
                   display={'flex'}
