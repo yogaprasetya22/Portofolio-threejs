@@ -20,7 +20,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
       <Image
         src={thumbnail}
         alt={title}
-        placeholder="blur"
+        // placeholder="blur"
         loading="lazy"
         className="grid-item-thumbnail"
       />
@@ -64,7 +64,6 @@ export const ProjextGridItem = ({
               layout="fill"
               src={thumbnail}
               alt={title}
-              placeholder="blur"
               loading="lazy"
               className="grid-item-thumbnail"
             />

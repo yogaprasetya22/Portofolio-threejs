@@ -84,7 +84,7 @@ const ExperientContainer = ({
   // }
 
   return (
-    <Box p={{ base: '10px', md: '17px' }}>
+    <Box p={{ base: '0', md: '17px' }} pt={{base:'10px'}}>
       <Flex pl={{ base: '10px', md: '17px' }}>
         <Box flex="1">
           <Stack spacing={4}>
@@ -125,7 +125,7 @@ const ExperientContainer = ({
                   ml: '-.4px',
                   rounded: 'lg',
                   height: `${h}rem`,
-                  bg: useColorModeValue('#4dccd9', '#ff63c398')
+                  bg: useColorModeValue('#2bebffa1', '#ed1a9c8c')
                 }}
               ></Box>
             </Flex>

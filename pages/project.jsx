@@ -11,46 +11,17 @@ import {
 import cewe from '../public/img/cwe.png'
 import { ProjextGridItem } from '../components/grid-item'
 import Section from '../components/section'
-import whatsappClone from '../public/img/whatsapp-clone/whatsapp-clone.png'
-import instagramClone from '../public/img/instagram-clone/thumbnile.png'
-import lldikti4 from '../public/img/lldikti/thumbnile.png'
+import { useTranslation } from 'react-i18next'
 
-const DataViewProjectPrivate = [
-  {
-    id: '1',
-    relese: 2022,
-    thumbnail: whatsappClone,
-    title: 'whatsapp-clone',
-    des: `Whatsapp clone yang dibuat menggunakan Next.js, firebase untuk authentication, penyimpanan data`
-  },
-
-  {
-    id: '2',
-    relese: 2022,
-    thumbnail: instagramClone,
-    title: 'instagram-clone',
-    des: 'Instagram clone yang dibuat menggunakan Next.js, firebase untuk authentication, penyimpanan data'
-  }
-]
-
-const DataViewProjectPublic = [
-  {
-    id: '1',
-    relese: 2022,
-    thumbnail: lldikti4,
-    title: 'lomba-lldikti',
-    des: 'Lomba UI/UX pada website Se Jawa Barat.'
-  },
-  {
-    id: '2',
-    relese: 2022,
-    thumbnail: cewe,
-    title: 'percobaan',
-    des: 'Music recommendation app for iOS'
-  }
-]
 
 const project = () => {
+  const { t, i18n, ready } = useTranslation('global')
+
+  if (!ready) return 'loading translations...'
+
+  const data = t('project', { returnObjects: true })
+  // console.log(data.body.personal)
+
   return (
     <Layout title={'Project'}>
       <Container>
@@ -79,9 +50,53 @@ const project = () => {
             flexWrap={'wrap'}
             justifyContent="space-around"
           >
-            <ViewAndCodePrivate />
+            <Box alignItems="center" justifyContent="start" w={'full'}>
+              <Stack isInline spacing={1} textAlign={'center'} fontWeight="">
+                <Text
+                  fontSize={'15px'}
+                  mb={6}
+                  p={3}
+                  borderRadius="lg"
+                  // bg={useColorModeValue('whiteAlpha.700', 'whiteAlpha.200')}
+                  shadow={'md'}
+                  dropShadow={'md'}
+                  fontWeight={'semibold'}
+                >
+                  {data.title[0].name}
+                </Text>
+              </Stack>
+            </Box>
+            <Flex
+              minW={{ base: '21rem', md: '48rem' }}
+              flexWrap={'wrap'}
+              justifyContent="space-around"
+            >
+              <ViewAndCodePrivate data={data?.body?.personal} />
+            </Flex>
             <Divider pt={'2rem'} mb="2rem" />
-            <ViewAndCodePublic />
+            <Box alignItems="center" justifyContent="start" w={'full'}>
+              <Stack isInline spacing={1} textAlign={'center'} fontWeight="">
+                <Text
+                  fontSize={'15px'}
+                  mb={6}
+                  p={3}
+                  borderRadius="lg"
+                  // bg={useColorModeValue('whiteAlpha.700', 'whiteAlpha.200')}
+                  shadow={'md'}
+                  dropShadow={'md'}
+                  fontWeight={'semibold'}
+                >
+                  {data.title[1].name}
+                </Text>
+              </Stack>
+            </Box>
+            <Flex
+              minW={{ base: '21rem', md: '48rem' }}
+              flexWrap={'wrap'}
+              justifyContent="space-around"
+            >
+              <ViewAndCodePublic data={data?.body?.propesional} />
+            </Flex>
           </Flex>
         </Flex>
       </Box>
@@ -91,10 +106,10 @@ const project = () => {
 
 export default project
 
-const ViewAndCodePrivate = () => {
+const ViewAndCodePrivate = ({data}) => {
   return (
     <>
-      {DataViewProjectPrivate.map(e => (
+      {data.map(e => (
         <Section delay={0.3} key={e.id}>
           <ProjextGridItem
             id={e.title}
@@ -111,10 +126,10 @@ const ViewAndCodePrivate = () => {
   )
 }
 
-const ViewAndCodePublic = () => {
+const ViewAndCodePublic = ({data}) => {
   return (
     <>
-      {DataViewProjectPublic.map(e => (
+      {data.map(e => (
         <Section delay={0.3} key={e.id}>
           <ProjextGridItem
             id={e.title}

@@ -19,7 +19,9 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import {
   ThemeToggleButton,
-  ThemeToggleButtonMobile
+  ThemeToggleButtonMobile,
+  TranslateButton,
+  TranslateButtonMobile
 } from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
 
@@ -97,7 +99,11 @@ const Navbar = props => {
         </Stack>
 
         <Box flex={1} align="right">
-          <ThemeToggleButton />
+          <Flex gap={2} justifyContent={'flex-end'}>
+            <ThemeToggleButton />
+            <TranslateButton />
+          </Flex>
+
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
@@ -108,8 +114,8 @@ const Navbar = props => {
                 marginRight={{ base: 5, md: 0 }}
               />
               <MenuList
-                minWidth={550}
-                bg={useColorModeValue('#eaeaeaf2', '#938e8ed6')}
+                minWidth={400}
+                bg={useColorModeValue('#eaeaeaf2', '#181825f5')}
                 backdropBlur={10}
               >
                 <NextLink href="/" passHref>
@@ -128,9 +134,20 @@ const Navbar = props => {
                   Github
                 </MenuItem>
                 <Divider border={'2px'} />
-                <Box display={'flex'} p={2} gap="1rem" alignItems={'center'}>
-                  <Text>Switch Theme :</Text>
-                  <ThemeToggleButtonMobile />
+                <Box
+                  display={'flex'}
+                  py={3}
+                  pr={10}
+                  pl={3}
+                  gap="1rem"
+                  alignItems={'center'}
+                  justifyContent={'space-between'}
+                >
+                  <Stack direction={'row'} spacing={2}>
+                    <Text>Switch Theme :</Text>
+                    <ThemeToggleButtonMobile />
+                  </Stack>
+                  <TranslateButtonMobile />
                 </Box>
               </MenuList>
             </Menu>

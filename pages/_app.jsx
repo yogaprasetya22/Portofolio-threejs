@@ -5,6 +5,25 @@ import Layout from '../components/layout/main'
 import theme from '../lib/theme'
 import '../styles/devicons.css'
 
+import global_en from '../lib/translate/en/global.json'
+import global_id from '../lib/translate/id/global.json'
+import i18next from 'i18next'
+import { I18nextProvider } from 'react-i18next'
+
+i18next.init({
+  interpolation: { escapeValue: false },
+  fallbackLng: 'en',
+  lng: 'en',
+  resources: {
+    en: {
+      global: global_en
+    },
+    id: {
+      global: global_id
+    }
+  }
+})
+
 export default function MyApp({
   Component,
   router,
@@ -14,9 +33,9 @@ export default function MyApp({
     <ChakraProvider theme={theme}>
       <Layout router={router}>
         <AnimatePresence exitBeforeEnter initial={true}>
-          <SessionProvider session={session} refetchInterval={5 * 60}>
+          <I18nextProvider i18n={i18next}>
             <Component {...pageProps} key={router.route} />
-          </SessionProvider>
+          </I18nextProvider>
         </AnimatePresence>
       </Layout>
     </ChakraProvider>

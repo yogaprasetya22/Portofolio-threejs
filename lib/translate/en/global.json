@@ -1,0 +1,66 @@
+{
+    "header": {
+        "meesage": "this is a test"
+    },
+    "home": {
+        "body": [
+            {
+                "title": "Hello, my name is Mochammad Yoga Prasetya, but my friends often call me Yoga. I come from Pembangunan Jaya University with a major in Information Systems. I love to learn something new and get input to make myself better and develop."
+            },
+            {
+                "title": "I live in Pamulang, South Tangerang. Now I am concentrating on web programming which is exploring full stack development that deals with Backend and Frontend. This website is not only as a learning tool but also as a place to showcase my projects and as a place to see the history of my experience."
+            }
+        ]
+    },
+    "project": {
+        "title": [
+            {
+                "name": "You can see my personal projects"
+            },
+            {
+                "name": "You can see my professional project"
+            }
+        ],
+        "body": {
+            "personal": [
+                {
+                    "id": "1",
+                    "relese": 2022,
+                    "thumbnail": "/img/whatsapp-clone/whatsapp-clone.png",
+                    "title": "whatsapp-clone",
+                    "des": "Whatsapp clone created using Next.js, firebase for authentication, data storage"
+                },
+                {
+                    "id": "2",
+                    "relese": 2022,
+                    "thumbnail": "/img/instagram-clone/thumbnile.png",
+                    "title": "instagram-clone",
+                    "des": "Instagram clone created using Next.js, firebase for authentication, data storage"
+                }
+            ],
+            "propesional": [
+                {
+                    "id": "1",
+                    "relese": 2022,
+                    "thumbnail": "/img/lldikti/thumbnile.png",
+                    "title": "lomba-lldikti",
+                    "des": "UI/UX competition on West Java website."
+                },
+                {
+                    "id": "2",
+                    "relese": 2023,
+                    "thumbnail": "/img/instagram-clone/thumbnile.png",
+                    "title": "instagram-clone",
+                    "des": "Instagram clone created using Next.js, firebase for authentication, data storage"
+                },
+                {
+                    "id": "3",
+                    "relese": 2023,
+                    "thumbnail": "/img/instagram-clone/thumbnile.png",
+                    "title": "instagram-clone",
+                    "des": "Instagram clone created using Next.js, firebase for authentication, data storage"
+                }
+            ]
+        }
+    }
+}

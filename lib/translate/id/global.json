@@ -1,0 +1,66 @@
+{
+    "header": {
+        "meesage": "ini adalah test"
+    },
+    "home": {
+        "body": [
+            {
+                "title": "Halo, nama saya Mochammad Yoga Prasetya, tapi teman-teman sering memanggil saya Yoga. Saya berasal dari Universitas Pembangunan Jaya dengan prodi Sistem Informasi. Saya senang mempelajari sesuatu yang baru dan mendapatkan masukan untuk menjadikan diri saya lebih baik dan berkembang."
+            },
+            {
+                "title": "Saya tinggal di Pamulang, Tangerang Selatan. Sekarang saya berkonsentrasi pada pemrograman web yang mana sedang mendalami tentang full stack Development yang bersangkut Backend dan Frontend. Website ini tidak hanya sebagai sarana pembelajaran tetapi juga sebagai tempat untuk membuat memamerkan proyek saya dan sebagai tempat untuk melihat sejarah pengalaman saya."
+            }
+        ]
+    },
+    "project": {
+        "title": [
+            {
+                "name": "Anda dapat melihat proyek pribadi saya"
+            },
+            {
+                "name": "Anda dapat melihat proyek profesional saya"
+            }
+        ],
+        "body": {
+            "personal": [
+                {
+                    "id": "1",
+                    "relese": 2022,
+                    "thumbnail": "/img/whatsapp-clone/whatsapp-clone.png",
+                    "title": "whatsapp-clone",
+                    "des": "Whatsapp clone yang dibuat menggunakan Next.js, firebase untuk authentication, penyimpanan data"
+                },
+                {
+                    "id": "2",
+                    "relese": 2022,
+                    "thumbnail": "/img/instagram-clone/thumbnile.png",
+                    "title": "instagram-clone",
+                    "des": "Instagram clone yang dibuat menggunakan Next.js, firebase untuk authentication, penyimpanan data"
+                }
+            ],
+            "propesional": [
+                {
+                    "id": "1",
+                    "relese": 2022,
+                    "thumbnail": "/img/lldikti/thumbnile.png",
+                    "title": "lomba-lldikti",
+                    "des": "Lomba UI/UX pada website Se Jawa Barat."
+                },
+                {
+                    "id": "2",
+                    "relese": 2023,
+                    "thumbnail": "/img/instagram-clone/thumbnile.png",
+                    "title": "instagram-clone",
+                    "des": "Instagram clone yang dibuat menggunakan Next.js, firebase untuk authentication, penyimpanan data"
+                },
+                {
+                    "id": "3",
+                    "relese": 2023,
+                    "thumbnail": "/img/instagram-clone/thumbnile.png",
+                    "title": "instagram-clone",
+                    "des": "Instagram clone yang dibuat menggunakan Next.js, firebase untuk authentication, penyimpanan data"
+                }
+            ]
+        }
+    }
+}

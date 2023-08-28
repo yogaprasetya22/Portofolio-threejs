@@ -32,18 +32,18 @@ function ReturnFocus() {
       <Button mt={4} onClick={onOpen}>
         Open Modal
       </Button>
-      <Box h="full" alignItems={'center'} justifyContent={'center'}>
+      <Box h="full" alignItems={'center'} justifyContent={'center'} userSelect={'none'}>
         <Modal finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
-          <ModalContent bg={'cyan.900'} onClick={onClose}>
-            {/* <ModalHeader></ModalHeader> */}
-            {/* <ModalCloseButton /> */}
-            {/* <ModalBody> */}
-              {/* <Lorem count={2} /> */}
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDMndRG8hwzAqYRFbbLrQN7ajMZBZjTWOvRw&usqp=CAU" />
-            {/* </ModalBody> */}
+          <ModalContent bg={'cyan.900'} width={'50rem'} onClick={onClose}>
+            {/* <ModalHeader></ModalHeader>
+            <ModalCloseButton />
+            <ModalBody> */}
+            {/* <Lorem count={2} /> */}
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDMndRG8hwzAqYRFbbLrQN7ajMZBZjTWOvRw&usqp=CAU" />
+            {/* </ModalBody>
 
-            {/* <ModalFooter></ModalFooter> */}
+            <ModalFooter></ModalFooter> */}
           </ModalContent>
         </Modal>
       </Box>

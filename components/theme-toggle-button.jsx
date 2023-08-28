@@ -3,10 +3,12 @@ import {
   Box,
   IconButton,
   useColorMode,
-  useColorModeValue
+  useColorModeValue,
+  Select,
 } from '@chakra-ui/react'
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
+import i18n from 'i18next'
 
 export const ThemeToggleButton = () => {
   const { toggleColorMode } = useColorMode()
@@ -55,5 +57,52 @@ export const ThemeToggleButtonMobile = () => {
         ></IconButton>
       </motion.div>
     </AnimatePresence>
+  )
+}
+
+export const TranslateButton = () => {
+
+  const handleTranslate = () => {
+    if (i18n.language === 'en') {
+      i18n.changeLanguage('id')
+    } else {
+      i18n.changeLanguage('en')
+    }
+  }
+
+  return (
+    <Select
+      w={'8rem'}
+      size="md"
+      onChange={handleTranslate}
+      variant="filled"
+      display={{ base: 'none', md: 'inline-block' }}
+    >
+      <option value="option1">English</option>
+      <option value="option1">Indonesia</option>
+    </Select>
+  )
+}
+export const TranslateButtonMobile = () => {
+
+  const handleTranslate = () => {
+    if (i18n.language === 'en') {
+      i18n.changeLanguage('id')
+    } else {
+      i18n.changeLanguage('en')
+    }
+  }
+
+  return (
+    <Select
+      w={'8rem'}
+      size="md"
+      onChange={handleTranslate}
+      variant="filled"
+      display={{ base: 'inline-block', md: 'none' }}
+    >
+      <option value="option1">English</option>
+      <option value="option1">Indonesia</option>
+    </Select>
   )
 }
