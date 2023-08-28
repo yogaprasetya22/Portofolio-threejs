@@ -1,4 +1,3 @@
-import Layout from '../components/layout/artickel'
 import {
   Box,
   useColorModeValue,
@@ -8,27 +7,13 @@ import {
   Icon,
   Heading,
   Link,
-  Img,
-  Skeleton
+  Img
 } from '@chakra-ui/react'
-import {
-  CommentModel,
-  ImageExperience,
-  Title
-} from '../components/layout/project'
 import styled from '@emotion/styled'
-import { CommentsIcons, HeartsIcons } from './general/ChakraIcons'
-import { useEffect, useState } from 'react'
-import { useSession } from 'next-auth/react'
+import { useState } from 'react'
 import { useRouter } from 'next/router'
 
 const ExperientContainer = ({ children, h, src, title, tahun, id }) => {
-  const { data: session } = useSession()
-  const [likes, setLikes] = useState([])
-  const [haslike, setHaslike] = useState(false)
-  const [load, setLoad] = useState(false)
-  const router = useRouter()
-
   return (
     <Box p={{ base: '0', md: '17px' }} pt={{ base: '10px' }}>
       <Flex pl={{ base: '10px', md: '17px' }}>
