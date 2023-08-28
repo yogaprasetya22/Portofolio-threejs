@@ -19,12 +19,12 @@ const VoxelDog = () => {
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
-  const [target] = useState(new THREE.Vector3(-1.5, -25, -1.9))
+  const [target] = useState(new THREE.Vector3(-0.5, 1.2, 2.5))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
-      36 * Math.sin(0.8 * Math.PI),
-      15,
-      25 * Math.cos(0.2 * Math.PI)
+      20 * Math.sin(0.2 * Math.PI),
+      10,
+      20 * Math.cos(0.2 * Math.PI)
     )
   )
   const [scene] = useState(new THREE.Scene())
@@ -53,22 +53,20 @@ const VoxelDog = () => {
       })
       renderer.setPixelRatio(window.devicePixelRatio)
       renderer.setSize(scW, scH)
-      // renderer.outputEncoding = THREE.sRGBEncoding
+      renderer.outputEncoding = THREE.sRGBEncoding
       container.appendChild(renderer.domElement)
       setRenderer(renderer)
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.09 + 11.5
-      const scalex = scale + 5.5
-
+      const scale = scH * 0.005 + 1.8
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
-        scalex,
+        scale,
         -scale,
-        0.21,
-        5000
+        0.01,
+        50000
       )
 
       function update() {
@@ -106,7 +104,7 @@ const VoxelDog = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/indonesia.glb', {
+      loadGLTFModel(scene, '/kantor.glb', {
         receiveShadow: true,
         castShadow: true
       }).then(() => {
