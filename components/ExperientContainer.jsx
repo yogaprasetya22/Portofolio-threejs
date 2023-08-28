@@ -19,72 +19,18 @@ import {
 import styled from '@emotion/styled'
 import { CommentsIcons, HeartsIcons } from './general/ChakraIcons'
 import { useEffect, useState } from 'react'
-import {
-  addDoc,
-  collection,
-  serverTimestamp,
-  query,
-  onSnapshot,
-  orderBy,
-  setDoc,
-  doc,
-  deleteDoc
-} from 'firebase/firestore'
 import { useSession } from 'next-auth/react'
-import { db } from '../firebase'
 import { useRouter } from 'next/router'
 
-const ExperientContainer = ({
-  children,
-  h,
-  src,
-  title,
-  tahun,
-  id
-}) => {
+const ExperientContainer = ({ children, h, src, title, tahun, id }) => {
   const { data: session } = useSession()
   const [likes, setLikes] = useState([])
   const [haslike, setHaslike] = useState(false)
   const [load, setLoad] = useState(false)
   const router = useRouter()
 
-  // useEffect(() => {
-  //   onSnapshot(collection(db, 'posts', id, 'likes'), snapshot => {
-  //     setLikes(snapshot.docs)
-  //   })
-  // }, [db, id])
-
-  // useEffect(() => {
-  //   if (session) {
-  //     setHaslike(likes.findIndex(like => like.id === session?.user.uid) !== -1)
-  //   }
-  // }, [likes, session])
-
-  // const likesPost = async () => {
-  //   if (!session) return router.push('/auth/signin')
-  //   if (haslike) {
-  //     await deleteDoc(doc(db, 'posts', id, 'likes', session?.user.uid), {
-  //       username: session.user.username
-  //     })
-  //   } else {
-  //     await setDoc(doc(db, 'posts', id, 'likes', session?.user.uid), {
-  //       username: session.user.username
-  //     })
-  //   }
-  // }
-
-  // const handleLike = async e => {
-  //   switch (e.detail) {
-  //     case 2: {
-  //       await setDoc(doc(db, 'posts', id, 'likes', session.user.uid), {
-  //         username: session.user.username
-  //       })
-  //     }
-  //   }
-  // }
-
   return (
-    <Box p={{ base: '0', md: '17px' }} pt={{base:'10px'}}>
+    <Box p={{ base: '0', md: '17px' }} pt={{ base: '10px' }}>
       <Flex pl={{ base: '10px', md: '17px' }}>
         <Box flex="1">
           <Stack spacing={4}>
@@ -167,7 +113,6 @@ const ExperientContainer = ({
                   {children}
                 </Paraf>
               </Box>
-              {/* <ImageExperience src={src} alt={title} /> */}
               <Img
                 src={src}
                 alt={title}
@@ -181,11 +126,7 @@ const ExperientContainer = ({
                 dropShadow={'lg'}
                 mt={3}
                 userSelect="none"
-                // onClick={e => handleLike(e)}
               />
-              {/* {!load && (
-                <Skeleton height={'14rem'} width={'14rem'} rounded={'md'} />
-              )} */}
             </Box>
             <Box display={'flex'} gap="3">
               <Flex
@@ -196,51 +137,7 @@ const ExperientContainer = ({
                 alignItems="center"
                 color={useColorModeValue('gray.600', 'gray.500')}
                 style={{ userSelect: 'none' }}
-              >
-                {/* {haslike ? (
-                  <>
-                    <Icon
-                      onClick={likesPost}
-                      cursor="pointer"
-                      viewBox="0 0 24 24"
-                      color={useColorModeValue('pink.600', 'red')}
-                      w={5}
-                      h={5}
-                    >
-                      <path
-                        fill="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                      ></path>
-                    </Icon>
-                  </>
-                ) : (
-                  <>
-                    <Icon
-                      onClick={likesPost}
-                      cursor="pointer"
-                      viewBox="0 0 24 24"
-                      color={useColorModeValue('gray.400', 'white')}
-                      w={5}
-                      h={5}
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                      ></path>
-                    </Icon>
-                  </>
-                )} */}
-                {/* <Box fontSize={'md'}>
-                  {likes.length}
-                  <LikePar>{likes.length > 1 ? 'likes' : 'like'}</LikePar>
-                </Box> */}
-              </Flex>
+              ></Flex>
               {/* <CommentModel src={src} title={title} des={children} /> */}
             </Box>
           </Stack>
