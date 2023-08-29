@@ -5,12 +5,17 @@ import { Box, Container } from '@chakra-ui/react'
 import Footer from '../Footer'
 import ThreeLoader from '../threejs-loader'
 
-const Kantor = dynamic(() => import('../threejs'), {
+const Kantor = dynamic(() => import('../threejs_kantor'), {
+  ssr: false,
+  loading: () => <ThreeLoader />
+})
+const Mobil = dynamic(() => import('../threejs'), {
   ssr: false,
   loading: () => <ThreeLoader />
 })
 
 const Main = ({ children, router }) => {
+
   return (
     <Box as="main" pb={8}>
       <Head>
@@ -22,7 +27,7 @@ const Main = ({ children, router }) => {
       <NavBar path={router.asPath} />
 
       <Container maxW={'container.md'} pt={14}>
-        <Kantor />
+       <Mobil />
 
         {children}
       </Container>

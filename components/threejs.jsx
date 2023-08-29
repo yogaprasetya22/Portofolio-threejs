@@ -63,7 +63,7 @@ const VoxelDog = () => {
       // 640 -> 240
       // 8   -> 6
       // const scale = scH * 0.005 + 2
-      const scale = scH * 0.005 + 8.5
+      const scale = scH * 0.005 + 8.8
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -118,6 +118,7 @@ const VoxelDog = () => {
       controls.maxPolarAngle = Math.PI / 2
       controls.target = target
       setControls(controls)
+
 
       loadGLTFModel(scene, '/desert_road.glb', {
         receiveShadow: false,
