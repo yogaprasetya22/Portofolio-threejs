@@ -64,8 +64,8 @@ export const ProjextGridItem = ({
               layout="fill"
               src={thumbnail}
               alt={title}
-              loading="lazy"
               className="grid-item-thumbnail"
+              priority
             />
           </Box>
           <Box

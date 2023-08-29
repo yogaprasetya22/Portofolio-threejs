@@ -53,7 +53,7 @@ const VoxelDog = () => {
       })
       renderer.setPixelRatio(window.devicePixelRatio)
       renderer.setSize(scW, scH)
-      renderer.outputEncoding = THREE.sRGBEncoding
+      // renderer.outputEncoding = THREE.sRGBEncoding
       container.appendChild(renderer.domElement)
       setRenderer(renderer)
 
@@ -89,14 +89,14 @@ const VoxelDog = () => {
       // pencahayaan bawah
       const ubin = new THREE.PointLight(0xcccccc, 1.5, 100)
       ubin.position.set(0, -10, 0) // ( kiri-kanan , atas-bawah , depan-belakang )
-      // scene.add(ubin)
+      scene.add(ubin)
 
-      const composer = new EffectComposer(renderer)
-      composer.addPass(new RenderPass(scene, camera))
+      // const composer = new EffectComposer(renderer)
+      // composer.addPass(new RenderPass(scene, camera))
 
-      const effekPass = new EffectPass(camera, new BloomEffect())
-      effekPass.renderToScreen = true
-      composer.addPass(effekPass)
+      // const effekPass = new EffectPass(camera, new BloomEffect())
+      // effekPass.renderToScreen = true
+      // composer.addPass(effekPass)
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.enableZoom = true
