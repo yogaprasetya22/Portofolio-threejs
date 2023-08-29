@@ -19,12 +19,13 @@ const VoxelDog = () => {
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
-  const [target] = useState(new THREE.Vector3(-1.5, -25, -1.9))
+  // const [target] = useState(new THREE.Vector3(0, 1.2, .5))
+  const [target] = useState(new THREE.Vector3(0, 0.9, 0.5))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
-      36 * Math.sin(0.8 * Math.PI),
-      15,
-      25 * Math.cos(0.2 * Math.PI)
+      20 * Math.sin(0.2 * Math.PI),
+      10,
+      20 * Math.cos(0.2 * Math.PI)
     )
   )
   const [scene] = useState(new THREE.Scene())
@@ -54,21 +55,22 @@ const VoxelDog = () => {
       renderer.setPixelRatio(window.devicePixelRatio)
       renderer.setSize(scW, scH)
       // renderer.outputEncoding = THREE.sRGBEncoding
+      renderer.shadowMap.enabled = true
+      renderer.shadowMap.type = THREE.BasicShadowMap
       container.appendChild(renderer.domElement)
       setRenderer(renderer)
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.09 + 11.5
-      const scalex = scale + 5.5
-
+      // const scale = scH * 0.005 + 2
+      const scale = scH * 0.005 + 8.5
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
-        scalex,
+        scale,
         -scale,
-        0.21,
-        5000
+        0.01,
+        50000
       )
 
       function update() {
@@ -84,14 +86,19 @@ const VoxelDog = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const hemi = new THREE.HemisphereLight(0xeaeaea, 0x080820, 3)
+      const hemi = new THREE.HemisphereLight(0xbfcbc2, 0x080820, 3)
       hemi.position.set(14, 48, 10)
       scene.add(hemi)
 
-      // pencahayaan bawah
-      const ubin = new THREE.PointLight(0xcccccc, 1.5, 100)
-      ubin.position.set(0, -10, 0) // ( kiri-kanan , atas-bawah , depan-belakang )
-      // scene.add(ubin)
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
+      scene.add(ambientLight)
+
+      const pointLight = new THREE.PointLight(0xffffff, 0.8, 18)
+      pointLight.position.set(-3, 6, -3)
+      pointLight.castShadow = true
+      pointLight.shadow.camera.near = 0.1
+      pointLight.shadow.camera.far = 25
+      scene.add(pointLight)
 
       const composer = new EffectComposer(renderer)
       composer.addPass(new RenderPass(scene, camera))
@@ -103,12 +110,18 @@ const VoxelDog = () => {
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.enableZoom = true
       controls.autoRotate = true
+      controls.dampingFactor = 0.05
+      controls.screenSpacePanning = false
+      controls.minDistance = 1
+      controls.maxDistance = 500
+      controls.zoomOnMouseWheel = true
+      controls.maxPolarAngle = Math.PI / 2
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/indonesia.glb', {
-        receiveShadow: true,
-        castShadow: true
+      loadGLTFModel(scene, '/desert_road.glb', {
+        receiveShadow: false,
+        castShadow: false
       }).then(() => {
         animate()
         setLoading(false)

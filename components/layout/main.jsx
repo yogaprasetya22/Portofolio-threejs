@@ -5,11 +5,7 @@ import { Box, Container } from '@chakra-ui/react'
 import Footer from '../Footer'
 import ThreeLoader from '../threejs-loader'
 
-const Kantor = dynamic(() => import('../threejs_2'), {
-  ssr: false,
-  loading: () => <ThreeLoader />
-})
-const Indonesia = dynamic(() => import('../threejs'), {
+const Kantor = dynamic(() => import('../threejs'), {
   ssr: false,
   loading: () => <ThreeLoader />
 })
