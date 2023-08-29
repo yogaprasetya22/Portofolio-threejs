@@ -5,7 +5,7 @@ import {
   useColorModeValue,
   Stack,
   Text,
-  Divider,
+  Divider
 } from '@chakra-ui/react'
 import ExperientContainer from '../components/ExperientContainer'
 
@@ -13,29 +13,14 @@ const about = () => {
   const posts = [
     {
       caption: 'Himpunan Akademik',
-      image: '/img/experience/himpunan.JPG',
-      profile:
-        'https://lh3.googleusercontent.com/a/AGNmyxbS8l447_XY6jfdoVK06R7OcxH-9xSJU35g8qPsCw=s96-c',
-      timestamp: {
-        nanoseconds: 421000000,
-        seconds: 1679930420
-      },
-      username: 'MYogaPrasetya',
+      image: '/img/experience/himpunan.png',
       tahun: 'Juli 2022 - Juli 2023',
       deskripsi:
         'Aktif sebagai anggota Divisi Akademik dalam Himpunan Mahasiswa, bertanggung jawab dalam mengorganisir dan menyelenggarakan kegiatan akademik.'
     },
     {
       caption: 'Magang di ICT Universitas Pembangunan Jaya',
-      image:
-        'https://firebasestorage.googleapis.com/v0/b/portfolio-dd69a.appspot.com/o/posts%2FHoBPy0ZPzUggxyc2tgim%2Fimage?alt=media&token=deee5036-f5b4-43c7-87e0-2aac51f2f7a4',
-      profile:
-        'https://lh3.googleusercontent.com/a/AGNmyxbS8l447_XY6jfdoVK06R7OcxH-9xSJU35g8qPsCw=s96-c',
-      timestamp: {
-        nanoseconds: 421000000,
-        seconds: 1679930420
-      },
-      username: 'MYogaPrasetya',
+      image: '/img/instagram-clone/thumbnile.png',
       tahun: 'Januari 2023 - Mei 2023',
       deskripsi:
         'Magang sebagai Web Developer, dengan fokus pada pengembangan aplikasi web di universitas pembangunan jaya.'

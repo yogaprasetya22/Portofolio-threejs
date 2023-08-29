@@ -23,6 +23,9 @@ export const DogContainer = forwardRef(({ children }, ref) => (
     h={[310, 495, 650]}
     position="relative"
   >
+    {/* <Box position="absolute" display={'flex'} justifyContent={'flex-end'} bottom={'10rem'} right={0}  bg="teal.600">
+      dawawdadwawd
+    </Box> */}
     {children}
   </Box>
 ))

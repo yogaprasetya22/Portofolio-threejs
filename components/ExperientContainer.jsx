@@ -1,3 +1,4 @@
+import Layout from '../components/layout/artickel'
 import {
   Box,
   useColorModeValue,
@@ -7,10 +8,12 @@ import {
   Icon,
   Heading,
   Link,
-  Img
+  Img,
+  Skeleton
 } from '@chakra-ui/react'
 import styled from '@emotion/styled'
-import { useState } from 'react'
+import { CommentsIcons, HeartsIcons } from './general/ChakraIcons'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
 const ExperientContainer = ({ children, h, src, title, tahun, id }) => {
@@ -98,20 +101,23 @@ const ExperientContainer = ({ children, h, src, title, tahun, id }) => {
                   {children}
                 </Paraf>
               </Box>
-              <Img
-                src={src}
-                alt={title}
-                // maxW="20.5rem"
-                minH={'13rem'}
-                maxH={'13.7rem'}
-                rounded={'md'}
-                cursor="pointer"
-                objectFit={'contain'}
-                shadow={'lg'}
-                dropShadow={'lg'}
-                mt={3}
-                userSelect="none"
-              />
+              <Flex>
+                <Img
+                  bg="teal.400"
+                  src={src}
+                  alt={title}
+                  // maxW="20.5rem"
+                  minH={'13rem'}
+                  maxH={'13.7rem'}
+                  rounded={'md'}
+                  cursor="pointer"
+                  objectFit={'contain'}
+                  shadow={'lg'}
+                  dropShadow={'lg'}
+                  mt={3}
+                  userSelect="none"
+                />
+              </Flex>
             </Box>
             <Box display={'flex'} gap="3">
               <Flex

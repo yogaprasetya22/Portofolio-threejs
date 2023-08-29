@@ -19,7 +19,8 @@ const VoxelDog = () => {
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
-  const [target] = useState(new THREE.Vector3(-0.5, 1.2, 2.5))
+  // const [target] = useState(new THREE.Vector3(0, 1.2, .5))
+  const [target] = useState(new THREE.Vector3(0, -1.2, .5))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
       20 * Math.sin(0.2 * Math.PI),
@@ -54,12 +55,15 @@ const VoxelDog = () => {
       renderer.setPixelRatio(window.devicePixelRatio)
       renderer.setSize(scW, scH)
       // renderer.outputEncoding = THREE.sRGBEncoding
+      renderer.shadowMap.enabled = true
+      renderer.shadowMap.type = THREE.BasicShadowMap
       container.appendChild(renderer.domElement)
       setRenderer(renderer)
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.005 + 1.8
+      // const scale = scH * 0.005 + 2
+      const scale = scH * 0.005 + 7
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -86,27 +90,38 @@ const VoxelDog = () => {
       hemi.position.set(14, 48, 10)
       scene.add(hemi)
 
-      // pencahayaan bawah
-      const ubin = new THREE.PointLight(0xcccccc, 1.5, 100)
-      ubin.position.set(0, -10, 0) // ( kiri-kanan , atas-bawah , depan-belakang )
-      scene.add(ubin)
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
+      scene.add(ambientLight)
 
-      // const composer = new EffectComposer(renderer)
-      // composer.addPass(new RenderPass(scene, camera))
+      const pointLight = new THREE.PointLight(0xffffff, 0.8, 18)
+      pointLight.position.set(-3, 6, -3)
+      pointLight.castShadow = true
+      pointLight.shadow.camera.near = 0.1
+      pointLight.shadow.camera.far = 25
+      scene.add(pointLight)
 
-      // const effekPass = new EffectPass(camera, new BloomEffect())
-      // effekPass.renderToScreen = true
-      // composer.addPass(effekPass)
+      const composer = new EffectComposer(renderer)
+      composer.addPass(new RenderPass(scene, camera))
+
+      const effekPass = new EffectPass(camera, new BloomEffect())
+      effekPass.renderToScreen = true
+      composer.addPass(effekPass)
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.enableZoom = true
       controls.autoRotate = true
+      controls.dampingFactor = 0.05
+      controls.screenSpacePanning = false
+      controls.minDistance = 1
+      controls.maxDistance = 500
+      controls.zoomOnMouseWheel = true
+      controls.maxPolarAngle = Math.PI / 2
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/kantor.glb', {
-        receiveShadow: true,
-        castShadow: true
+      loadGLTFModel(scene, '/desert_road.glb', {
+        receiveShadow: false,
+        castShadow: false
       }).then(() => {
         animate()
         setLoading(false)
