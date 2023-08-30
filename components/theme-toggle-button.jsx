@@ -62,11 +62,11 @@ export const ThemeToggleButtonMobile = () => {
 
 export const TranslateButton = () => {
 
-  const handleTranslate = () => {
-    if (i18n.language === 'en') {
-      i18n.changeLanguage('id')
-    } else {
+  const handleTranslate = (e) => {
+    if (e.target.value === 'en') {
       i18n.changeLanguage('en')
+    } else {
+      i18n.changeLanguage('id')
     }
   }
 
@@ -78,18 +78,18 @@ export const TranslateButton = () => {
       variant="filled"
       display={{ base: 'none', md: 'inline-block' }}
     >
-      <option value="option1">English</option>
-      <option value="option1">Indonesia</option>
+      <option value="en">English</option>
+      <option value="id">Indonesia</option>
     </Select>
   )
 }
 export const TranslateButtonMobile = () => {
 
-  const handleTranslate = () => {
-    if (i18n.language === 'en') {
-      i18n.changeLanguage('id')
-    } else {
+  const handleTranslate = (e) => {
+    if (e.target.value === 'en') {
       i18n.changeLanguage('en')
+    } else {
+      i18n.changeLanguage('id')
     }
   }
 
@@ -101,8 +101,8 @@ export const TranslateButtonMobile = () => {
       variant="filled"
       display={{ base: 'inline-block', md: 'none' }}
     >
-      <option value="option1">English</option>
-      <option value="option1">Indonesia</option>
+      <option value="en">English</option>
+      <option value="id">Indonesia</option>
     </Select>
   )
 }
