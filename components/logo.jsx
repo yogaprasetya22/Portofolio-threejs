@@ -11,6 +11,8 @@ const LogoBox = styled.span`
   align-items: center;
   height: 30px;
   line-height: 20px;
+  letter-spacing: 0.03em;
+  word-spacing: 0.3em;
   padding: 10px;
   cursor: pointer;
 
@@ -33,7 +35,7 @@ const Logo = () => {
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
           fontFamily='M PLUS Rounded 1c", sans-serif'
         >
-          JAGRES
+          YOGA
         </Title>
       </LogoBox>
     </Link>

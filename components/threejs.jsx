@@ -112,13 +112,14 @@ const VoxelDog = () => {
       controls.autoRotate = true
       controls.dampingFactor = 0.05
       controls.screenSpacePanning = false
+      // orbit smooth
+      controls.enableDamping = true
       controls.minDistance = 1
       controls.maxDistance = 500
       controls.zoomOnMouseWheel = true
       controls.maxPolarAngle = Math.PI / 2
       controls.target = target
       setControls(controls)
-
 
       loadGLTFModel(scene, '/desert_road.glb', {
         receiveShadow: false,
