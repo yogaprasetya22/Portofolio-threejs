@@ -28,7 +28,7 @@ const about = () => {
   ]
 
   return (
-    <Layout title="Skils">
+    <Layout title="Experience">
       <Container>
         <Box
           borderRadius="lg"

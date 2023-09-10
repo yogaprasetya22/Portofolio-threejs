@@ -11,10 +11,8 @@ import Layout from '../components/layout/artickel'
 import NextLink from 'next/link'
 import { Paragraf } from '../components/layout/project'
 import Section from '../components/section'
-import dynamic from 'next/dynamic'
 import Skill from '../components/skils/Skill'
 import { useTranslation } from 'react-i18next'
-import { useState } from 'react'
 
 export default function Home() {
   const [t, i18n] = useTranslation('global')
