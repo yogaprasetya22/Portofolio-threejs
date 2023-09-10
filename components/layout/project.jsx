@@ -61,7 +61,7 @@ export const Mark = styled.span`
   color: ${color};
 `
 
-const Para = styled.p`
+const Para = styled.div`
   text-align: justify;
   text-indent: 1em;
   line-height: 2;
@@ -94,9 +94,7 @@ export const ImageProject = ({ src, alt }) => {
   const finalRef = useRef(null)
 
   useEffect(() => {
-    setTimeout(() => {
-      if (src) setLoading(true)
-    }, 800)
+    if (src) setLoading(true)
   }, [src])
   return (
     <>
@@ -121,13 +119,15 @@ export const ImageProject = ({ src, alt }) => {
             <ModalContent
               onClick={onClose}
               bg="none"
-              maxW="55rem"
-              h={{ base: '90vh', md: 'auto' }}
+              minW="full"
+              minH="full"
               overflow="hidden"
               alignItems={'center'}
               justifyContent={'center'}
+              m={0}
+              p={0}
             >
-              <Image src={src} />
+              <Image src={src} alt={alt} />
             </ModalContent>
           </Modal>
         </>

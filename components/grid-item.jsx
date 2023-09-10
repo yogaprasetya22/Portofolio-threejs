@@ -38,7 +38,8 @@ export const ProjextGridItem = ({
   title,
   thumbnail,
   color,
-  relese
+  relese,
+  link
 }) => {
   return (
     <Box
@@ -53,7 +54,7 @@ export const ProjextGridItem = ({
         transform: 'scale(1.02)'
       }}
     >
-      <NextLink href={`/project/${id}`}>
+      <NextLink href={`${link}`}>
         <LinkBox cursor="pointer">
           <Box
             marginBottom={3}

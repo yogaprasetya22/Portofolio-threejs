@@ -86,7 +86,7 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem
             _target="_blank"
-            href="https://github.com/yogaprasetya22?tab=repositories"
+            href="https://github.com/yogaprasetya22"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -127,16 +127,13 @@ const Navbar = props => {
                 <NextLink href="/experience" passHref>
                   <MenuItem as={Link}>Experience</MenuItem>
                 </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/yogaprasetya22?tab=repositories"
-                >
+                <MenuItem as={Link} href="https://github.com/yogaprasetya22">
                   Github
                 </MenuItem>
                 <Divider border={'2px'} />
                 <Box
-                  py={3} 
-                  pr={14}
+                  py={3}
+                  pr={20}
                   pl={3}
                   display={'flex'}
                   gap="1rem"

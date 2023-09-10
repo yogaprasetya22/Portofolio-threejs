@@ -12,7 +12,6 @@ import { ProjextGridItem } from '../components/grid-item'
 import Section from '../components/section'
 import { useTranslation } from 'react-i18next'
 
-
 const project = () => {
   const { t, i18n, ready } = useTranslation('global')
 
@@ -105,7 +104,7 @@ const project = () => {
 
 export default project
 
-const ViewAndCodePrivate = ({data}) => {
+const ViewAndCodePrivate = ({ data }) => {
   return (
     <>
       {data.map(e => (
@@ -115,9 +114,10 @@ const ViewAndCodePrivate = ({data}) => {
             title={e.title}
             thumbnail={e?.thumbnail}
             relese={e?.relese}
+            link={`project/personal/${e?.slug}`}
             color={useColorModeValue('#bdd1ff9c', '#2e3436b3')}
           >
-            {e.des}
+            {e.deskripsi}
           </ProjextGridItem>
         </Section>
       ))}
@@ -125,7 +125,7 @@ const ViewAndCodePrivate = ({data}) => {
   )
 }
 
-const ViewAndCodePublic = ({data}) => {
+const ViewAndCodePublic = ({ data }) => {
   return (
     <>
       {data.map(e => (
@@ -135,9 +135,10 @@ const ViewAndCodePublic = ({data}) => {
             title={e.title}
             thumbnail={e?.thumbnail}
             relese={e?.relese}
+            link={`project/propesional/${e?.slug}`}
             color={useColorModeValue('#bdd1ffd1', '#2e3436b3')}
           >
-            {e.des}
+            {e.deskripsi}
           </ProjextGridItem>
         </Section>
       ))}
