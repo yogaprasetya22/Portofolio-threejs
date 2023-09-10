@@ -9,24 +9,13 @@ import {
 } from '@chakra-ui/react'
 import ExperientContainer from '../components/ExperientContainer'
 
+import { useTranslation } from 'react-i18next'
 const about = () => {
-  const posts = [
-    {
-      caption: 'Himpunan Akademik',
-      image: '/img/experience/himpunan.png',
-      tahun: 'Juli 2022 - Juli 2023',
-      deskripsi:
-        'Aktif sebagai anggota Divisi Akademik dalam Himpunan Mahasiswa, bertanggung jawab dalam mengorganisir dan menyelenggarakan kegiatan akademik.'
-    },
-    {
-      caption: 'Magang di ICT Universitas Pembangunan Jaya',
-      image: '/img/instagram-clone/thumbnile.png',
-      tahun: 'Januari 2023 - Mei 2023',
-      deskripsi:
-        'Magang sebagai Web Developer, dengan fokus pada pengembangan aplikasi web di universitas pembangunan jaya.'
-    }
-  ]
+  const { t, i18n, ready } = useTranslation('global')
 
+  if (!ready) return 'loading translations...'
+
+  const posts = t('experient', { returnObjects: true })
   return (
     <Layout title="Experience">
       <Container>

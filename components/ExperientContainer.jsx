@@ -1,4 +1,3 @@
-import Layout from '../components/layout/artickel'
 import {
   Box,
   useColorModeValue,
@@ -12,9 +11,7 @@ import {
   Skeleton
 } from '@chakra-ui/react'
 import styled from '@emotion/styled'
-import { CommentsIcons, HeartsIcons } from './general/ChakraIcons'
-import { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
+import i18n from 'i18next'
 
 const ExperientContainer = ({ children, h, src, title, tahun, id }) => {
   return (
@@ -93,7 +90,7 @@ const ExperientContainer = ({ children, h, src, title, tahun, id }) => {
               >
                 {tahun} -
                 <Text pl={1} color={useColorModeValue('#ff63c398', '#4dccd9')}>
-                  Sekarang
+                  {i18n.language === 'id' ? 'Sekarang' : 'Now'}
                 </Text>
               </Flex>
               <Box w={'full'}>

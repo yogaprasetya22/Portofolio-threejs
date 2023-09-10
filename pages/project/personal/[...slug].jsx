@@ -10,6 +10,7 @@ import {
   BadgeUi,
   ImageProject
 } from '../../../components/layout/project'
+import Faild from '../../404'
 
 function flatMap(array, fn, i) {
   var result = []
@@ -27,14 +28,6 @@ export default function Slug({ id }) {
   if (!ready) return 'loading translations...'
   const trnaslate = t('project', { returnObjects: true })
   const dataTranslate = trnaslate?.body.personal
-
-  useEffect(() => {
-    dataTranslate.map(item => {
-      if (item.slug === id) {
-        setData(item)
-      }
-    })
-  }, [id, i18n.language])
 
   const ReplaceStringToComponent = ({ children }) => {
     // Memisahkan teks dalam format ||...|| sebagai badge
@@ -65,6 +58,14 @@ export default function Slug({ id }) {
     return children
   }
 
+  useEffect(() => {
+    dataTranslate.map(item => {
+      if (item.slug === id) {
+        setData(item)
+      }
+    })
+  }, [id, i18n.language])
+
   return (
     <Layout title={data?.title}>
       <Box p={{ base: '10px', md: '35px' }}>
@@ -72,15 +73,20 @@ export default function Slug({ id }) {
         <br />
         <Center>
           <Paragraf>
-            {data.blog && (
+            {data.content && (
               <ReplaceStringToComponent>
-                {data.blog[0]?.des_blog}
+                {data.content[0]?.des_content}
               </ReplaceStringToComponent>
             )}
           </Paragraf>
         </Center>
-        <Content data={data?.blog} />
-        <Bottom link={data?.demo} github={data?.github} />
+        <Content data={data?.content} />
+        {/* <Bottom link={data?.demo} github={data?.github} /> */}
+        {data?.demo && data?.github ? (
+          <Bottom link={data?.demo} github={data?.github} />
+        ) : (
+          <Faild />
+        )}
       </Box>
     </Layout>
   )
@@ -132,7 +138,7 @@ const Content = ({ data }) => {
         return (
           <div key={i}>
             <Paragraf>
-              <MarkReplaceContent>{item.des_blog}</MarkReplaceContent>
+              <MarkReplaceContent>{item.des_content}</MarkReplaceContent>
             </Paragraf>
           </div>
         )

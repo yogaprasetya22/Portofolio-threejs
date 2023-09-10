@@ -72,14 +72,14 @@ export default function Slug({ id }) {
         <br />
         <Center>
           <Paragraf>
-            {data.blog && (
+            {data.content && (
               <ReplaceStringToComponent>
-                {data.blog[0]?.des_blog}
+                {data.content[0]?.des_content}
               </ReplaceStringToComponent>
             )}
           </Paragraf>
         </Center>
-        <Content data={data?.blog} />
+        <Content data={data?.content} />
         <Bottom link={data?.demo} github={data?.github} />
       </Box>
     </Layout>
@@ -132,7 +132,7 @@ const Content = ({ data }) => {
         return (
           <div key={i}>
             <Paragraf>
-              <MarkReplaceContent>{item.des_blog}</MarkReplaceContent>
+              <MarkReplaceContent>{item.des_content}</MarkReplaceContent>
             </Paragraf>
           </div>
         )

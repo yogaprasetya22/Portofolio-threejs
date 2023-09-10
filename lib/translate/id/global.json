@@ -32,30 +32,30 @@
                     "deskripsi": "Instagram clone dibuat menggunakan Next.js, firebase untuk otentikasi, penyimpanan data",
                     "link": "https://instagram-jagres.vercel.app/",
                     "github": "https://github.com/yogaprasetya22/instagram-jagres",
-                    "blog": [
+                    "content": [
                         {
                             "id": "1",
-                            "des_blog": "Selamat datang **Instagram Clone** dengan **Next.js** ||21 Aug 2022||"
+                            "des_content": "Selamat datang **Instagram Clone** dengan **Next.js** ||21 Aug 2022||"
                         },
                         {
                             "id": "2",
-                            "des_blog": "Saya bangga mempersembahkan karya saya, yaitu sebuah aplikasi **Instagram Clone** yang dibangun menggunakan **Next.js. Dalam proyek ini, saya menjelajahi potensi Next.js** untuk menciptakan pengalaman yang sama dengan Instagram."
+                            "des_content": "Saya bangga mempersembahkan karya saya, yaitu sebuah aplikasi **Instagram Clone** yang dibangun menggunakan **Next.js. Dalam proyek ini, saya menjelajahi potensi Next.js** untuk menciptakan pengalaman yang sama dengan Instagram."
                         },
                         {
                             "id": "3",
-                            "des_blog": "Aplikasi ini memiliki fungsionalitas yang mungking kurang lengkap, memungkinkan pengguna untuk mengunggah foto, dan masih tahap pengembangan pada menjelajahi feed, serta berinteraksi dengan teman-teman dan pengguna lainnya. Dengan menggunakan teknologi **Next.js, aplikasi ini menawarkan kecepatan dan responsivitas yang tinggi, sehingga pengguna dapat menikmati pengalaman yang mulus."
+                            "des_content": "Aplikasi ini memiliki fungsionalitas yang mungking kurang lengkap, memungkinkan pengguna untuk mengunggah foto, dan masih tahap pengembangan pada menjelajahi feed, serta berinteraksi dengan teman-teman dan pengguna lainnya. Dengan menggunakan teknologi **Next.js, aplikasi ini menawarkan kecepatan dan responsivitas yang tinggi, sehingga pengguna dapat menikmati pengalaman yang mulus."
                         },
                         {
                             "id": "4",
-                            "des_blog": "%/img/instagram-clone/thumbnile.png%"
+                            "des_content": "%/img/instagram-clone/thumbnile.png%"
                         },
                         {
                             "id": "5",
-                            "des_blog": "Saya berharap Anda menikmati aplikasi ini dan jangan ragu untuk memberi tahu saya jika Anda memiliki masalah atau saran untuk meningkatkan aplikasi ini."
+                            "des_content": "Saya berharap Anda menikmati aplikasi ini dan jangan ragu untuk memberi tahu saya jika Anda memiliki masalah atau saran untuk meningkatkan aplikasi ini."
                         },
                         {
                             "id": "6",
-                            "des_blog": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
                         }
                     ]
                 },
@@ -66,34 +66,34 @@
                     "title": "Whatsapp Clone",
                     "slug": "whatsapp-clone",
                     "deskripsi": "Whatsapp clone dibuat menggunakan Next.js, firebase untuk otentikasi, penyimpanan data",
-                    "blog": [
+                    "content": [
                         {
                             "id": "1",
-                            "des_blog": "Selamat datang **Whatsapp Clone** dengan **Next.js** ||21 Aug 2022||"
+                            "des_content": "Selamat datang **Whatsapp Clone** dengan **Next.js** ||21 Aug 2022||"
                         },
                         {
                             "id": "2",
-                            "des_blog": "Saya bangga memperlihatkan project kecil, yaitu sebuah aplikasi chatting yang serupa dengan **Whatsap, melalui aplikasi clone yang saya buat menggunakan ** Next.js! Aplikasi ini memperlihatkan fitur-fitur utama seperti pengiriman pesan teks. Dibangun dengan menggunakan teknologi ** Next.js dan **Firebas. Saya dengan hati-hati mengembangkan aplikasi ini dengan fokus pada keamanan dan privasi pengguna."
+                            "des_content": "Saya bangga memperlihatkan project kecil, yaitu sebuah aplikasi chatting yang serupa dengan **Whatsap, melalui aplikasi clone yang saya buat menggunakan ** Next.js! Aplikasi ini memperlihatkan fitur-fitur utama seperti pengiriman pesan teks. Dibangun dengan menggunakan teknologi ** Next.js dan **Firebas. Saya dengan hati-hati mengembangkan aplikasi ini dengan fokus pada keamanan dan privasi pengguna."
                         },
                         {
                             "id": "3",
-                            "des_blog": "%/img/whatsapp-clone/whatsapp-clone.png%"
+                            "des_content": "%/img/whatsapp-clone/whatsapp-clone.png%"
                         },
                         {
                             "id": "4",
-                            "des_blog": "Pada aplikasi yang saya buat adalah sebuah cloningan dari whatsapp web versi saya dengan menggunakan **Next.js."
+                            "des_content": "Pada aplikasi yang saya buat adalah sebuah cloningan dari whatsapp web versi saya dengan menggunakan **Next.js."
                         },
                         {
                             "id": "5",
-                            "des_blog": "%/img/whatsapp-clone/google_login.png%"
+                            "des_content": "%/img/whatsapp-clone/google_login.png%"
                         },
                         {
                             "id": "6",
-                            "des_blog": "Saya berharap Anda menikmati aplikasi ini dan jangan ragu untuk memberi tahu saya jika Anda memiliki masalah atau saran untuk meningkatkan aplikasi ini."
+                            "des_content": "Saya berharap Anda menikmati aplikasi ini dan jangan ragu untuk memberi tahu saya jika Anda memiliki masalah atau saran untuk meningkatkan aplikasi ini."
                         },
                         {
                             "id": "7",
-                            "des_blog": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
                         }
                     ]
                 }
@@ -106,34 +106,34 @@
                     "title": "Lomba UI/UX",
                     "slug": "lomba-lldikti",
                     "deskripsi": "Lomba UI/UX pada website Se Jawa Barat.",
-                    "blog": [
+                    "content": [
                         {
                             "id": "1",
-                            "des_blog": "Selamat datang **Lomba UI/UX** dengan **Laravel dan React.js** ||5 Aug 2022||"
+                            "des_content": "Selamat datang **Lomba UI/UX** dengan **Laravel dan React.js** ||5 Aug 2022||"
                         },
                         {
                             "id": "2",
-                            "des_blog": "Saya bangga memperlihatkan project kecil, yaitu sebuah aplikasi chatting yang serupa dengan **Whatsap, melalui aplikasi clone yang saya buat menggunakan ** Next.js! Aplikasi ini memperlihatkan fitur-fitur utama seperti pengiriman pesan teks. Dibangun dengan menggunakan teknologi ** Next.js dan **Firebas. Saya dengan hati-hati mengembangkan aplikasi ini dengan fokus pada keamanan dan privasi pengguna."
+                            "des_content": "Saya bangga memperlihatkan project kecil, yaitu sebuah aplikasi chatting yang serupa dengan **Whatsap, melalui aplikasi clone yang saya buat menggunakan ** Next.js! Aplikasi ini memperlihatkan fitur-fitur utama seperti pengiriman pesan teks. Dibangun dengan menggunakan teknologi ** Next.js dan **Firebas. Saya dengan hati-hati mengembangkan aplikasi ini dengan fokus pada keamanan dan privasi pengguna."
                         },
                         {
                             "id": "3",
-                            "des_blog": "%/img/whatsapp-clone/whatsapp-clone.png%"
+                            "des_content": "%/img/whatsapp-clone/whatsapp-clone.png%"
                         },
                         {
                             "id": "4",
-                            "des_blog": "Pada aplikasi yang saya buat adalah sebuah cloningan dari whatsapp web versi saya dengan menggunakan **Next.js."
+                            "des_content": "Pada aplikasi yang saya buat adalah sebuah cloningan dari whatsapp web versi saya dengan menggunakan **Next.js."
                         },
                         {
                             "id": "5",
-                            "des_blog": "%/img/whatsapp-clone/google_login.png%"
+                            "des_content": "%/img/whatsapp-clone/google_login.png%"
                         },
                         {
                             "id": "6",
-                            "des_blog": "Saya berharap Anda menikmati aplikasi ini dan jangan ragu untuk memberi tahu saya jika Anda memiliki masalah atau saran untuk meningkatkan aplikasi ini."
+                            "des_content": "Saya berharap Anda menikmati aplikasi ini dan jangan ragu untuk memberi tahu saya jika Anda memiliki masalah atau saran untuk meningkatkan aplikasi ini."
                         },
                         {
                             "id": "7",
-                            "des_blog": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
                         }
                     ]
                 },
@@ -153,5 +153,19 @@
                 }
             ]
         }
-    }
+    },
+    "experient": [
+        {
+            "caption": "Himpunan Akademik",
+            "image": "/img/experience/himpunan.png",
+            "tahun": "Juli 2022 - Juli 2023",
+            "deskripsi": "Aktif sebagai anggota Divisi Akademik dalam Himpunan Mahasiswa, bertanggung jawab dalam mengorganisir dan menyelenggarakan kegiatan akademik."
+        },
+        {
+            "caption": "Magang di ICT Universitas Pembangunan Jaya",
+            "image": "/img/instagram-clone/thumbnile.png",
+            "tahun": "Januari 2023 - Mei 2023",
+            "deskripsi": "Magang sebagai Web Developer, dengan fokus pada pengembangan aplikasi web di universitas pembangunan jaya."
+        }
+    ]
 }
