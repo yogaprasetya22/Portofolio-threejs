@@ -4,7 +4,7 @@ import {
   IconButton,
   useColorMode,
   useColorModeValue,
-  Select,
+  Select
 } from '@chakra-ui/react'
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 // import { useState, useEffect } from 'react'
@@ -61,8 +61,7 @@ export const ThemeToggleButtonMobile = () => {
 }
 
 export const TranslateButton = () => {
-
-  const handleTranslate = (e) => {
+  const handleTranslate = e => {
     if (e.target.value === 'en') {
       i18n.changeLanguage('en')
     } else {
@@ -84,8 +83,7 @@ export const TranslateButton = () => {
   )
 }
 export const TranslateButtonMobile = () => {
-
-  const handleTranslate = (e) => {
+  const handleTranslate = e => {
     if (e.target.value === 'en') {
       i18n.changeLanguage('en')
     } else {

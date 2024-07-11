@@ -66,6 +66,8 @@
                     "title": "Whatsapp Clone",
                     "slug": "whatsapp-clone",
                     "deskripsi": "Whatsapp clone created using Next.js, firebase for authentication, data storage",
+                    "demo": "https://instagram-jagres.vercel.app/",
+                    "github": "https://github.com/yogaprasetya22/instagram-jagres",
                     "content": [
                         {
                             "id": "1",
@@ -106,6 +108,8 @@
                     "title": "Lomba UI/UX",
                     "slug": "lomba-lldikti",
                     "deskripsi": "Lomba UI/UX pada website Se Jawa Barat.",
+                    "demo": "https://instagram-jagres.vercel.app/",
+                    "github": "https://github.com/yogaprasetya22/instagram-jagres",
                     "content": [
                         {
                             "id": "1",
@@ -143,7 +147,9 @@
                     "thumbnail": "/img/instagram-clone/thumbnile.png",
                     "title": "instagram-clone",
                     "slug": "instagram-clone",
-                    "deskripsi": "Instagram clone created using Next.js, firebase for authentication, data storage"
+                    "deskripsi": "Instagram clone created using Next.js, firebase for authentication, data storage",
+                    "demo": "https://instagram-jagres.vercel.app/",
+                    "github": "https://github.com/yogaprasetya22/instagram-jagres"
                 },
                 {
                     "id": "3",
@@ -151,7 +157,9 @@
                     "thumbnail": "/img/instagram-clone/thumbnile.png",
                     "title": "instagram-clone",
                     "slug": "instagram-clone",
-                    "deskripsi": "Instagram clone created using Next.js, firebase for authentication, data storage"
+                    "deskripsi": "Instagram clone created using Next.js, firebase for authentication, data storage",
+                    "demo": "https://instagram-jagres.vercel.app/",
+                    "github": "https://github.com/yogaprasetya22/instagram-jagres"
                 }
             ]
         }
@@ -165,7 +173,7 @@
         },
         {
             "caption": "Internship at ICT Universitas Pembangunan Jaya",
-            "image": "/img/instagram-clone/thumbnile.png",
+            "image": "/img/experience/Logo-UPJ.png",
             "tahun": "Januari 2023 - Mei 2023",
             "deskripsi": "Internship as a Web Developer, focusing on web application development at Pembangunan Jaya University."
         }

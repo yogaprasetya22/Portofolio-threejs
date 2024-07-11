@@ -30,7 +30,7 @@
                     "title": "Instagram Clone",
                     "slug": "instagram-clone",
                     "deskripsi": "Instagram clone dibuat menggunakan Next.js, firebase untuk otentikasi, penyimpanan data",
-                    "link": "https://instagram-jagres.vercel.app/",
+                    "demo": "https://instagram-jagres.vercel.app/",
                     "github": "https://github.com/yogaprasetya22/instagram-jagres",
                     "content": [
                         {
@@ -163,7 +163,7 @@
         },
         {
             "caption": "Magang di ICT Universitas Pembangunan Jaya",
-            "image": "/img/instagram-clone/thumbnile.png",
+            "image": "/img/experience/Logo-UPJ.png",
             "tahun": "Januari 2023 - Mei 2023",
             "deskripsi": "Magang sebagai Web Developer, dengan fokus pada pengembangan aplikasi web di universitas pembangunan jaya."
         }
