@@ -66,6 +66,8 @@
                     "title": "Whatsapp Clone",
                     "slug": "whatsapp-clone",
                     "deskripsi": "Whatsapp clone dibuat menggunakan Next.js, firebase untuk otentikasi, penyimpanan data",
+                    "demo": "https://instagram-jagres.vercel.app/",
+                    "github": "https://github.com/yogaprasetya22/instagram-jagres",
                     "content": [
                         {
                             "id": "1",
@@ -99,7 +101,95 @@
                 }
             ],
             "propesional": [
-               
+                {
+                    "id": "3",
+                    "relese": 2023,
+                    "thumbnail": "/img/lldikti/thumbnile.png",
+                    "title": "LLDIKTI",
+                    "slug": "lldikti",
+                    "deskripsi": "LLDIKTI lomba sekala jawa barat ",
+                    "github": "https://github.com/yogaprasetya22/LLDIKTI_4",
+                    "content": [
+                        {
+                            "id": "1",
+                            "des_content": "Selamat datang **LLDIKTI** lomba sekala jawa barat dengan **Laravel** ||8 Feb 2023||"
+                        },
+                        {
+                            "id": "2",
+                            "des_content": "Perlombaan LLDIKTI (Lembaga Layanan Pendidikan Tinggi) di Jawa Barat adalah suatu acara kompetisi yang bertujuan untuk mendorong mahasiswa dalam bidang desain dan pengembangan web agar lebih inovatif dan kreatif. Dalam kompetisi ini, peserta diminta untuk membuat ulang desain website company profile yang menekankan aspek profesionalitas, user-friendly, dan estetika yang menarik. Berbagai perguruan tinggi di Jawa Barat turut serta dalam kompetisi ini, sehingga semakin memperkaya semangat persaingan dan kualitas karya yang dihasilkan."
+                        },
+                        {
+                            "id": "3",
+                            "des_content": "%/img/lldikti/home-lldikti.png%"
+                        },
+                        {
+                            "id": "4",
+                            "des_content": "Proyek yang saya kerjakan untuk lomba ini adalah remake desain website company profile, yang melibatkan beberapa tahap penting. Pertama, saya melakukan analisis mendalam terhadap kebutuhan perusahaan dan target audiens mereka. Dengan memahami hal ini, saya dapat merancang tampilan dan struktur website yang lebih relevan dan menarik bagi pengunjung. Selanjutnya, saya menggunakan berbagai alat desain modern dan teknik pengembangan web untuk menciptakan antarmuka yang responsif dan mudah diakses melalui berbagai perangkat, baik itu desktop maupun mobile."
+                        },
+                        {
+                            "id": "5",
+                            "des_content": "Desain website yang saya buat menekankan pada tata letak yang bersih dan profesional, dengan navigasi yang intuitif untuk memudahkan pengguna dalam menemukan informasi yang mereka butuhkan. Saya juga menambahkan elemen visual seperti gambar berkualitas tinggi dan video presentasi yang mendukung konten teks, sehingga meningkatkan daya tarik visual dan informasi yang disampaikan. Selain itu, saya memastikan bahwa website ini memiliki waktu muat yang cepat dan SEO-friendly, untuk mendukung visibilitas dan performa di mesin pencari."
+                        },
+                        {
+                            "id": "6",
+                            "des_content": "Melalui partisipasi dalam lomba LLDIKTI ini, saya memperoleh pengalaman berharga dalam merancang dan mengembangkan website yang sesuai dengan standar industri. Proyek ini tidak hanya mengasah keterampilan teknis saya dalam desain dan coding, tetapi juga meningkatkan kemampuan saya dalam berkomunikasi dan bekerja sama dengan tim serta klien. Saya percaya bahwa hasil kerja keras ini akan menjadi portofolio yang kuat dalam karier saya di bidang pengembangan web dan desain digital."
+                        },
+                        {
+                            "id": "7",
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "id": "4",
+                    "relese": 2023,
+                    "thumbnail": "/img/beasiswa/dashboard.png",
+                    "title": "Beasiswa",
+                    "slug": "beasiswa",
+                    "deskripsi": "Beasiswa Tugas Akhir",
+                    "content": [
+                        {
+                            "id": "1",
+                            "des_content": "Selamat datang **Beasiswa** pada tugas akhir saya dengan **Laravel** ||8 Feb 2024||"
+                        },
+                        {
+                            "id": "2",
+                            "des_content": "Aplikasi tugas akhir yang saya kembangkan berfokus pada perkembangan beasiswa di institusi pendidikan XYZ. Aplikasi ini dirancang untuk memberikan kemudahan dalam visualisasi data, interaksi real-time, dan pemantauan kemajuan beasiswa. Salah satu modul utama yang disertakan adalah modul tracer, yang berfungsi untuk memvisualisasikan data kemajuan laporan yang telah dibuat oleh mahasiswa. Modul ini menyajikan data dalam bentuk grafik linier, sehingga memudahkan pengguna untuk memahami perkembangan setiap mahasiswa secara jelas dan terperinci."
+                        },
+                        {
+                            "id": "3",
+                            "des_content": "modul pelaporan yang memungkinkan laporan beasiswa untuk di-approve oleh pihak yang berwenang. Modul ini memastikan bahwa setiap laporan yang dibuat oleh mahasiswa dapat melalui proses verifikasi dan persetujuan yang transparan dan terstruktur. Dengan adanya modul ini, tidak hanya memudahkan pihak Kemahasiswaan dalam memantau dan mengelola laporan, tetapi juga memastikan bahwa setiap laporan memenuhi standar yang ditetapkan sebelum dianggap final. Fitur ini diharapkan dapat meningkatkan akurasi dan keandalan data yang digunakan dalam pengambilan keputusan terkait beasiswa di institusi pendidikan XYZ."
+                        },
+                        {
+                            "id": "4",
+                            "des_content": "%/img/beasiswa/dashboard.png%"
+                        },
+                        {
+                            "id": "5",
+                            "des_content": "Selain modul tracer, aplikasi ini juga dilengkapi dengan dashboard pelaporan beasiswa yang komprehensif. Dashboard ini berfungsi untuk memvisualisasikan berbagai jenis data beasiswa, termasuk jumlah beasiswa, beasiswa yang sedang berjalan, beasiswa yang tertunda, dan beasiswa yang telah selesai. Data ini disajikan dalam bentuk grafik batang, sehingga memberikan gambaran yang jelas dan mudah dipahami mengenai status beasiswa di institusi pendidikan XYZ. Dengan adanya visualisasi ini, pengguna dapat dengan mudah memantau dan mengelola beasiswa secara efektif."
+                        },
+                        {
+                            "id": "4",
+                            "des_content": "%/img/beasiswa/pelaporan.png%"
+                        },
+                        {
+                            "id": "5",
+                            "des_content": "Fitur lain yang tidak kalah penting adalah kemampuan chat real-time yang terintegrasi dalam dashboard. Fitur ini memungkinkan interaksi langsung antara mahasiswa penerima beasiswa dengan assessor yang bertanggung jawab. Melalui chat real-time, mahasiswa dapat dengan mudah mengajukan pertanyaan, berdiskusi mengenai perkembangan mereka, dan mendapatkan dukungan yang dibutuhkan dari assessor. Hal ini diharapkan dapat mempercepat proses komunikasi dan memastikan bahwa setiap mahasiswa mendapatkan perhatian yang diperlukan untuk mencapai tujuan akademik mereka."
+                        },
+                        {
+                            "id": "6",
+                            "des_content": "%/img/beasiswa/chat.png%"
+                        },
+                        {
+                            "id": "7",
+                            "des_content": "Aplikasi ini juga menyediakan rekap laporan yang mencakup jumlah beasiswa, beasiswa yang sedang berjalan, beasiswa yang tertunda, dan beasiswa yang telah selesai. Rekap laporan ini dirancang untuk memudahkan pengguna, terutama bagian Kemahasiswaan, dalam memantau laporan-laporan yang masih tertunda dan memastikan semua beasiswa dikelola dengan baik. Dengan adanya rekap ini, diharapkan institusi pendidikan XYZ dapat mengelola program beasiswa mereka dengan lebih efisien dan efektif, serta memberikan manfaat maksimal bagi mahasiswa penerima beasiswa."
+                        },
+                        {
+                            "id": "8",
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                }
             ]
         }
     },

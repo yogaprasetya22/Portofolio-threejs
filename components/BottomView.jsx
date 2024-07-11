@@ -1,7 +1,6 @@
-import { Box, Stack,Flex,Link } from "@chakra-ui/react"
+import { Box, Stack, Flex, Link } from '@chakra-ui/react'
 
-
-export const Bottom = ({link,github}) => (
+export const Bottom = ({ link, github }) => (
   <Box
     pt={10}
     display={'flex'}
@@ -10,35 +9,34 @@ export const Bottom = ({link,github}) => (
     width={'100%'}
   >
     <Stack isInline spacing={20} padding={'10px 60px'}>
-      <Flex
-        bg={'black'}
-        w={'80px'}
-        h={'50px'}
-        borderRadius={5}
-        justifyContent="center"
-        alignItems="center"
-      >
-        <Link
-          href={link}
-          target="_blank"
+      {link && (
+        <Flex
+          bg={'black'}
+          w={'80px'}
+          h={'50px'}
+          borderRadius={5}
+          justifyContent="center"
+          alignItems="center"
         >
-          View
-        </Link>
-      </Flex>
-      <Flex
-        bg={'black'}
-        w={'80px'}
-        borderRadius={5}
-        justifyContent="center"
-        alignItems="center"
-      >
-        <Link
-          href={github}
-          target="_blank"
+          <Link href={link} target="_blank">
+            View
+          </Link>
+        </Flex>
+      )}
+      {github && (
+        <Flex
+          bg={'black'}
+          w={'80px'}
+          h={'50px'}
+          borderRadius={5}
+          justifyContent="center"
+          alignItems="center"
         >
-          Code
-        </Link>
-      </Flex>
+          <Link href={github} target="_blank">
+            Code
+          </Link>
+        </Flex>
+      )}
     </Stack>
   </Box>
 )

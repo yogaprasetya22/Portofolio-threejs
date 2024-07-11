@@ -65,6 +65,7 @@ export const ProjextGridItem = ({
               layout="fill"
               src={thumbnail}
               alt={title}
+              objectFit="cover"
               className="grid-item-thumbnail"
               priority
             />
