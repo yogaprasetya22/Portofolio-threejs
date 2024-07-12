@@ -5,10 +5,19 @@
     "home": {
         "body": [
             {
-                "title": "Hello, my name is Mochammad Yoga Prasetya, but my friends often call me Yoga. I come from Pembangunan Jaya University with a major in Information Systems. I love to learn something new and get input to make myself better and develop."
+                "title": "I am a graduate of Pembangunan Jaya University, majoring in Information Systems, with expertise in Software Engineering. Currently, I work as a Frontend Developer and can be a Fullstack Developer."
             },
             {
-                "title": "I live in Pamulang, South Tangerang. Now I am concentrating on web programming which is exploring full stack development that deals with Backend and Frontend. This website is not only as a learning tool but also as a place to showcase my projects and as a place to see the history of my experience."
+                "title": "Since entering University, I have been interested in programming. However, I soon realized that the knowledge I gained there was limited, prompting me to explore other sources such as YouTube, Udemy Courses, and Blogs to expand my skills."
+            },
+            {
+                "title": "The world of software development offers a lot to learn and various technologies to explore, and I was determined to absorb as much as possible. I have a strong passion for learning and appreciate feedback to continue developing and growing."
+            },
+            {
+                "title": "I live in Pamulang, South Tangerang. And I am always enthusiastic to connect with new people. If you would like to contact me, please visit my social media or contact me via email."
+            },
+            {
+                "title": "Thank you, and I look forward to connecting with you!"
             }
         ]
     },
@@ -116,7 +125,7 @@
                         },
                         {
                             "id": "2",
-                            "des_content": "The LLDIKTI (Higher Education Service Institution) competition in West Java is an event that aims to encourage students to be more innovative and creative in the field of web design and development. In this competition, participants are asked to remake a company profile website design that emphasizes professionalism, user-friendliness, and attractive aesthetics. Various universities in West Java participate in this competition, which further enriches the spirit of competition and the quality of the works produced."
+                            "des_content": "The LLDIKTI **(Higher** **Education **Service **Institution)** competition in West Java is an event that aims to encourage students to be more innovative and creative in the field of web design and development. In this competition, participants are asked to remake a company profile website design that emphasizes professionalism, user-friendliness, and attractive aesthetics. Various universities in West Java participate in this competition, which further enriches the spirit of competition and the quality of the works produced."
                         },
                         {
                             "id": "3",

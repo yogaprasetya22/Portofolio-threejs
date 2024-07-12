@@ -51,14 +51,12 @@ const project = () => {
             <Box alignItems="center" justifyContent="start" w={'full'}>
               <Stack isInline spacing={1} textAlign={'center'} fontWeight="">
                 <Text
-                  fontSize={'15px'}
+                  fontSize={'18px'}
                   mb={6}
                   p={3}
                   borderRadius="lg"
-                  // bg={useColorModeValue('whiteAlpha.700', 'whiteAlpha.200')}
-                  shadow={'md'}
                   dropShadow={'md'}
-                  fontWeight={'semibold'}
+                  fontWeight={'extrabold'}
                 >
                   {data.title[0].name}
                 </Text>
@@ -75,14 +73,12 @@ const project = () => {
             <Box alignItems="center" justifyContent="start" w={'full'}>
               <Stack isInline spacing={1} textAlign={'center'} fontWeight="">
                 <Text
-                  fontSize={'15px'}
+                  fontSize={'18px'}
                   mb={6}
                   p={3}
                   borderRadius="lg"
-                  // bg={useColorModeValue('whiteAlpha.700', 'whiteAlpha.200')}
-                  shadow={'md'}
                   dropShadow={'md'}
-                  fontWeight={'semibold'}
+                  fontWeight={'extrabold'}
                 >
                   {data.title[1].name}
                 </Text>

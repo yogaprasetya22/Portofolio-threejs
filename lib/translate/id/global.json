@@ -5,10 +5,19 @@
     "home": {
         "body": [
             {
-                "title": "Halo, nama saya Mochammad Yoga Prasetya, tapi teman-teman sering memanggil saya Yoga. Saya berasal dari Universitas Pembangunan Jaya dengan prodi Sistem Informasi. Saya senang mempelajari sesuatu yang baru dan mendapatkan masukan untuk menjadikan diri saya lebih baik dan berkembang."
+                "title": "Saya adalah lulusan Universitas Pembangunan Jaya, jurusan Sistem Informasi, dengan keahlian di bidang Sofrware Enginer. Saat ini, saya bekerja sebagai Frontend Developer dan bisa Fullstack Developer."
             },
             {
-                "title": "Saya tinggal di Pamulang, Tangerang Selatan. Sekarang saya berkonsentrasi pada pemrograman web yang mana sedang mendalami tentang full stack Development yang bersangkut Backend dan Frontend. Website ini tidak hanya sebagai sarana pembelajaran tetapi juga sebagai tempat untuk membuat memamerkan proyek saya dan sebagai tempat untuk melihat sejarah pengalaman saya."
+                "title": "Sejak masuk Universitas, saya sudah tertarik dengan pemrograman. Namun, saya segera menyadari bahwa pengetahuan yang saya dapatkan di sana terbatas, mendorong saya untuk menjelajahi sumber-sumber lain seperti YouTube, Udemy Courses, dan Blog untuk memperluas keterampilan saya."
+            },
+            {
+                "title": "Dunia pengembangan perangkat lunak menawarkan banyak hal untuk dipelajari dan berbagai teknologi untuk dijelajahi, dan saya bertekad untuk menyerap sebanyak mungkin. Saya memiliki hasrat yang kuat untuk belajar dan menghargai umpan balik untuk terus berkembang dan bertumbuh."
+            },
+            {
+                "title": "Saya tinggal di Pamulang, Tangerang Selatan.  Dan saya selalu antusias untuk terhubung dengan orang-orang baru. Jika Anda ingin menghubungi saya, silakan kunjungi media sosial saya atau hubungi saya melalui email."
+            },
+            {
+                "title": "Terima kasih, dan saya berharap dapat terhubung dengan Anda!"
             }
         ]
     },
@@ -116,7 +125,7 @@
                         },
                         {
                             "id": "2",
-                            "des_content": "Perlombaan LLDIKTI (Lembaga Layanan Pendidikan Tinggi) di Jawa Barat adalah suatu acara kompetisi yang bertujuan untuk mendorong mahasiswa dalam bidang desain dan pengembangan web agar lebih inovatif dan kreatif. Dalam kompetisi ini, peserta diminta untuk membuat ulang desain website company profile yang menekankan aspek profesionalitas, user-friendly, dan estetika yang menarik. Berbagai perguruan tinggi di Jawa Barat turut serta dalam kompetisi ini, sehingga semakin memperkaya semangat persaingan dan kualitas karya yang dihasilkan."
+                            "des_content": "Perlombaan LLDIKTI **(Lembaga** **Layanan** **Pendidikan** **Tinggi)** di Jawa Barat adalah suatu acara kompetisi yang bertujuan untuk mendorong mahasiswa dalam bidang desain dan pengembangan web agar lebih inovatif dan kreatif. Dalam kompetisi ini, peserta diminta untuk membuat ulang desain website company profile yang menekankan aspek profesionalitas, user-friendly, dan estetika yang menarik. Berbagai perguruan tinggi di Jawa Barat turut serta dalam kompetisi ini, sehingga semakin memperkaya semangat persaingan dan kualitas karya yang dihasilkan."
                         },
                         {
                             "id": "3",

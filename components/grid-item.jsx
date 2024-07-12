@@ -60,6 +60,7 @@ export const ProjextGridItem = ({
             marginBottom={3}
             width={{ base: 315, md: 370 }}
             height={{ base: 205, md: 230 }}
+            position={'relative'}
           >
             <Image
               layout="fill"
@@ -69,43 +70,43 @@ export const ProjextGridItem = ({
               className="grid-item-thumbnail"
               priority
             />
-          </Box>
-          <Box
-            zIndex={3}
-            position="absolute"
-            marginTop={{ base: '-82px', md: '-90px' }}
-            background={color}
-            width={'100%'}
-            height={{ base: '37.6%', md: '34.5%' }}
-            borderBottomRadius={'12px'}
-          >
             <Box
-              fontSize={{ base: 15, md: 18 }}
-              fontWeight="bold"
-              style={{ userSelect: 'none' }}
+              zIndex={3}
+              position="absolute"
+              bottom={0}
+              background={color}
+              width={'100%'}
+              height={{ base: '30.6%', md: '34.5%' }}
+              borderBottomRadius={'12px'}
             >
+              <Box
+                fontSize={{ base: 15, md: 18 }}
+                fontWeight="bold"
+                style={{ userSelect: 'none' }}
+              >
+                <Flex
+                  // bg={useColorModeValue('#4dccd971', '#ff63c371')}
+                  borderBottom={useColorModeValue('#4dccd971', '#ff63c371')}
+                  alignItems="center"
+                  justifyContent={'center'}
+                  w={'full'}
+                  gap="3px"
+                  fontSize={{ base: 15, md: 18 }}
+                >
+                  {title}
+                  <Badge>{relese}</Badge>
+                </Flex>
+              </Box>
               <Flex
-                bg={useColorModeValue('#4dccd971', '#ff63c371')}
+                height={{ base: '5rem', md: '3rem' }}
                 alignItems="center"
                 justifyContent={'center'}
-                w={'full'}
-                gap="3px"
-                fontSize={{ base: 15, md: 18 }}
               >
-                {title}
-                <Badge>{relese}</Badge>
+                <Text fontSize={{ base: 11.5, md: 14 }} fontWeight="medium">
+                  {children}
+                </Text>
               </Flex>
             </Box>
-            <Flex
-              height={{ base: '5rem', md: '3rem' }}
-              alignItems="center"
-              justifyContent={'center'}
-              padding={2}
-            >
-              <Text fontSize={{ base: 11.5, md: 14 }} fontWeight="medium">
-                {children}
-              </Text>
-            </Flex>
           </Box>
         </LinkBox>
       </NextLink>

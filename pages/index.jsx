@@ -45,8 +45,11 @@ export default function Home() {
         spacing={1}
       >
         <Paragraf>{t('home.body.0.title')}</Paragraf>
+        <Paragraf>{t('home.body.1.title')}</Paragraf>
+        <Paragraf>{t('home.body.2.title')}</Paragraf>
+        <Paragraf>{t('home.body.3.title')}</Paragraf>
         <Paragraf>
-          {t('home.body.1.title')}{' '}
+          {t('home.body.4.title')}{' '}
           <NextLink href="/project">
             <Link>Project</Link>
           </NextLink>

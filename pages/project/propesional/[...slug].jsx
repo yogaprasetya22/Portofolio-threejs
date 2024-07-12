@@ -56,7 +56,11 @@ export default function Slug({ id }) {
       })
       return (
         <>
-          {textBefore} <BadgeUi>{badgeText}</BadgeUi> {textAfter}
+          {textBefore}
+          <Box whiteSpace={'nowrap'} display="inline-flex">
+            <BadgeUi>{badgeText}</BadgeUi>
+          </Box>
+          {textAfter}
         </>
       )
     }
