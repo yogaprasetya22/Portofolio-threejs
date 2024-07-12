@@ -111,7 +111,7 @@ const ViewAndCodePrivate = ({ data }) => {
             thumbnail={e?.thumbnail}
             relese={e?.relese}
             link={`project/personal/${e?.slug}`}
-            color={useColorModeValue('#bdd1ff9c', '#2e3436b3')}
+            color={useColorModeValue('#eaeaead4', '#2e3436b3')}
           >
             {e.deskripsi}
           </ProjextGridItem>
@@ -132,7 +132,7 @@ const ViewAndCodePublic = ({ data }) => {
             thumbnail={e?.thumbnail}
             relese={e?.relese}
             link={`project/propesional/${e?.slug}`}
-            color={useColorModeValue('#bdd1ffd1', '#2e3436b3')}
+            color={useColorModeValue('#eaeaead4', '#2e3436b3')}
           >
             {e.deskripsi}
           </ProjextGridItem>

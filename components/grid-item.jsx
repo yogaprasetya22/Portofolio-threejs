@@ -45,8 +45,6 @@ export const ProjextGridItem = ({
     <Box
       w="100%"
       textAlign="center"
-      shadow={'xl'}
-      dropShadow={'xl'}
       rounded="xl"
       transition={'all 0.2s ease-in-out'}
       mb={{ base: 8, md: 0 }}
@@ -75,8 +73,9 @@ export const ProjextGridItem = ({
               position="absolute"
               bottom={0}
               background={color}
+              className="backdrop-blur"
               width={'100%'}
-              height={{ base: '30.6%', md: '34.5%' }}
+              height={{ base: '34.6%', md: '34.5%' }}
               borderBottomRadius={'12px'}
             >
               <Box
@@ -86,14 +85,13 @@ export const ProjextGridItem = ({
               >
                 <Flex
                   // bg={useColorModeValue('#4dccd971', '#ff63c371')}
-                  borderBottom={useColorModeValue('#4dccd971', '#ff63c371')}
-                  alignItems="center"
+                  flex={'row'}
+                  alignItems={'center'}
                   justifyContent={'center'}
                   w={'full'}
                   gap="3px"
-                  fontSize={{ base: 15, md: 18 }}
                 >
-                  {title}
+                  <Text fontSize={{ base: 15, md: 18 }}>{title}</Text>
                   <Badge>{relese}</Badge>
                 </Flex>
               </Box>
@@ -119,6 +117,9 @@ export const GridItemStyle = () => (
     styles={`
       .grid-item-thumbnail {
         border-radius: 12px;
+      }
+      .backdrop-blur {
+        backdrop-filter: blur(2px);
       }
     `}
   />
