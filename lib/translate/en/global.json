@@ -33,7 +33,6 @@
         "body": {
             "personal": [
                 {
-                    "id": "1",
                     "relese": 2022,
                     "thumbnail": "/img/instagram-clone/thumbnile.png",
                     "title": "Instagram Clone",
@@ -43,33 +42,26 @@
                     "github": "https://github.com/yogaprasetya22/instagram-jagres",
                     "content": [
                         {
-                            "id": "1",
                             "des_content": "Welcome to **Instagram Clone** with **Next.js** || Aug 21, 2022||"
                         },
                         {
-                            "id": "2",
                             "des_content": "I am proud to present my work, an **Instagram Clone** app built using **Next.js. In this project, I explored the potential of Next.js** to create an Instagram-like experience."
                         },
                         {
-                            "id": "3",
                             "des_content": "The app has somewhat incomplete functionality, allowing users to upload photos, and is still developing on browsing feeds, and interacting with friends and other users. Using **Next.js technology, the app offers high speed and responsiveness, allowing users to enjoy a seamless experience."
                         },
                         {
-                            "id": "4",
                             "des_content": "%/img/instagram-clone/thumbnile.png%"
                         },
                         {
-                            "id": "5",
                             "des_content": "I hope you enjoy this app and feel free to let me know if you have any problems or suggestions for improving this app."
                         },
                         {
-                            "id": "6",
                             "des_content": "Thank you for taking the time to read this. I hope you enjoy this app 🚀✨."
                         }
                     ]
                 },
                 {
-                    "id": "2",
                     "relese": 2022,
                     "thumbnail": "/img/whatsapp-clone/whatsapp-clone.png",
                     "title": "Whatsapp Clone",
@@ -79,31 +71,24 @@
                     "github": "https://github.com/yogaprasetya22/instagram-jagres",
                     "content": [
                         {
-                            "id": "1",
                             "des_content": "Welcome to **Whatsapp Clone** with **Next.js** || Aug 21, 2022||"
                         },
                         {
-                            "id": "2",
                             "des_content": "I'm proud to show you a small project, a chat app similar to **Whatsap, through a clone app I made using **Next.js! This app showcases key features such as text messaging. Built using **Next.js and **Firebas technologies. I carefully developed this app with a focus on user security and privacy."
                         },
                         {
-                            "id": "3",
                             "des_content": "%/img/whatsapp-clone/whatsapp-clone.png%"
                         },
                         {
-                            "id": "4",
                             "des_content": "In the application I created is a clone of my version of whatsapp web using **Next.js."
                         },
                         {
-                            "id": "5",
                             "des_content": "%/img/whatsapp-clone/google_login.png%"
                         },
                         {
-                            "id": "6",
                             "des_content": "I hope you enjoy this app and feel free to let me know if you have any problems or suggestions for improving this app."
                         },
                         {
-                            "id": "7",
                             "des_content": "Thank you for taking the time to read this. I hope you enjoy this app 🚀✨."
                         }
                     ]
@@ -111,7 +96,6 @@
             ],
             "propesional": [
                 {
-                    "id": "3",
                     "relese": 2023,
                     "thumbnail": "/img/lldikti/thumbnile.png",
                     "title": "LLDIKTI",
@@ -120,37 +104,29 @@
                     "github": "https://github.com/yogaprasetya22/LLDIKTI_4",
                     "content": [
                         {
-                            "id": "1",
                             "des_content": "Welcome to the **LLDIKTI** competition in West Java with **Laravel** ||8 Feb 2023||"
                         },
                         {
-                            "id": "2",
                             "des_content": "The LLDIKTI **(Higher** **Education **Service **Institution)** competition in West Java is an event that aims to encourage students to be more innovative and creative in the field of web design and development. In this competition, participants are asked to remake a company profile website design that emphasizes professionalism, user-friendliness, and attractive aesthetics. Various universities in West Java participate in this competition, which further enriches the spirit of competition and the quality of the works produced."
                         },
                         {
-                            "id": "3",
                             "des_content": "%/img/lldikti/home-lldikti.png%"
                         },
                         {
-                            "id": "4",
                             "des_content": "The project I worked on for this competition is a remake of a company profile website design, which involves several important stages. First, I conducted an in-depth analysis of the company's needs and their target audience. By understanding this, I was able to design a more relevant and appealing layout and structure for visitors. Next, I used various modern design tools and web development techniques to create a responsive interface that can be accessed easily through various devices, both desktop and mobile."
                         },
                         {
-                            "id": "5",
                             "des_content": "The website design I created emphasizes a clean and professional layout, with intuitive navigation to make it easier for users to find the information they need. I also added visual elements such as high-quality images and presentation videos that support the text content, thereby enhancing the visual appeal and the information conveyed. Additionally, I ensured that this website has a fast loading time and is SEO-friendly, to support its visibility and performance in search engines."
                         },
                         {
-                            "id": "6",
                             "des_content": "Through participating in this LLDIKTI competition, I gained valuable experience in designing and developing websites that meet industry standards. This project not only honed my technical skills in design and coding but also improved my ability to communicate and collaborate with teams and clients. I believe that this hard work will become a strong portfolio in my career in web development and digital design."
                         },
                         {
-                            "id": "7",
                             "des_content": "Thank you for taking the time to read this. I hope you enjoy this application 🚀✨."
                         }
                     ]
                 },
                 {
-                    "id": "4",
                     "relese": 2023,
                     "thumbnail": "/img/beasiswa/dashboard.png",
                     "title": "Beasiswa",
@@ -158,43 +134,33 @@
                     "deskripsi": "Final Project Scholarship",
                     "content": [
                         {
-                            "id": "1",
                             "des_content": "Welcome to **Scholarship** in my final project with **Laravel** ||8 Feb 2024||"
                         },
                         {
-                            "id": "2",
                             "des_content": "The final project application I developed focuses on the development of scholarships at XYZ educational institutions. This application is designed to facilitate data visualization, real-time interaction, and scholarship progress monitoring. One of the main modules included is the tracer module, which serves to visualize the progress data of reports created by students. This module presents data in a linear graph format, making it easier for users to understand each student's progress clearly and in detail."
                         },
                         {
-                            "id": "3",
                             "des_content": "A reporting module allows scholarship reports to be approved by the authorities. This module ensures that every report made by students can go through a transparent and structured verification and approval process. With this module, it not only makes it easier for the Student Affairs to monitor and manage reports but also ensures that each report meets the established standards before being considered final. This feature is expected to increase the accuracy and reliability of the data used in decision-making related to scholarships at XYZ educational institutions."
                         },
                         {
-                            "id": "4",
                             "des_content": "%/img/beasiswa/dashboard.png%"
                         },
                         {
-                            "id": "5",
                             "des_content": "Besides the tracer module, this application is also equipped with a comprehensive scholarship reporting dashboard. This dashboard serves to visualize various types of scholarship data, including the number of scholarships, ongoing scholarships, pending scholarships, and completed scholarships. This data is presented in a bar graph format, providing a clear and easily understandable overview of the scholarship status at XYZ educational institutions. With this visualization, users can easily monitor and manage scholarships effectively."
                         },
                         {
-                            "id": "4",
                             "des_content": "%/img/beasiswa/pelaporan.png%"
                         },
                         {
-                            "id": "5",
                             "des_content": "Another equally important feature is the real-time chat capability integrated into the dashboard. This feature allows direct interaction between scholarship recipients and the responsible assessors. Through real-time chat, students can easily ask questions, discuss their progress, and get the necessary support from assessors. This is expected to speed up the communication process and ensure that every student receives the necessary attention to achieve their academic goals."
                         },
                         {
-                            "id": "6",
                             "des_content": "%/img/beasiswa/chat.png%"
                         },
                         {
-                            "id": "7",
                             "des_content": "This application also provides a report summary that includes the number of scholarships, ongoing scholarships, pending scholarships, and completed scholarships. This report summary is designed to facilitate users, especially the Student Affairs section, in monitoring pending reports and ensuring all scholarships are well managed. With this summary, it is expected that XYZ educational institutions can manage their scholarship programs more efficiently and effectively, providing maximum benefits for scholarship recipients."
                         },
                         {
-                            "id": "8",
                             "des_content": "Thank you for taking the time to read this. I hope you enjoy this application 🚀✨."
                         }
                     ]
@@ -214,6 +180,12 @@
             "image": "/img/experience/Logo-UPJ.png",
             "tahun": "Januari 2023 - Mei 2023",
             "deskripsi": "Internship as a Web Developer, focusing on web application development at Pembangunan Jaya University."
+        },
+        {
+            "caption": "Magang di Stellar Jardin",
+            "image": "/img/experience/Logo-UPJ.png",
+            "tahun": "Juni 2023 - September 2023",
+            "deskripsi": "Magang sebagai Fullstack Developer yang menggunakan Laravel, saya memiliki peran penting dalam pengembangan dan pemeliharaan sisi server web"
         }
     ]
 }
