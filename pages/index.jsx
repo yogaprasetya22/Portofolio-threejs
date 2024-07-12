@@ -30,13 +30,15 @@ export default function Home() {
         dropShadow={'md'}
       >
         <Stack isInline spacing={1} textAlign={'center'} fontWeight="bold">
-          <Text fontSize={'15px'}>Portfolio,</Text>
+          <Text fontSize={'15px'}>Hi, </Text>
+          <Text fontSize={'15px'}>{t('header.my')}</Text>
           <Text
             fontSize={'15px'}
             color={useColorModeValue('pink.700', 'cyan.500')}
           >
             M Yoga Prasetya
           </Text>
+          <Text fontSize={'15px'}>.</Text>
         </Stack>
       </Box>
       <Stack
