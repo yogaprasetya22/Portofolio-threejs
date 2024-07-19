@@ -14,7 +14,16 @@ import {
   IconButton,
   useColorModeValue,
   Text,
-  Divider
+  Divider,
+  Button,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverCloseButton,
+  PopoverBody,
+  PopoverFooter,
+  Portal
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import {
@@ -24,6 +33,14 @@ import {
   TranslateButtonMobile
 } from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
+import Image from 'next/image'
+import {
+  ContactIcons,
+  LinkedinIcons,
+  InstagramIcons,
+  EmailIcon
+} from './general/ChakraIcons'
+import { useRef } from 'react'
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
   const active = path === href
@@ -48,6 +65,20 @@ const Navbar = props => {
   const { path } = props
   return (
     <>
+      <Box
+        position="fixed"
+        bottom={0}
+        right={0}
+        m={10}
+        rounded="lg"
+        as="nav"
+        zIndex={10}
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        bg={useColorModeValue('#9f9f9f2b', '#29293c59')}
+        css={{ backdropFilter: 'blur(10px)' }}
+      >
+        <InternalStateEx />
+      </Box>
       <Box
         position="fixed"
         as="nav"
@@ -158,3 +189,58 @@ const Navbar = props => {
 }
 
 export default Navbar
+
+function InternalStateEx() {
+  const initRef = useRef()
+  return (
+    <Popover
+      closeOnBlur={false}
+      placement="top-start"
+      initialFocusRef={initRef}
+      w={'5rem'}
+    >
+      {({ isOpen, onClose }) => (
+        <>
+          <PopoverTrigger>
+            <ContactIcons
+              width="2.7rem"
+              h="2.7rem"
+              filter={useColorModeValue('invert(0)', 'invert(100%)')}
+            />
+          </PopoverTrigger>
+          <Portal>
+            <PopoverContent w={'6rem'}>
+              <PopoverCloseButton />
+              <PopoverBody>
+                <Stack spacing={1}>
+                  <LinkItem
+                    href="https://www.linkedin.com/in/m-yoga-prasetya-928877227/"
+                    path="/"
+                    target="_blank"
+                  >
+                    <LinkedinIcons width="1.7rem" h="1.7rem" />
+                  </LinkItem>
+                  <LinkItem
+                    href="https://www.instagram.com/yogaprasetya22/"
+                    path="/"
+                    target="_blank"
+                  >
+                    <InstagramIcons width="1.7rem" h="1.7rem" />
+                  </LinkItem>
+                  {/* email */}
+                  <LinkItem
+                    href="mailto:mochammad.yogaprasetya@student.upj.ac.id"
+                    path="/"
+                    target="_blank"
+                  >
+                    <EmailIcon width="1.7rem" h="1.7rem" />
+                  </LinkItem>
+                </Stack>
+              </PopoverBody>
+            </PopoverContent>
+          </Portal>
+        </>
+      )}
+    </Popover>
+  )
+}

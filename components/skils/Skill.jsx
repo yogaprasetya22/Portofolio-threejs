@@ -21,20 +21,22 @@ import {
   ThreeJsIcons,
   TypeScriptIcons
 } from '../general/ChakraIcons'
+import { useTranslation } from 'react-i18next'
 
 const Skill = () => {
+  const [t, i18n] = useTranslation('global')
   return (
     <>
       <Stack spacing={5} pt={5}>
         <Box>
-          <Title>My Skills</Title>
+          <Title>{t('skill.index')}</Title>
           <Text fontSize={'sm'} fontWeight={'semibold'}>
-            Some of the technologies I learned and use
+            {t('skill.desc')}
           </Text>
         </Box>
         <Box>
           <Title>Programming Language</Title>
-          <Flex gap={2} pt={2} flexWrap={'wrap'} >
+          <Flex gap={2} pt={2} flexWrap={'wrap'}>
             <ContainerSkill url="https://www.python.org/">
               <PythonIcons width="1.7rem" h="1.7rem" />
               Python

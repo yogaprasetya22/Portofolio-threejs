@@ -2,6 +2,24 @@
     "header": {
         "my": "I'm"
     },
+    "skill": {
+        "index": "My Skills",
+        "desc": "Some of the technologies I learned and use"
+    },
+    "education": [
+        {
+            "name": "SMKN 1 Tangerang Selatan",
+            "period": "2017 - 2020",
+            "major": "Sistem Informasi",
+            "src": "/img/experience/Logo-SMK.png"
+        },
+        {
+            "name": "Universitas Pembangunan Jaya",
+            "period": "2020 - 2024",
+            "major": "Sistem Informasi",
+            "src": "/img/experience/Logo-UPJ.png"
+        }
+    ],
     "home": {
         "body": [
             {
