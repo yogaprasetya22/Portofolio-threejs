@@ -70,22 +70,18 @@ const ExperientContainer = ({ children, h, src, title, tahun, id }) => {
             ></Box>
           </Flex>
         </Box>
-        <Box flex="7">
+        <Box flex="10">
           <Stack spacing={4} ml={{ base: '0', md: '-3rem' }}>
             <Box w="full">
-              {' '}
-              <Heading
-                as="h6"
-                fontSize="lg"
-                fontFamily={'monospace'}
-                position="absolute"
-              >
-                <Box
+              <Heading as="h6" fontSize="lg" fontFamily={'monospace'}>
+                <Text
                   color={useColorModeValue('gray.700', 'gray.200')}
                   _hover={{ color: 'cyan.400', textUnderlineOffset: 1 }}
+                  pt={2}
+                  mb={-2}
                 >
                   {title}
-                </Box>
+                </Text>
               </Heading>
               <Flex
                 fontFamily={'monospace'}
