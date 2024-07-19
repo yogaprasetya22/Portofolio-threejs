@@ -17,7 +17,9 @@ import {
   PythonIcons,
   PHPIcons,
   LaravelIcons,
-  MySqlIcons
+  MySqlIcons,
+  ThreeJsIcons,
+  TypeScriptIcons
 } from '../general/ChakraIcons'
 
 const Skill = () => {
@@ -32,7 +34,7 @@ const Skill = () => {
         </Box>
         <Box>
           <Title>Programming Language</Title>
-          <Flex gap={2} pt={2}>
+          <Flex gap={2} pt={2} flexWrap={'wrap'} >
             <ContainerSkill url="https://www.python.org/">
               <PythonIcons width="1.7rem" h="1.7rem" />
               Python
@@ -41,8 +43,12 @@ const Skill = () => {
               <JavascriptIcons width="1.7rem" h="1.7rem" />
               JavaScript
             </ContainerSkill>
+            <ContainerSkill url="https://www.typescriptlang.org/">
+              <TypeScriptIcons width="1.7rem" h="1.7rem" />
+              TypeScript
+            </ContainerSkill>
             <ContainerSkill url="https://www.w3schools.com/html/">
-              <HtmlIcons width="1.7rem" h="1.7rem"  />
+              <HtmlIcons width="1.7rem" h="1.7rem" />
               HTML5
             </ContainerSkill>
             <ContainerSkill url="https://www.php.net/">
@@ -60,7 +66,11 @@ const Skill = () => {
           <Flex gap={2} pt={2}>
             <ContainerSkill url="https://expressjs.com/">
               <ExpressIcons width="1.7rem" h="1.7rem" />
-              Express
+              Express.js
+            </ContainerSkill>
+            <ContainerSkill url="https://threejs.org/">
+              <ThreeJsIcons width="1.7rem" h="1.7rem" />
+              Three.js
             </ContainerSkill>
           </Flex>
         </Box>
@@ -137,7 +147,7 @@ const Skill = () => {
 export default Skill
 
 const ContainerSkill = ({ children, url }) => (
-  <Link href={url} target='_blank' fontSize={'sm'} fontWeight={'semibold'}>
+  <Link href={url} target="_blank" fontSize={'sm'} fontWeight={'semibold'}>
     <Flex
       textColor={useColorModeValue('#2e3436b3', '#898989')}
       width="auto"
