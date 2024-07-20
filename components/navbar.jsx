@@ -38,7 +38,8 @@ import {
   ContactIcons,
   LinkedinIcons,
   InstagramIcons,
-  EmailIcon
+  EmailIcon,
+  ResumeIcon
 } from './general/ChakraIcons'
 import { useRef } from 'react'
 
@@ -73,7 +74,6 @@ const Navbar = props => {
         rounded="lg"
         as="nav"
         zIndex={10}
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         bg={useColorModeValue('#9f9f9f2b', '#29293c59')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
@@ -209,7 +209,7 @@ function InternalStateEx() {
             />
           </PopoverTrigger>
           <Portal>
-            <PopoverContent w={'6rem'}>
+            <PopoverContent w={'8rem'}>
               <PopoverCloseButton />
               <PopoverBody>
                 <Stack spacing={1}>
@@ -227,13 +227,19 @@ function InternalStateEx() {
                   >
                     <InstagramIcons width="1.7rem" h="1.7rem" />
                   </LinkItem>
-                  {/* email */}
                   <LinkItem
                     href="mailto:mochammad.yogaprasetya@student.upj.ac.id"
                     path="/"
                     target="_blank"
                   >
                     <EmailIcon width="1.7rem" h="1.7rem" />
+                  </LinkItem>
+                  <LinkItem
+                    href={`https://docs.google.com/gview?url=https://www.myogaprasetya.my.id/img/experience/CV_Mochammad Yoga Prasetya.pdf`}
+                    path="/"
+                    target="_blank"
+                  >
+                    <ResumeIcon width="1.7rem" h="1.7rem" />
                   </LinkItem>
                 </Stack>
               </PopoverBody>
