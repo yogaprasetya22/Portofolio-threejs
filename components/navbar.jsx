@@ -239,7 +239,7 @@ function InternalStateEx() {
                     path="/"
                     target="_blank"
                   >
-                    <ResumeIcon width="1.7rem" h="1.7rem" />
+                    <ResumeIcon width="1.7rem" h="1.7rem"   filter={useColorModeValue('invert(0)', 'invert(100%)')}/>
                   </LinkItem>
                 </Stack>
               </PopoverBody>
