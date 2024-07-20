@@ -223,7 +223,7 @@ function InternalStateEx() {
                     alignItems="center"
                   >
                     <LinkedinIcons width="1.7rem" h="1.7rem" />
-                    linkedin
+                    linked-in
                   </LinkItem>
                   <LinkItem
                     href="https://www.instagram.com/yogaprasetya22/"
@@ -235,7 +235,7 @@ function InternalStateEx() {
                     alignItems="center"
                   >
                     <InstagramIcons width="1.7rem" h="1.7rem" />
-                    Imstagram
+                    Instagram
                   </LinkItem>
                   <LinkItem
                     href="mailto:mochammad.yogaprasetya@student.upj.ac.id"
