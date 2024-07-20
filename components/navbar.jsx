@@ -209,37 +209,60 @@ function InternalStateEx() {
             />
           </PopoverTrigger>
           <Portal>
-            <PopoverContent w={'8rem'}>
-              <PopoverCloseButton />
+            <PopoverContent w={'9rem'}>
+              <PopoverCloseButton /> <PopoverHeader>social media</PopoverHeader>
               <PopoverBody>
                 <Stack spacing={1}>
                   <LinkItem
                     href="https://www.linkedin.com/in/m-yoga-prasetya-928877227/"
                     path="/"
                     target="_blank"
+                    display="flex"
+                    gap={2}
+                    fontSize="xs"
+                    alignItems="center"
                   >
                     <LinkedinIcons width="1.7rem" h="1.7rem" />
+                    linkedin
                   </LinkItem>
                   <LinkItem
                     href="https://www.instagram.com/yogaprasetya22/"
                     path="/"
                     target="_blank"
+                    display="flex"
+                    gap={2}
+                    fontSize="xs"
+                    alignItems="center"
                   >
                     <InstagramIcons width="1.7rem" h="1.7rem" />
+                    Imstagram
                   </LinkItem>
                   <LinkItem
                     href="mailto:mochammad.yogaprasetya@student.upj.ac.id"
                     path="/"
                     target="_blank"
+                    display="flex"
+                    gap={2}
+                    fontSize="xs"
+                    alignItems="center"
                   >
-                    <EmailIcon width="1.7rem" h="1.7rem" />
+                    <EmailIcon width="1.7rem" h="1.7rem" /> Email
                   </LinkItem>
                   <LinkItem
                     href={`https://docs.google.com/gview?url=https://www.myogaprasetya.my.id/img/experience/CV_Mochammad Yoga Prasetya.pdf`}
                     path="/"
                     target="_blank"
+                    display="flex"
+                    gap={2}
+                    fontSize="xs"
+                    alignItems="center"
                   >
-                    <ResumeIcon width="1.7rem" h="1.7rem"   filter={useColorModeValue('invert(0)', 'invert(100%)')}/>
+                    <ResumeIcon
+                      width="1.7rem"
+                      h="1.7rem"
+                      filter={useColorModeValue('invert(0)', 'invert(100%)')}
+                    />
+                    Resume
                   </LinkItem>
                 </Stack>
               </PopoverBody>
