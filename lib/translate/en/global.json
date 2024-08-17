@@ -256,7 +256,7 @@
                     "thumbnail": "/img/absensi-karyawan/home.png",
                     "title": "Employee Attendance",
                     "slug": "absensi-karyawan",
-                    "description": "Employee Attendance Freelancer",
+                    "deskripsi": "Employee Attendance Freelancer",
                     "content": [
                         {
                             "des_content": "Welcome to the **Employee Attendance** project with **Laravel** ||5 Sep 2023||"
@@ -295,7 +295,7 @@
                     "thumbnail": "/img/absensi-mahasiswa/home.png",
                     "title": "Student Attendance",
                     "slug": "absensi-mahasiswa",
-                    "description": "Student Attendance Freelancer",
+                    "deskripsi": "Student Attendance Freelancer",
                     "content": [
                         {
                             "des_content": "Welcome to the **Student Attendance** project with **Laravel** ||10 Sep 2023||"
@@ -322,7 +322,7 @@
                     "thumbnail": "/img/inventory/home.png",
                     "title": "Workshop Goods Inventory",
                     "slug": "inventory-barang-bengkel",
-                    "description": "Workshop Inventory Freelancer",
+                    "deskripsi": "Workshop Inventory Freelancer",
                     "content": [
                         {
                             "des_content": "Welcome to the project **Inventory** with **Laravel** ||10 Sep 2023||"
@@ -349,7 +349,7 @@
                     "thumbnail": "/img/menejemen-surat/home.png",
                     "title": "Mail Management",
                     "slug": "manajemen-surat",
-                    "description": "Mail Management Freelancer",
+                    "deskripsi": "Mail Management Freelancer",
                     "content": [
                         {
                             "des_content": "Welcome to the **Mail Management** project with **Laravel** ||10 Sep 2023||"
