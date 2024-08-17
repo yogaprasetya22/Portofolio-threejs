@@ -103,8 +103,8 @@ export default project
 const ViewAndCodePrivate = ({ data }) => {
   return (
     <>
-      {data.map(e => (
-        <Section delay={0.3} key={e.id}>
+      {data.map((e, i) => (
+        <Section delay={0.3} key={i}>
           <ProjextGridItem
             id={e.title}
             title={e.title}
@@ -124,8 +124,8 @@ const ViewAndCodePrivate = ({ data }) => {
 const ViewAndCodePublic = ({ data }) => {
   return (
     <>
-      {data.map(e => (
-        <Section delay={0.3} key={e.id}>
+      {data.map((e, i) => (
+        <Section delay={0.3} key={i}>
           <ProjextGridItem
             id={e.title}
             title={e.title}

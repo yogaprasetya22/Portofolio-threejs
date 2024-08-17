@@ -9,6 +9,8 @@ import global_en from '../lib/translate/en/global.json'
 import global_id from '../lib/translate/id/global.json'
 import i18next from 'i18next'
 import { I18nextProvider } from 'react-i18next'
+import 'react-photo-view/dist/react-photo-view.css'
+import { PhotoProvider } from 'react-photo-view'
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -32,12 +34,14 @@ export default function MyApp({
   return (
     <ChakraProvider theme={theme}>
       <Layout router={router}>
-        <AnimatePresence exitBeforeEnter initial={true}>
-          <I18nextProvider i18n={i18next}>
-            <Component {...pageProps} key={router.route} />
-            <Analytics />
-          </I18nextProvider>
-        </AnimatePresence>
+        <PhotoProvider>
+          <AnimatePresence exitBeforeEnter initial={true}>
+            <I18nextProvider i18n={i18next}>
+              <Component {...pageProps} key={router.route} />
+              <Analytics />
+            </I18nextProvider>
+          </AnimatePresence>
+        </PhotoProvider>
       </Layout>
     </ChakraProvider>
   )

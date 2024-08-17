@@ -110,6 +110,32 @@
                             "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
                         }
                     ]
+                },
+                {
+                    "relese": 2024,
+                    "thumbnail": "/img/game/home.png",
+                    "title": "Game Multiplayer",
+                    "slug": "game-multiplayer",
+                    "deskripsi": "Game Multiplayer dengan Three.js",
+                    "demo": "https://jagres-game.vercel.app/",
+                    "github": "https://github.com/yogaprasetya22/multiplayer-three",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang di project **Game **Multiplayer **dengan Three.js** ||10 Sep 2023||"
+                        },
+                        {
+                            "des_content": "Saya bangga mempersembahkan karya saya, yaitu sebuah aplikasi **Game **Multiplayer **dengan Three.js** yang dibangun menggunakan **React.js. Dalam proyek ini, saya menjelajahi potensi React.js** untuk menciptakan pengalaman yang sama dengan Game Multiplayer."
+                        },
+                        {
+                            "des_content": "%/img/game/home.png%"
+                        },
+                        {
+                            "des_content": "Saya berharap Anda menikmati aplikasi ini dan jangan ragu untuk memberi tahu saya jika Anda memiliki masalah atau saran untuk meningkatkan aplikasi ini."
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
                 }
             ],
             "propesional": [
@@ -177,6 +203,168 @@
                         },
                         {
                             "des_content": "Aplikasi ini juga menyediakan rekap laporan yang mencakup jumlah beasiswa, beasiswa yang sedang berjalan, beasiswa yang tertunda, dan beasiswa yang telah selesai. Rekap laporan ini dirancang untuk memudahkan pengguna, terutama bagian Kemahasiswaan, dalam memantau laporan-laporan yang masih tertunda dan memastikan semua beasiswa dikelola dengan baik. Dengan adanya rekap ini, diharapkan institusi pendidikan XYZ dapat mengelola program beasiswa mereka dengan lebih efisien dan efektif, serta memberikan manfaat maksimal bagi mahasiswa penerima beasiswa."
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2023,
+                    "thumbnail": "/img/stellar/stellar.png",
+                    "title": "Stellar",
+                    "slug": "stellar",
+                    "deskripsi": "Magang Stellar Jardin sebagai Fullstack Developer",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang di project **Company **Profile **Stellar Jardin** dengan **Laravel** ||10 Sep 2023||"
+                        },
+                        {
+                            "des_content": "Dengan menggunakan aplikasi CMS berbasis web, perusahaan dapat dengan mudah memperbarui informasi tentang perumahan Stellar jardin, seperti harga, lokasi, fasilitas, desain, dan gambar. Aplikasi CMS juga memungkinkan perusahaan untuk menampilkan testimoni, berita, dan artikel yang berkaitan dengan perumahan Stellar jardin, sehingga dapat meningkatkan minat dan kepercayaan calon pembeli. Selain itu, aplikasi CMS juga dapat membantu perusahaan untuk menganalisis data pengunjung website, seperti jumlah, asal, perilaku, dan preferensi, sehingga dari apa yang digunakan dalam penysusunan strategi pemasaran dapat lebih efektif dan efisien. Aplikasi CMS berbasis web merupakan salah satu solusi teknologi yang dapat membantu perusahaan menghadapi persaingan dan tantangan dalam industri properti yang semakin ketat dan dinamis."
+                        },
+                        {
+                            "des_content": "Pada bagian home page, aplikasi ini menampilkan informasi umum tentang perumahan Stellar jardin, nilai-nilai, dan keunggulan. Hal ini bertujuan untuk memberikan gambaran yang jelas dan menarik bagi pengunjung website tentang perumahan Stellar jardin, sehingga dapat meningkatkan minat dan kepercayaan calon pembeli. Selain itu, home page juga menampilkan galeri foto perumahan Stellar jardin, sehingga pengunjung dapat melihat langsung desain, fasilitas, dan lingkungan perumahan tersebut. Dengan adanya galeri foto, diharapkan pengunjung website dapat lebih tertarik dan yakin untuk membeli perumahan Stellar jardin."
+                        },
+                        {
+                            "des_content": "%/img/stellar/home.jpeg%"
+                        },
+                        {
+                            "des_content": "Selain home page, aplikasi ini juga memiliki fitur yang memungkinkan perusahaan untuk menampilkan informasi tentang tipe-tipe perumahan Stellar jardin, seperti tipe 36, tipe 45, dan tipe 60. Informasi ini meliputi luas bangunan, jumlah kamar tidur, jumlah kamar mandi, dan harga. Dengan adanya informasi ini, calon pembeli dapat memilih tipe perumahan yang sesuai dengan kebutuhan dan anggaran mereka. Fitur ini diharapkan dapat membantu perusahaan dalam meningkatkan penjualan dan keuntungan perumahan Stellar jardin."
+                        },
+                        {
+                            "des_content": "%/img/stellar/type.jpeg%"
+                        },
+                        {
+                            "des_content": "Simulasi KPR adalah fitur yang memungkinkan calon pembeli untuk menghitung estimasi cicilan KPR berdasarkan harga perumahan, uang muka, suku bunga, dan jangka waktu. Dengan adanya fitur ini, calon pembeli dapat memperkirakan biaya cicilan KPR yang harus mereka bayar setiap bulan, sehingga dapat membantu mereka dalam merencanakan keuangan dan memilih perumahan yang sesuai dengan kemampuan finansial mereka. Fitur ini diharapkan dapat meningkatkan minat dan kepercayaan calon pembeli untuk membeli perumahan Stellar jardin."
+                        },
+                        {
+                            "des_content": "%/img/stellar/simulasi.jpeg%"
+                        },
+                        {
+                            "des_content": "Artikel adalah fitur yang memungkink perusahaan untuk menampilkan berbagai informasi dan tips seputar properti, investasi, dan gaya hidup. Artikel ini dapat membantu perusahaan untuk meningkatkan minat dan kepercayaan calon pembeli, serta memperkuat brand awareness perumahan Stellar jardin. Dengan adanya artikel, diharapkan pengunjung website dapat mendapatkan informasi yang bermanfaat dan menarik, sehingga dapat memotivasi mereka untuk membeli perumahan Stellar jardin."
+                        },
+                        {
+                            "des_content": "%/img/stellar/artikel.jpeg%"
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2023,
+                    "thumbnail": "/img/absensi-karyawan/home.png",
+                    "title": "Absensi Karyawan",
+                    "slug": "absensi-karyawan",
+                    "deskripsi": "Freelancer Absensi Karyawan",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang di project **Absensi Karyawan** dengan **Laravel** ||5 Sep 2023||"
+                        },
+                        {
+                            "des_content": "Aplikasi ini memungkinkan perusahaan untuk mencatat kehadiran dan absensi karyawan secara real-time, sehingga memudahkan manajemen dalam memantau dan mengelola kehadiran karyawan. Aplikasi ini juga dilengkapi dengan fitur notifikasi otomatis yang memberitahukan karyawan tentang jadwal kerja, absensi, dan cuti mereka, sehingga memastikan bahwa karyawan selalu terinformasi dan disiplin dalam menjalankan tugasnya. Dengan adanya fitur notifikasi otomatis, diharapkan perusahaan dapat meningkatkan efisiensi dan produktivitas karyawan, serta mengurangi tingkat keterlambatan dan absensi karyawan."
+                        },
+                        {
+                            "des_content": "%/img/absensi-karyawan/home.png%"
+                        },
+                        {
+                            "des_content": "ini menampilkan notifikasi bahwa guru berada di luar lingkup sekolah. Sistem menggunakan pelacakan GPS untuk memastikan bahwa guru berada dalam area sekolah saat melakukan presensi."
+                        },
+                        {
+                            "des_content": "%/img/absensi-karyawan/tidak-dilokasi.png%"
+                        },
+                        {
+                            "des_content": "ini menampilkan bahwa karyawan telah melakukan presensi masuk. Sistem menggunakan teknologi pelacakan lokasi untuk memastikan bahwa karyawan yang melakukan presensi adalah karyawan yang bersangkutan."
+                        },
+                        {
+                            "des_content": "%/img/absensi-karyawan/absensi.png%"
+                        },
+                        {
+                            "des_content": "Rekap laporan persemester menampilkan jumlah kehadiran, jumlah keterlambatan, jumlah absensi. Laporan ini dirancang untuk memudahkan manajemen dalam memantau dan mengelola kehadiran karyawan, serta memberikan informasi yang akurat dan terperinci mengenai tingkat disiplin dan produktivitas karyawan. Dengan adanya laporan ini, diharapkan perusahaan dapat mengambil keputusan yang tepat dan efektif dalam mengelola sumber daya manusia."
+                        },
+                        {
+                            "des_content": "%/img/absensi-karyawan/rekap.png%"
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2023,
+                    "thumbnail": "/img/absensi-mahasiswa/home.png",
+                    "title": "Absensi Mahasiswa",
+                    "slug": "absensi-mahasiswa",
+                    "deskripsi": "Freelancer Absensi Mahasiswa",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang di project **Absensi Mahasiswa** dengan **Laravel** ||10 Sep 2023||"
+                        },
+                        {
+                            "des_content": "Aplikasi ini memungkinkan perguruan tinggi untuk mencatat kehadiran dan absensi mahasiswa secara real-time, sehingga memudahkan dosen dan staf akademik dalam memantau dan mengelola kehadiran mahasiswa. Aplikasi ini juga dilengkapi dengan fitur notifikasi otomatis yang memberitahukan mahasiswa tentang jadwal kuliah, absensi, dan tugas mereka, sehingga memastikan bahwa mahasiswa selalu terinformasi dan disiplin dalam menjalankan tugas akademiknya. Dengan adanya fitur notifikasi otomatis, diharapkan perguruan tinggi dapat meningkatkan efisiensi dan produktivitas mahasiswa, serta mengurangi tingkat keterlambatan dan absensi mahasiswa."
+                        },
+                        {
+                            "des_content": "%/img/absensi-mahasiswa/home.png%"
+                        },
+                        {
+                            "des_content": "%/img/absensi-mahasiswa/scane.png%"
+                        },
+                        {
+                            "des_content": "%/img/absensi-mahasiswa/absen-dosen.png%"
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2023,
+                    "thumbnail": "/img/inventory/home.png",
+                    "title": "Inventory Barang Bengkel",
+                    "slug": "inventory-barang-bengkel",
+                    "deskripsi": "Freelancer Inventory Barang Bengkel",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang di project **Inventory **Barang Bengkel** dengan **Laravel** ||10 Sep 2023||"
+                        },
+                        {
+                            "des_content": "Aplikasi ini memungkinkan bengkel untuk mencatat dan mengelola stok barang secara real-time, sehingga memudahkan pemilik bengkel dalam memantau dan mengelola persediaan barang. Aplikasi ini juga dilengkapi dengan fitur notifikasi otomatis yang memberitahukan pemilik bengkel tentang stok barang yang hampir habis, sehingga memastikan bahwa bengkel selalu siap dalam melayani pelanggan. Dengan adanya fitur notifikasi otomatis, diharapkan bengkel dapat meningkatkan efisiensi dan produktivitas dalam pengelolaan stok barang."
+                        },
+                        {
+                            "des_content": "%/img/inventory/home.png%"
+                        },
+                        {
+                            "des_content": "%/img/inventory/rekapitulasi.png%"
+                        },
+                        {
+                            "des_content": "%/img/inventory/stok-barang.png%"
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2023,
+                    "thumbnail": "/img/menejemen-surat/home.png",
+                    "title": "Manajemen Surat",
+                    "slug": "manajemen-surat",
+                    "deskripsi": "Freelancer Manajemen Surat",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang di project **Manajemen Surat** dengan **Laravel** ||10 Sep 2023||"
+                        },
+                        {
+                            "des_content": "Aplikasi ini memungkinkan perusahaan untuk mencatat dan mengelola surat masuk dan surat keluar secara real-time, sehingga memudahkan staf administrasi dalam memantau dan mengelola surat. Aplikasi ini juga dilengkapi dengan fitur notifikasi otomatis yang memberitahukan staf administrasi tentang surat yang perlu ditindaklanjuti, sehingga memastikan bahwa surat selalu terkelola dengan baik. Dengan adanya fitur notifikasi otomatis, diharapkan perusahaan dapat meningkatkan efisiensi dan produktivitas dalam pengelolaan surat."
+                        },
+                        {
+                            "des_content": "%/img/menejemen-surat/home.png%"
+                        },
+                        {
+                            "des_content": "%/img/menejemen-surat/approval.png%"
+                        },
+                        {
+                            "des_content": "%/img/menejemen-surat/generate-pdf.png%"
                         },
                         {
                             "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."

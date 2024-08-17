@@ -21,10 +21,8 @@ import {
 import styled from '@emotion/styled'
 import { useRef } from 'react'
 import dynamic from 'next/dynamic'
-import { PlusSquareIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
-import { useSession } from 'next-auth/react'
-import { useRouter } from 'next/router'
+import { PhotoView } from 'react-photo-view'
 import { useEffect } from 'react'
 
 const Section = dynamic(() => import('../section'), { ssr: false })
@@ -105,31 +103,26 @@ export const ImageProject = ({ src, alt }) => {
       ) : (
         <>
           <Flex pt={4} alignItems="center" justifyContent={'center'}>
-            <Image
-              maxW="full"
+            <PhotoView
+              speed={() => 800}
+              easing={type =>
+                type === 2
+                  ? 'cubic-bezier(0.36, 0, 0.66, -0.56)'
+                  : 'cubic-bezier(0.34, 1.56, 0.64, 1)'
+              }
               src={src}
               alt={alt}
-              mb={4}
-              onClick={onOpen}
-              cursor="pointer"
-            />
-          </Flex>
-          <Modal finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
-            <ModalOverlay bg="blackAlpha.300" backdropFilter="blur(4px) " />
-            <ModalContent
-              onClick={onClose}
-              bg="none"
-              minW="full"
-              minH="full"
-              overflow="hidden"
-              alignItems={'center'}
-              justifyContent={'center'}
-              m={0}
-              p={0}
             >
-              <Image src={src} alt={alt} />
-            </ModalContent>
-          </Modal>
+              <Image
+                maxW="full"
+                src={src}
+                alt={alt}
+                mb={4}
+                onClick={onOpen}
+                cursor="pointer"
+              />
+            </PhotoView>
+          </Flex>
         </>
       )}
     </>

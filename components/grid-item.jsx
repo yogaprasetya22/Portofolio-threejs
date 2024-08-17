@@ -45,6 +45,7 @@ export const ProjextGridItem = ({
     <Box
       w="100%"
       textAlign="center"
+      shadow="md"
       rounded="xl"
       transition={'all 0.2s ease-in-out'}
       mb={{ base: 8, md: 0 }}

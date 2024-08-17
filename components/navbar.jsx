@@ -209,7 +209,7 @@ function InternalStateEx() {
             />
           </PopoverTrigger>
           <Portal>
-            <PopoverContent w={'9rem'}>
+            <PopoverContent w={'10rem'}>
               <PopoverCloseButton /> <PopoverHeader>social media</PopoverHeader>
               <PopoverBody>
                 <Stack spacing={1}>
@@ -246,7 +246,7 @@ function InternalStateEx() {
                     fontSize="xs"
                     alignItems="center"
                   >
-                    <EmailIcon width="1.7rem" h="1.7rem" /> Email
+                    <EmailIcon width="1.7rem" h="1.7rem" p={0.5} /> Email
                   </LinkItem>
                   <LinkItem
                     href={`https://docs.google.com/gview?url=https://www.myogaprasetya.my.id/img/experience/CV_Mochammad Yoga Prasetya.pdf`}
