@@ -1,0 +1,397 @@
+{
+    "header": {
+        "my": "Saya"
+    },
+    "skill": {
+        "index": "Keterampilan Saya",
+        "desc": "Beberapa teknologi yang saya pelajari dan gunakan"
+    },
+    "education": [
+        {
+            "name": "SMKN 1 Tangerang Selatan",
+            "period": "2017 - 2020",
+            "major": "Sistem Informasi",
+            "src": "/img/experience/Logo-SMK.png"
+        },
+        {
+            "name": "Universitas Pembangunan Jaya",
+            "period": "2020 - 2024",
+            "major": "Sistem Informasi",
+            "src": "/img/experience/Logo-UPJ.png"
+        }
+    ],
+    "home": {
+        "body": [
+            {
+                "title": "Saya adalah lulusan dari Universitas Pembangunan Jaya dengan gelar Sarjana di bidang Sistem Informasi, dengan keahlian di bidang Rekayasa Perangkat Lunak. Saat ini, saya bekerja sebagai Frontend Developer dan bisa menjadi Fullstack Developer."
+            },
+            {
+                "title": "Sejak masuk Universitas, saya sudah tertarik dengan pemrograman. Namun, saya segera menyadari bahwa pengetahuan yang saya dapatkan di sana terbatas, mendorong saya untuk menjelajahi sumber-sumber lain seperti YouTube, Udemy Courses, dan Blog untuk memperluas keterampilan saya."
+            },
+            {
+                "title": "Dunia pengembangan perangkat lunak menawarkan banyak hal untuk dipelajari dan berbagai teknologi untuk dijelajahi, dan saya bertekad untuk menyerap sebanyak mungkin. Saya memiliki hasrat yang kuat untuk belajar dan menghargai umpan balik untuk terus berkembang dan bertumbuh."
+            },
+            {
+                "title": "Saya tinggal di Pamulang, Tangerang Selatan.  Dan saya selalu antusias untuk terhubung dengan orang-orang baru. Jika Anda ingin menghubungi saya, silakan kunjungi media sosial saya atau hubungi saya melalui email."
+            },
+            {
+                "title": "Terima kasih, dan saya berharap dapat terhubung dengan Anda!"
+            }
+        ]
+    },
+    "project": {
+        "title": [
+            {
+                "name": "Anda dapat melihat proyek pribadi saya"
+            },
+            {
+                "name": "Anda dapat melihat proyek profesional saya"
+            }
+        ],
+        "body": {
+            "personal": [
+                {
+                    "relese": 2022,
+                    "thumbnail": "/img/instagram-clone/thumbnile.png",
+                    "title": "Instagram Clone",
+                    "slug": "instagram-clone",
+                    "deskripsi": "Instagram clone dibuat menggunakan Next.js, firebase untuk otentikasi, penyimpanan data",
+                    "demo": "https://instagram-jagres.vercel.app/",
+                    "github": "https://github.com/yogaprasetya22/instagram-jagres",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang **Instagram Clone** dengan **Next.js** ||21 Aug 2022||"
+                        },
+                        {
+                            "des_content": "Saya bangga mempersembahkan karya saya, yaitu sebuah aplikasi **Instagram Clone** yang dibangun menggunakan **Next.js. Dalam proyek ini, saya menjelajahi potensi Next.js** untuk menciptakan pengalaman yang sama dengan Instagram."
+                        },
+                        {
+                            "des_content": "Aplikasi ini memiliki fungsionalitas yang mungking kurang lengkap, memungkinkan pengguna untuk mengunggah foto, dan masih tahap pengembangan pada menjelajahi feed, serta berinteraksi dengan teman-teman dan pengguna lainnya. Dengan menggunakan teknologi **Next.js, aplikasi ini menawarkan kecepatan dan responsivitas yang tinggi, sehingga pengguna dapat menikmati pengalaman yang mulus."
+                        },
+                        {
+                            "des_content": "%/img/instagram-clone/thumbnile.png%"
+                        },
+                        {
+                            "des_content": "Saya berharap Anda menikmati aplikasi ini dan jangan ragu untuk memberi tahu saya jika Anda memiliki masalah atau saran untuk meningkatkan aplikasi ini."
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2022,
+                    "thumbnail": "/img/whatsapp-clone/whatsapp-clone.png",
+                    "title": "Whatsapp Clone",
+                    "slug": "whatsapp-clone",
+                    "deskripsi": "Whatsapp clone dibuat menggunakan Next.js, firebase untuk otentikasi, penyimpanan data",
+                    "demo": "https://instagram-jagres.vercel.app/",
+                    "github": "https://github.com/yogaprasetya22/instagram-jagres",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang **Whatsapp Clone** dengan **Next.js** ||21 Aug 2022||"
+                        },
+                        {
+                            "des_content": "Saya bangga memperlihatkan project kecil, yaitu sebuah aplikasi chatting yang serupa dengan **Whatsap, melalui aplikasi clone yang saya buat menggunakan ** Next.js! Aplikasi ini memperlihatkan fitur-fitur utama seperti pengiriman pesan teks. Dibangun dengan menggunakan teknologi ** Next.js dan **Firebas. Saya dengan hati-hati mengembangkan aplikasi ini dengan fokus pada keamanan dan privasi pengguna."
+                        },
+                        {
+                            "des_content": "%/img/whatsapp-clone/whatsapp-clone.png%"
+                        },
+                        {
+                            "des_content": "Pada aplikasi yang saya buat adalah sebuah cloningan dari whatsapp web versi saya dengan menggunakan **Next.js."
+                        },
+                        {
+                            "des_content": "%/img/whatsapp-clone/google_login.png%"
+                        },
+                        {
+                            "des_content": "Saya berharap Anda menikmati aplikasi ini dan jangan ragu untuk memberi tahu saya jika Anda memiliki masalah atau saran untuk meningkatkan aplikasi ini."
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2024,
+                    "thumbnail": "/img/game/home.png",
+                    "title": "Game Multiplayer",
+                    "slug": "game-multiplayer",
+                    "deskripsi": "Game Multiplayer dengan Three.js",
+                    "demo": "https://jagres-game.vercel.app/",
+                    "github": "https://github.com/yogaprasetya22/multiplayer-three",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang di project **Game **Multiplayer **dengan Three.js** ||10 Sep 2023||"
+                        },
+                        {
+                            "des_content": "Saya bangga mempersembahkan karya saya, yaitu sebuah aplikasi **Game **Multiplayer **dengan Three.js** yang dibangun menggunakan **React.js. Dalam proyek ini, saya menjelajahi potensi React.js** untuk menciptakan pengalaman yang sama dengan Game Multiplayer."
+                        },
+                        {
+                            "des_content": "%/img/game/home.png%"
+                        },
+                        {
+                            "des_content": "Saya berharap Anda menikmati aplikasi ini dan jangan ragu untuk memberi tahu saya jika Anda memiliki masalah atau saran untuk meningkatkan aplikasi ini."
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                }
+            ],
+            "propesional": [
+                {
+                    "relese": 2023,
+                    "thumbnail": "/img/lldikti/thumbnile.png",
+                    "title": "LLDIKTI",
+                    "slug": "lldikti",
+                    "deskripsi": "LLDIKTI lomba sekala jawa barat ",
+                    "github": "https://github.com/yogaprasetya22/LLDIKTI_4",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang **LLDIKTI** lomba sekala jawa barat dengan **Laravel** ||8 Feb 2023||"
+                        },
+                        {
+                            "des_content": "Perlombaan LLDIKTI **(Lembaga** **Layanan** **Pendidikan** **Tinggi)** di Jawa Barat adalah suatu acara kompetisi yang bertujuan untuk mendorong mahasiswa dalam bidang desain dan pengembangan web agar lebih inovatif dan kreatif. Dalam kompetisi ini, peserta diminta untuk membuat ulang desain website company profile yang menekankan aspek profesionalitas, user-friendly, dan estetika yang menarik. Berbagai perguruan tinggi di Jawa Barat turut serta dalam kompetisi ini, sehingga semakin memperkaya semangat persaingan dan kualitas karya yang dihasilkan."
+                        },
+                        {
+                            "des_content": "%/img/lldikti/home-lldikti.png%"
+                        },
+                        {
+                            "des_content": "Proyek yang saya kerjakan untuk lomba ini adalah remake desain website company profile, yang melibatkan beberapa tahap penting. Pertama, saya melakukan analisis mendalam terhadap kebutuhan perusahaan dan target audiens mereka. Dengan memahami hal ini, saya dapat merancang tampilan dan struktur website yang lebih relevan dan menarik bagi pengunjung. Selanjutnya, saya menggunakan berbagai alat desain modern dan teknik pengembangan web untuk menciptakan antarmuka yang responsif dan mudah diakses melalui berbagai perangkat, baik itu desktop maupun mobile."
+                        },
+                        {
+                            "des_content": "Desain website yang saya buat menekankan pada tata letak yang bersih dan profesional, dengan navigasi yang intuitif untuk memudahkan pengguna dalam menemukan informasi yang mereka butuhkan. Saya juga menambahkan elemen visual seperti gambar berkualitas tinggi dan video presentasi yang mendukung konten teks, sehingga meningkatkan daya tarik visual dan informasi yang disampaikan. Selain itu, saya memastikan bahwa website ini memiliki waktu muat yang cepat dan SEO-friendly, untuk mendukung visibilitas dan performa di mesin pencari."
+                        },
+                        {
+                            "des_content": "Melalui partisipasi dalam lomba LLDIKTI ini, saya memperoleh pengalaman berharga dalam merancang dan mengembangkan website yang sesuai dengan standar industri. Proyek ini tidak hanya mengasah keterampilan teknis saya dalam desain dan coding, tetapi juga meningkatkan kemampuan saya dalam berkomunikasi dan bekerja sama dengan tim serta klien. Saya percaya bahwa hasil kerja keras ini akan menjadi portofolio yang kuat dalam karier saya di bidang pengembangan web dan desain digital."
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2023,
+                    "thumbnail": "/img/beasiswa/dashboard.png",
+                    "title": "Beasiswa",
+                    "slug": "beasiswa",
+                    "deskripsi": "Beasiswa Tugas Akhir",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang **Beasiswa** pada tugas akhir saya dengan **Laravel** ||8 Feb 2024||"
+                        },
+                        {
+                            "des_content": "Aplikasi tugas akhir yang saya kembangkan berfokus pada perkembangan beasiswa di institusi pendidikan XYZ. Aplikasi ini dirancang untuk memberikan kemudahan dalam visualisasi data, interaksi real-time, dan pemantauan kemajuan beasiswa. Salah satu modul utama yang disertakan adalah modul tracer, yang berfungsi untuk memvisualisasikan data kemajuan laporan yang telah dibuat oleh mahasiswa. Modul ini menyajikan data dalam bentuk grafik linier, sehingga memudahkan pengguna untuk memahami perkembangan setiap mahasiswa secara jelas dan terperinci."
+                        },
+                        {
+                            "des_content": "modul pelaporan yang memungkinkan laporan beasiswa untuk di-approve oleh pihak yang berwenang. Modul ini memastikan bahwa setiap laporan yang dibuat oleh mahasiswa dapat melalui proses verifikasi dan persetujuan yang transparan dan terstruktur. Dengan adanya modul ini, tidak hanya memudahkan pihak Kemahasiswaan dalam memantau dan mengelola laporan, tetapi juga memastikan bahwa setiap laporan memenuhi standar yang ditetapkan sebelum dianggap final. Fitur ini diharapkan dapat meningkatkan akurasi dan keandalan data yang digunakan dalam pengambilan keputusan terkait beasiswa di institusi pendidikan XYZ."
+                        },
+                        {
+                            "des_content": "%/img/beasiswa/dashboard.png%"
+                        },
+                        {
+                            "des_content": "Selain modul tracer, aplikasi ini juga dilengkapi dengan dashboard pelaporan beasiswa yang komprehensif. Dashboard ini berfungsi untuk memvisualisasikan berbagai jenis data beasiswa, termasuk jumlah beasiswa, beasiswa yang sedang berjalan, beasiswa yang tertunda, dan beasiswa yang telah selesai. Data ini disajikan dalam bentuk grafik batang, sehingga memberikan gambaran yang jelas dan mudah dipahami mengenai status beasiswa di institusi pendidikan XYZ. Dengan adanya visualisasi ini, pengguna dapat dengan mudah memantau dan mengelola beasiswa secara efektif."
+                        },
+                        {
+                            "des_content": "%/img/beasiswa/pelaporan.png%"
+                        },
+                        {
+                            "des_content": "Fitur lain yang tidak kalah penting adalah kemampuan chat real-time yang terintegrasi dalam dashboard. Fitur ini memungkinkan interaksi langsung antara mahasiswa penerima beasiswa dengan assessor yang bertanggung jawab. Melalui chat real-time, mahasiswa dapat dengan mudah mengajukan pertanyaan, berdiskusi mengenai perkembangan mereka, dan mendapatkan dukungan yang dibutuhkan dari assessor. Hal ini diharapkan dapat mempercepat proses komunikasi dan memastikan bahwa setiap mahasiswa mendapatkan perhatian yang diperlukan untuk mencapai tujuan akademik mereka."
+                        },
+                        {
+                            "des_content": "%/img/beasiswa/chat.png%"
+                        },
+                        {
+                            "des_content": "Aplikasi ini juga menyediakan rekap laporan yang mencakup jumlah beasiswa, beasiswa yang sedang berjalan, beasiswa yang tertunda, dan beasiswa yang telah selesai. Rekap laporan ini dirancang untuk memudahkan pengguna, terutama bagian Kemahasiswaan, dalam memantau laporan-laporan yang masih tertunda dan memastikan semua beasiswa dikelola dengan baik. Dengan adanya rekap ini, diharapkan institusi pendidikan XYZ dapat mengelola program beasiswa mereka dengan lebih efisien dan efektif, serta memberikan manfaat maksimal bagi mahasiswa penerima beasiswa."
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2023,
+                    "thumbnail": "/img/stellar/stellar.png",
+                    "title": "Stellar",
+                    "slug": "stellar",
+                    "deskripsi": "Magang Stellar Jardin sebagai Fullstack Developer",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang di project **Company **Profile **Stellar Jardin** dengan **Laravel** ||10 Sep 2023||"
+                        },
+                        {
+                            "des_content": "Dengan menggunakan aplikasi CMS berbasis web, perusahaan dapat dengan mudah memperbarui informasi tentang perumahan Stellar jardin, seperti harga, lokasi, fasilitas, desain, dan gambar. Aplikasi CMS juga memungkinkan perusahaan untuk menampilkan testimoni, berita, dan artikel yang berkaitan dengan perumahan Stellar jardin, sehingga dapat meningkatkan minat dan kepercayaan calon pembeli. Selain itu, aplikasi CMS juga dapat membantu perusahaan untuk menganalisis data pengunjung website, seperti jumlah, asal, perilaku, dan preferensi, sehingga dari apa yang digunakan dalam penysusunan strategi pemasaran dapat lebih efektif dan efisien. Aplikasi CMS berbasis web merupakan salah satu solusi teknologi yang dapat membantu perusahaan menghadapi persaingan dan tantangan dalam industri properti yang semakin ketat dan dinamis."
+                        },
+                        {
+                            "des_content": "Pada bagian home page, aplikasi ini menampilkan informasi umum tentang perumahan Stellar jardin, nilai-nilai, dan keunggulan. Hal ini bertujuan untuk memberikan gambaran yang jelas dan menarik bagi pengunjung website tentang perumahan Stellar jardin, sehingga dapat meningkatkan minat dan kepercayaan calon pembeli. Selain itu, home page juga menampilkan galeri foto perumahan Stellar jardin, sehingga pengunjung dapat melihat langsung desain, fasilitas, dan lingkungan perumahan tersebut. Dengan adanya galeri foto, diharapkan pengunjung website dapat lebih tertarik dan yakin untuk membeli perumahan Stellar jardin."
+                        },
+                        {
+                            "des_content": "%/img/stellar/home.jpeg%"
+                        },
+                        {
+                            "des_content": "Selain home page, aplikasi ini juga memiliki fitur yang memungkinkan perusahaan untuk menampilkan informasi tentang tipe-tipe perumahan Stellar jardin, seperti tipe 36, tipe 45, dan tipe 60. Informasi ini meliputi luas bangunan, jumlah kamar tidur, jumlah kamar mandi, dan harga. Dengan adanya informasi ini, calon pembeli dapat memilih tipe perumahan yang sesuai dengan kebutuhan dan anggaran mereka. Fitur ini diharapkan dapat membantu perusahaan dalam meningkatkan penjualan dan keuntungan perumahan Stellar jardin."
+                        },
+                        {
+                            "des_content": "%/img/stellar/type.jpeg%"
+                        },
+                        {
+                            "des_content": "Simulasi KPR adalah fitur yang memungkinkan calon pembeli untuk menghitung estimasi cicilan KPR berdasarkan harga perumahan, uang muka, suku bunga, dan jangka waktu. Dengan adanya fitur ini, calon pembeli dapat memperkirakan biaya cicilan KPR yang harus mereka bayar setiap bulan, sehingga dapat membantu mereka dalam merencanakan keuangan dan memilih perumahan yang sesuai dengan kemampuan finansial mereka. Fitur ini diharapkan dapat meningkatkan minat dan kepercayaan calon pembeli untuk membeli perumahan Stellar jardin."
+                        },
+                        {
+                            "des_content": "%/img/stellar/simulasi.jpeg%"
+                        },
+                        {
+                            "des_content": "Artikel adalah fitur yang memungkink perusahaan untuk menampilkan berbagai informasi dan tips seputar properti, investasi, dan gaya hidup. Artikel ini dapat membantu perusahaan untuk meningkatkan minat dan kepercayaan calon pembeli, serta memperkuat brand awareness perumahan Stellar jardin. Dengan adanya artikel, diharapkan pengunjung website dapat mendapatkan informasi yang bermanfaat dan menarik, sehingga dapat memotivasi mereka untuk membeli perumahan Stellar jardin."
+                        },
+                        {
+                            "des_content": "%/img/stellar/artikel.jpeg%"
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2024,
+                    "thumbnail": "/img/absensi-karyawan/home.png",
+                    "title": "Absensi Karyawan",
+                    "slug": "absensi-karyawan",
+                    "deskripsi": "Freelancer Absensi Karyawan",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang di project **Absensi Karyawan** dengan **Laravel** ||5 Sep 2024||"
+                        },
+                        {
+                            "des_content": "Aplikasi ini memungkinkan perusahaan untuk mencatat kehadiran dan absensi karyawan secara real-time, sehingga memudahkan manajemen dalam memantau dan mengelola kehadiran karyawan. Aplikasi ini juga dilengkapi dengan fitur notifikasi otomatis yang memberitahukan karyawan tentang jadwal kerja, absensi, dan cuti mereka, sehingga memastikan bahwa karyawan selalu terinformasi dan disiplin dalam menjalankan tugasnya. Dengan adanya fitur notifikasi otomatis, diharapkan perusahaan dapat meningkatkan efisiensi dan produktivitas karyawan, serta mengurangi tingkat keterlambatan dan absensi karyawan."
+                        },
+                        {
+                            "des_content": "%/img/absensi-karyawan/home.png%"
+                        },
+                        {
+                            "des_content": "ini menampilkan notifikasi bahwa guru berada di luar lingkup sekolah. Sistem menggunakan pelacakan GPS untuk memastikan bahwa guru berada dalam area sekolah saat melakukan presensi."
+                        },
+                        {
+                            "des_content": "%/img/absensi-karyawan/tidak-dilokasi.png%"
+                        },
+                        {
+                            "des_content": "ini menampilkan bahwa karyawan telah melakukan presensi masuk. Sistem menggunakan teknologi pelacakan lokasi untuk memastikan bahwa karyawan yang melakukan presensi adalah karyawan yang bersangkutan."
+                        },
+                        {
+                            "des_content": "%/img/absensi-karyawan/absensi.png%"
+                        },
+                        {
+                            "des_content": "Rekap laporan persemester menampilkan jumlah kehadiran, jumlah keterlambatan, jumlah absensi. Laporan ini dirancang untuk memudahkan manajemen dalam memantau dan mengelola kehadiran karyawan, serta memberikan informasi yang akurat dan terperinci mengenai tingkat disiplin dan produktivitas karyawan. Dengan adanya laporan ini, diharapkan perusahaan dapat mengambil keputusan yang tepat dan efektif dalam mengelola sumber daya manusia."
+                        },
+                        {
+                            "des_content": "%/img/absensi-karyawan/rekap.png%"
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2024,
+                    "thumbnail": "/img/absensi-mahasiswa/home.png",
+                    "title": "Absensi Mahasiswa",
+                    "slug": "absensi-mahasiswa",
+                    "deskripsi": "Freelancer Absensi Mahasiswa",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang di project **Absensi Mahasiswa** dengan **Laravel** ||10 Sep 2024||"
+                        },
+                        {
+                            "des_content": "Aplikasi ini memungkinkan perguruan tinggi untuk mencatat kehadiran dan absensi mahasiswa secara real-time, sehingga memudahkan dosen dan staf akademik dalam memantau dan mengelola kehadiran mahasiswa. Aplikasi ini juga dilengkapi dengan fitur notifikasi otomatis yang memberitahukan mahasiswa tentang jadwal kuliah, absensi, dan tugas mereka, sehingga memastikan bahwa mahasiswa selalu terinformasi dan disiplin dalam menjalankan tugas akademiknya. Dengan adanya fitur notifikasi otomatis, diharapkan perguruan tinggi dapat meningkatkan efisiensi dan produktivitas mahasiswa, serta mengurangi tingkat keterlambatan dan absensi mahasiswa."
+                        },
+                        {
+                            "des_content": "%/img/absensi-mahasiswa/home.png%"
+                        },
+                        {
+                            "des_content": "%/img/absensi-mahasiswa/scane.png%"
+                        },
+                        {
+                            "des_content": "%/img/absensi-mahasiswa/absen-dosen.png%"
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2024,
+                    "thumbnail": "/img/inventory/home.png",
+                    "title": "Inventory Barang Bengkel",
+                    "slug": "inventory-barang-bengkel",
+                    "deskripsi": "Freelancer Inventory Barang Bengkel",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang di project **Inventory **Barang Bengkel** dengan **Laravel** ||10 Sep 2024||"
+                        },
+                        {
+                            "des_content": "Aplikasi ini memungkinkan bengkel untuk mencatat dan mengelola stok barang secara real-time, sehingga memudahkan pemilik bengkel dalam memantau dan mengelola persediaan barang. Aplikasi ini juga dilengkapi dengan fitur notifikasi otomatis yang memberitahukan pemilik bengkel tentang stok barang yang hampir habis, sehingga memastikan bahwa bengkel selalu siap dalam melayani pelanggan. Dengan adanya fitur notifikasi otomatis, diharapkan bengkel dapat meningkatkan efisiensi dan produktivitas dalam pengelolaan stok barang."
+                        },
+                        {
+                            "des_content": "%/img/inventory/home.png%"
+                        },
+                        {
+                            "des_content": "%/img/inventory/rekapitulasi.png%"
+                        },
+                        {
+                            "des_content": "%/img/inventory/stok-barang.png%"
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2024,
+                    "thumbnail": "/img/menejemen-surat/home.png",
+                    "title": "Manajemen Surat",
+                    "slug": "manajemen-surat",
+                    "deskripsi": "Freelancer Manajemen Surat",
+                    "content": [
+                        {
+                            "des_content": "Selamat datang di project **Manajemen Surat** dengan **Laravel** ||10 Sep 2024||"
+                        },
+                        {
+                            "des_content": "Aplikasi ini memungkinkan perusahaan untuk mencatat dan mengelola surat masuk dan surat keluar secara real-time, sehingga memudahkan staf administrasi dalam memantau dan mengelola surat. Aplikasi ini juga dilengkapi dengan fitur notifikasi otomatis yang memberitahukan staf administrasi tentang surat yang perlu ditindaklanjuti, sehingga memastikan bahwa surat selalu terkelola dengan baik. Dengan adanya fitur notifikasi otomatis, diharapkan perusahaan dapat meningkatkan efisiensi dan produktivitas dalam pengelolaan surat."
+                        },
+                        {
+                            "des_content": "%/img/menejemen-surat/home.png%"
+                        },
+                        {
+                            "des_content": "%/img/menejemen-surat/approval.png%"
+                        },
+                        {
+                            "des_content": "%/img/menejemen-surat/generate-pdf.png%"
+                        },
+                        {
+                            "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "experient": [
+        {
+            "caption": "Himpunan Akademik",
+            "image": "/img/experience/himpunan.png",
+            "tahun": "Juli 2022 - Juli 2023",
+            "deskripsi": "Aktif sebagai anggota Divisi Akademik dalam Himpunan Mahasiswa, bertanggung jawab dalam mengorganisir dan menyelenggarakan kegiatan akademik."
+        },
+        {
+            "caption": "Magang di ICT Universitas Pembangunan Jaya",
+            "image": "/img/experience/Logo-UPJ.png",
+            "tahun": "Januari 2023 - Mei 2023",
+            "deskripsi": "Magang sebagai Web Developer, dengan fokus pada pengembangan aplikasi web di universitas pembangunan jaya."
+        },
+        {
+            "caption": "Magang di Stellar Jardin",
+            "image": "/img/experience/stellar.png",
+            "tahun": "Juni 2023 - September 2023",
+            "deskripsi": "Magang sebagai Fullstack Developer yang menggunakan Laravel, saya memiliki peran penting dalam pengembangan dan pemeliharaan sisi server web"
+        }
+    ]
+}

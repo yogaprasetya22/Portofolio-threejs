@@ -1,0 +1,114 @@
+[
+    {
+        "id": "1",
+        "relese": 2022,
+        "thumbnail": "/img/lldikti/thumbnile.png",
+        "title": "Lomba UI/UX",
+        "slug": "lomba-lldikti",
+        "deskripsi": "Lomba UI/UX pada website Se Jawa Barat.",
+        "demo": "https://instagram-jagres.vercel.app/",
+        "github": "https://github.com/yogaprasetya22/instagram-jagres",
+        "content": [
+            {
+                "id": "1",
+                "des_content": "Selamat datang **Lomba UI/UX** dengan **Laravel dan React.js** ||5 Aug 2022||"
+            },
+            {
+                "id": "2",
+                "des_content": "Saya bangga memperlihatkan project kecil, yaitu sebuah aplikasi chatting yang serupa dengan **Whatsap, melalui aplikasi clone yang saya buat menggunakan ** Next.js! Aplikasi ini memperlihatkan fitur-fitur utama seperti pengiriman pesan teks. Dibangun dengan menggunakan teknologi ** Next.js dan **Firebas. Saya dengan hati-hati mengembangkan aplikasi ini dengan fokus pada keamanan dan privasi pengguna."
+            },
+            {
+                "id": "3",
+                "des_content": "%/img/whatsapp-clone/whatsapp-clone.png%"
+            },
+            {
+                "id": "4",
+                "des_content": "Pada aplikasi yang saya buat adalah sebuah cloningan dari whatsapp web versi saya dengan menggunakan **Next.js."
+            },
+            {
+                "id": "5",
+                "des_content": "%/img/whatsapp-clone/google_login.png%"
+            },
+            {
+                "id": "6",
+                "des_content": "Saya berharap Anda menikmati aplikasi ini dan jangan ragu untuk memberi tahu saya jika Anda memiliki masalah atau saran untuk meningkatkan aplikasi ini."
+            },
+            {
+                "id": "7",
+                "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "relese": 2023,
+        "thumbnail": "/img/instagram-clone/thumbnile.png",
+        "title": "instagram-clone",
+        "slug": "instagram-clone",
+        "deskripsi": "Instagram clone created using Next.js, firebase for authentication, data storage",
+        "demo": "https://instagram-jagres.vercel.app/",
+        "github": "https://github.com/yogaprasetya22/instagram-jagres"
+    },
+    {
+        "id": "3",
+        "relese": 2023,
+        "thumbnail": "/img/instagram-clone/thumbnile.png",
+        "title": "instagram-clone",
+        "slug": "instagram-clone",
+        "deskripsi": "Instagram clone created using Next.js, firebase for authentication, data storage",
+        "demo": "https://instagram-jagres.vercel.app/",
+        "github": "https://github.com/yogaprasetya22/instagram-jagres"
+    },
+    {
+        "id": "1",
+        "relese": 2022,
+        "thumbnail": "/img/lldikti/thumbnile.png",
+        "title": "Lomba UI/UX",
+        "slug": "lomba-lldikti",
+        "deskripsi": "Lomba UI/UX pada website Se Jawa Barat.",
+        "content": [
+            {
+                "id": "1",
+                "des_content": "Selamat datang **Lomba UI/UX** dengan **Laravel dan React.js** ||5 Aug 2022||"
+            },
+            {
+                "id": "2",
+                "des_content": "Saya bangga memperlihatkan project kecil, yaitu sebuah aplikasi chatting yang serupa dengan **Whatsap, melalui aplikasi clone yang saya buat menggunakan ** Next.js! Aplikasi ini memperlihatkan fitur-fitur utama seperti pengiriman pesan teks. Dibangun dengan menggunakan teknologi ** Next.js dan **Firebas. Saya dengan hati-hati mengembangkan aplikasi ini dengan fokus pada keamanan dan privasi pengguna."
+            },
+            {
+                "id": "3",
+                "des_content": "%/img/whatsapp-clone/whatsapp-clone.png%"
+            },
+            {
+                "id": "4",
+                "des_content": "Pada aplikasi yang saya buat adalah sebuah cloningan dari whatsapp web versi saya dengan menggunakan **Next.js."
+            },
+            {
+                "id": "5",
+                "des_content": "%/img/whatsapp-clone/google_login.png%"
+            },
+            {
+                "id": "6",
+                "des_content": "Saya berharap Anda menikmati aplikasi ini dan jangan ragu untuk memberi tahu saya jika Anda memiliki masalah atau saran untuk meningkatkan aplikasi ini."
+            },
+            {
+                "id": "7",
+                "des_content": "Terima kasih telah meluangkan waktu untuk membaca ini. Saya harap Anda menikmati aplikasi ini 🚀✨."
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "relese": 2023,
+        "thumbnail": "/img/instagram-clone/thumbnile.png",
+        "title": "instagram-clone",
+        "des": "Instagram clone yang dibuat menggunakan Next.js, firebase untuk authentication, penyimpanan data"
+    },
+    {
+        "id": "3",
+        "relese": 2023,
+        "thumbnail": "/img/instagram-clone/thumbnile.png",
+        "title": "instagram-clone",
+        "des": "Instagram clone yang dibuat menggunakan Next.js, firebase untuk authentication, penyimpanan data"
+    }
+]

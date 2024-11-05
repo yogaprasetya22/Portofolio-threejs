@@ -1,0 +1,397 @@
+{
+    "header": {
+        "my": "I'm"
+    },
+    "skill": {
+        "index": "My Skills",
+        "desc": "Some of the technologies I learned and use"
+    },
+    "education": [
+        {
+            "name": "SMKN 1 Tangerang Selatan",
+            "period": "2017 - 2020",
+            "major": "Sistem Informasi",
+            "src": "/img/experience/Logo-SMK.png"
+        },
+        {
+            "name": "Universitas Pembangunan Jaya",
+            "period": "2020 - 2024",
+            "major": "Sistem Informasi",
+            "src": "/img/experience/Logo-UPJ.png"
+        }
+    ],
+    "home": {
+        "body": [
+            {
+                "title": "I am a graduate from Universitas Pembangunan Jaya with a Bachelor's degree in Information Systems, with expertise in Software Engineering. Currently, I work as a Frontend Developer and could be a Fullstack Developer."
+            },
+            {
+                "title": "Since entering University, I have been interested in programming. However, I soon realized that the knowledge I gained there was limited, prompting me to explore other sources such as YouTube, Udemy Courses, and Blogs to expand my skills."
+            },
+            {
+                "title": "The world of software development offers a lot to learn and various technologies to explore, and I was determined to absorb as much as possible. I have a strong passion for learning and appreciate feedback to continue developing and growing."
+            },
+            {
+                "title": "I live in Pamulang, South Tangerang. And I am always enthusiastic to connect with new people. If you would like to contact me, please visit my social media or contact me via email."
+            },
+            {
+                "title": "Thank you, and I look forward to connecting with you!"
+            }
+        ]
+    },
+    "project": {
+        "title": [
+            {
+                "name": "You can see my personal projects"
+            },
+            {
+                "name": "You can see my professional project"
+            }
+        ],
+        "body": {
+            "personal": [
+                {
+                    "relese": 2022,
+                    "thumbnail": "/img/instagram-clone/thumbnile.png",
+                    "title": "Instagram Clone",
+                    "slug": "instagram-clone",
+                    "deskripsi": "Instagram clone created using Next.js, firebase for authentication, data storage",
+                    "demo": "https://instagram-jagres.vercel.app/",
+                    "github": "https://github.com/yogaprasetya22/instagram-jagres",
+                    "content": [
+                        {
+                            "des_content": "Welcome to **Instagram Clone** with **Next.js** || Aug 21, 2022||"
+                        },
+                        {
+                            "des_content": "I am proud to present my work, an **Instagram Clone** app built using **Next.js. In this project, I explored the potential of Next.js** to create an Instagram-like experience."
+                        },
+                        {
+                            "des_content": "The app has somewhat incomplete functionality, allowing users to upload photos, and is still developing on browsing feeds, and interacting with friends and other users. Using **Next.js technology, the app offers high speed and responsiveness, allowing users to enjoy a seamless experience."
+                        },
+                        {
+                            "des_content": "%/img/instagram-clone/thumbnile.png%"
+                        },
+                        {
+                            "des_content": "I hope you enjoy this app and feel free to let me know if you have any problems or suggestions for improving this app."
+                        },
+                        {
+                            "des_content": "Thank you for taking the time to read this. I hope you enjoy this app 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2022,
+                    "thumbnail": "/img/whatsapp-clone/whatsapp-clone.png",
+                    "title": "Whatsapp Clone",
+                    "slug": "whatsapp-clone",
+                    "deskripsi": "Whatsapp clone created using Next.js, firebase for authentication, data storage",
+                    "demo": "https://instagram-jagres.vercel.app/",
+                    "github": "https://github.com/yogaprasetya22/instagram-jagres",
+                    "content": [
+                        {
+                            "des_content": "Welcome to **Whatsapp Clone** with **Next.js** || Aug 21, 2022||"
+                        },
+                        {
+                            "des_content": "I'm proud to show you a small project, a chat app similar to **Whatsap, through a clone app I made using **Next.js! This app showcases key features such as text messaging. Built using **Next.js and **Firebas technologies. I carefully developed this app with a focus on user security and privacy."
+                        },
+                        {
+                            "des_content": "%/img/whatsapp-clone/whatsapp-clone.png%"
+                        },
+                        {
+                            "des_content": "In the application I created is a clone of my version of whatsapp web using **Next.js."
+                        },
+                        {
+                            "des_content": "%/img/whatsapp-clone/google_login.png%"
+                        },
+                        {
+                            "des_content": "I hope you enjoy this app and feel free to let me know if you have any problems or suggestions for improving this app."
+                        },
+                        {
+                            "des_content": "Thank you for taking the time to read this. I hope you enjoy this app 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2024,
+                    "thumbnail": "/img/game/home.png",
+                    "title": "Game Multiplayer",
+                    "slug": "game-multiplayer",
+                    "deskripsi": "Game Multiplayer dengan Three.js",
+                    "demo": "https://jagres-game.vercel.app/",
+                    "github": "https://github.com/yogaprasetya22/multiplayer-three",
+                    "content": [
+                        {
+                            "des_content": "Welcome to the project **Multiplayer **Game** with Three.js** ||10 Sep 2023||"
+                        },
+                        {
+                            "des_content": "I am proud to present my work, a **Multiplayer **Game** application with Three.js** built using **React.js. In this project, I explored the potential of React.js** to create an experience similar to Multiplayer Games."
+                        },
+                        {
+                            "des_content": "%/img/game/home.png%"
+                        },
+                        {
+                            "des_content": "I hope you enjoy this app and please feel free to let me know if you have any problems or suggestions for improving this app."
+                        },
+                        {
+                            "des_content": "Thank you for taking the time to read this. I hope you enjoy this app 🚀✨."
+                        }
+                    ]
+                }
+            ],
+            "propesional": [
+                {
+                    "relese": 2024,
+                    "thumbnail": "/img/lldikti/thumbnile.png",
+                    "title": "LLDIKTI",
+                    "slug": "lldikti",
+                    "deskripsi": "LLDIKTI competition in West Java",
+                    "github": "https://github.com/yogaprasetya22/LLDIKTI_4",
+                    "content": [
+                        {
+                            "des_content": "Welcome to the **LLDIKTI** competition in West Java with **Laravel** ||8 Feb 2024||"
+                        },
+                        {
+                            "des_content": "The LLDIKTI **(Higher** **Education **Service **Institution)** competition in West Java is an event that aims to encourage students to be more innovative and creative in the field of web design and development. In this competition, participants are asked to remake a company profile website design that emphasizes professionalism, user-friendliness, and attractive aesthetics. Various universities in West Java participate in this competition, which further enriches the spirit of competition and the quality of the works produced."
+                        },
+                        {
+                            "des_content": "%/img/lldikti/home-lldikti.png%"
+                        },
+                        {
+                            "des_content": "The project I worked on for this competition is a remake of a company profile website design, which involves several important stages. First, I conducted an in-depth analysis of the company's needs and their target audience. By understanding this, I was able to design a more relevant and appealing layout and structure for visitors. Next, I used various modern design tools and web development techniques to create a responsive interface that can be accessed easily through various devices, both desktop and mobile."
+                        },
+                        {
+                            "des_content": "The website design I created emphasizes a clean and professional layout, with intuitive navigation to make it easier for users to find the information they need. I also added visual elements such as high-quality images and presentation videos that support the text content, thereby enhancing the visual appeal and the information conveyed. Additionally, I ensured that this website has a fast loading time and is SEO-friendly, to support its visibility and performance in search engines."
+                        },
+                        {
+                            "des_content": "Through participating in this LLDIKTI competition, I gained valuable experience in designing and developing websites that meet industry standards. This project not only honed my technical skills in design and coding but also improved my ability to communicate and collaborate with teams and clients. I believe that this hard work will become a strong portfolio in my career in web development and digital design."
+                        },
+                        {
+                            "des_content": "Thank you for taking the time to read this. I hope you enjoy this application 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2023,
+                    "thumbnail": "/img/beasiswa/dashboard.png",
+                    "title": "Beasiswa",
+                    "slug": "beasiswa",
+                    "deskripsi": "Final Project Scholarship",
+                    "content": [
+                        {
+                            "des_content": "Welcome to **Scholarship** in my final project with **Laravel** ||8 Feb 2024||"
+                        },
+                        {
+                            "des_content": "The final project application I developed focuses on the development of scholarships at XYZ educational institutions. This application is designed to facilitate data visualization, real-time interaction, and scholarship progress monitoring. One of the main modules included is the tracer module, which serves to visualize the progress data of reports created by students. This module presents data in a linear graph format, making it easier for users to understand each student's progress clearly and in detail."
+                        },
+                        {
+                            "des_content": "A reporting module allows scholarship reports to be approved by the authorities. This module ensures that every report made by students can go through a transparent and structured verification and approval process. With this module, it not only makes it easier for the Student Affairs to monitor and manage reports but also ensures that each report meets the established standards before being considered final. This feature is expected to increase the accuracy and reliability of the data used in decision-making related to scholarships at XYZ educational institutions."
+                        },
+                        {
+                            "des_content": "%/img/beasiswa/dashboard.png%"
+                        },
+                        {
+                            "des_content": "Besides the tracer module, this application is also equipped with a comprehensive scholarship reporting dashboard. This dashboard serves to visualize various types of scholarship data, including the number of scholarships, ongoing scholarships, pending scholarships, and completed scholarships. This data is presented in a bar graph format, providing a clear and easily understandable overview of the scholarship status at XYZ educational institutions. With this visualization, users can easily monitor and manage scholarships effectively."
+                        },
+                        {
+                            "des_content": "%/img/beasiswa/pelaporan.png%"
+                        },
+                        {
+                            "des_content": "Another equally important feature is the real-time chat capability integrated into the dashboard. This feature allows direct interaction between scholarship recipients and the responsible assessors. Through real-time chat, students can easily ask questions, discuss their progress, and get the necessary support from assessors. This is expected to speed up the communication process and ensure that every student receives the necessary attention to achieve their academic goals."
+                        },
+                        {
+                            "des_content": "%/img/beasiswa/chat.png%"
+                        },
+                        {
+                            "des_content": "This application also provides a report summary that includes the number of scholarships, ongoing scholarships, pending scholarships, and completed scholarships. This report summary is designed to facilitate users, especially the Student Affairs section, in monitoring pending reports and ensuring all scholarships are well managed. With this summary, it is expected that XYZ educational institutions can manage their scholarship programs more efficiently and effectively, providing maximum benefits for scholarship recipients."
+                        },
+                        {
+                            "des_content": "Thank you for taking the time to read this. I hope you enjoy this application 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2023,
+                    "thumbnail": "/img/stellar/stellar.png",
+                    "title": "Stellar",
+                    "slug": "stellar",
+                    "deskripsi": "Stellar Jardin Internship as Fullstack Developer",
+                    "content": [
+                        {
+                            "des_content": "Welcome to the **Company **Profile **Stellar Jardin** project with **Laravel** ||10 Sep 2024||"
+                        },
+                        {
+                            "des_content": "By using a web-based CMS application, the company can easily update information about Stellar Jardin housing, such as prices, locations, facilities, designs, and images. The CMS application also allows the company to display testimonials, news, and articles related to Stellar Jardin housing, thereby increasing the interest and trust of potential buyers. Additionally, the CMS application can help the company analyze website visitor data, such as numbers, origins, behaviors, and preferences, which can be used in the preparation of marketing strategies to be more effective and efficient. A web-based CMS application is one of the technological solutions that can help companies face competition and challenges in the increasingly tight and dynamic property industry."
+                        },
+                        {
+                            "des_content": "On the home page, this application displays general information about Stellar Jardin housing, its values, and advantages. This aims to provide a clear and attractive overview for website visitors about Stellar Jardin housing, thereby increasing the interest and trust of potential buyers. Additionally, the home page also displays a photo gallery of Stellar Jardin housing, so visitors can directly see the design, facilities, and environment of the housing. With the photo gallery, it is hoped that website visitors will be more interested and convinced to buy Stellar Jardin housing."
+                        },
+                        {
+                            "des_content": "%/img/stellar/home.jpeg%"
+                        },
+                        {
+                            "des_content": "In addition to the home page, this application also has features that allow the company to display information about the types of Stellar Jardin housing, such as type 36, type 45, and type 60. This information includes building area, number of bedrooms, number of bathrooms, and prices. With this information, potential buyers can choose the type of housing that suits their needs and budget. This feature is expected to help the company increase sales and profits of Stellar Jardin housing."
+                        },
+                        {
+                            "des_content": "%/img/stellar/type.jpeg%"
+                        },
+                        {
+                            "des_content": "Mortgage simulation is a feature that allows potential buyers to calculate the estimated mortgage installments based on the housing price, down payment, interest rate, and term. With this feature, potential buyers can estimate the monthly mortgage installment costs they have to pay, thereby helping them plan their finances and choose housing that fits their financial capabilities. This feature is expected to increase the interest and trust of potential buyers to buy Stellar Jardin housing."
+                        },
+                        {
+                            "des_content": "%/img/stellar/simulasi.jpeg%"
+                        },
+                        {
+                            "des_content": "Articles are features that allow the company to display various information and tips about property, investment, and lifestyle. These articles can help the company increase the interest and trust of potential buyers, as well as strengthen the brand awareness of Stellar Jardin housing. With the articles, it is hoped that website visitors can obtain useful and interesting information, thereby motivating them to buy Stellar Jardin housing."
+                        },
+                        {
+                            "des_content": "%/img/stellar/artikel.jpeg%"
+                        },
+                        {
+                            "des_content": "Thank you for taking the time to read this. I hope you enjoy this application 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2024,
+                    "thumbnail": "/img/absensi-karyawan/home.png",
+                    "title": "Employee Attendance",
+                    "slug": "absensi-karyawan",
+                    "deskripsi": "Employee Attendance Freelancer",
+                    "content": [
+                        {
+                            "des_content": "Welcome to the **Employee Attendance** project with **Laravel** ||5 Sep 2024||"
+                        },
+                        {
+                            "des_content": "This application allows companies to record employee attendance and attendance in real-time, making it easier for management to monitor and manage employee attendance. The app is also equipped with an automatic notification feature that notifies employees about their work schedule, attendance, and leave, thus ensuring that employees are always informed and disciplined in carrying out their duties. With the automatic notification feature, it is expected that companies can increase employee efficiency and productivity, as well as reduce employee tardiness and absenteeism."
+                        },
+                        {
+                            "des_content": "%/img/absensi-karyawan/home.png%"
+                        },
+                        {
+                            "des_content": "this displays a notification that the teacher is out of the school area. The system uses GPS tracking to ensure that the teacher is within the school area when taking attendance."
+                        },
+                        {
+                            "des_content": "%/img/absensi-karyawan/tidak-dilokasi.png%"
+                        },
+                        {
+                            "des_content": "This displays that the employee has clocked in. The system uses location tracking technology to ensure that the employee who took attendance is the employee in question."
+                        },
+                        {
+                            "des_content": "%/img/absensi-karyawan/absensi.png%"
+                        },
+                        {
+                            "des_content": "Recap report for each semester showing the number of attendance, number of tardiness, number of absences. This report is designed to facilitate management in monitoring and managing employee attendance, as well as providing accurate and detailed information on employee discipline and productivity levels. With this report, it is expected that companies can make the right and effective decisions in managing human resources."
+                        },
+                        {
+                            "des_content": "%/img/absensi-karyawan/rekap.png%"
+                        },
+                        {
+                            "des_content": "Thank you for taking the time to read this. I hope you enjoy this app 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2024,
+                    "thumbnail": "/img/absensi-mahasiswa/home.png",
+                    "title": "Student Attendance",
+                    "slug": "absensi-mahasiswa",
+                    "deskripsi": "Student Attendance Freelancer",
+                    "content": [
+                        {
+                            "des_content": "Welcome to the **Student Attendance** project with **Laravel** ||10 Sep 2024||"
+                        },
+                        {
+                            "des_content": "This application allows universities to record student attendance and attendance in real-time, making it easier for lecturers and academic staff to monitor and manage student attendance. The app is also equipped with an automatic notification feature that notifies students about their lecture schedule, attendance, and assignments, thus ensuring that students are always informed and disciplined in carrying out their academic duties. With the automatic notification feature, it is expected that universities can increase student efficiency and productivity, as well as reduce student tardiness and absenteeism."
+                        },
+                        {
+                            "des_content": "%/img/absensi-mahasiswa/home.png%"
+                        },
+                        {
+                            "des_content": "%/img/absensi-mahasiswa/scane.png%"
+                        },
+                        {
+                            "des_content": "%/img/absensi-mahasiswa/absen-dosen.png%"
+                        },
+                        {
+                            "des_content": "Thank you for taking the time to read this. I hope you enjoy this app 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2024,
+                    "thumbnail": "/img/inventory/home.png",
+                    "title": "Workshop Goods Inventory",
+                    "slug": "inventory-barang-bengkel",
+                    "deskripsi": "Workshop Inventory Freelancer",
+                    "content": [
+                        {
+                            "des_content": "Welcome to the project **Inventory** with **Laravel** ||10 Sep 2024||"
+                        },
+                        {
+                            "des_content": "This application allows workshops to record and manage stock items in real-time, making it easier for workshop owners to monitor and manage inventory. This application is also equipped with an automatic notification feature that notifies workshop owners of low stock items, ensuring that workshops are always ready to serve customers. With the automatic notification feature, it is expected that workshops can increase efficiency and productivity in managing stock items."
+                        },
+                        {
+                            "des_content": "%/img/inventory/home.png%"
+                        },
+                        {
+                            "des_content": "%/img/inventory/rekapitulasi.png%"
+                        },
+                        {
+                            "des_content": "%/img/inventory/stok-barang.png%"
+                        },
+                        {
+                            "des_content": "Thank you for taking the time to read this. I hope you enjoy this app 🚀✨."
+                        }
+                    ]
+                },
+                {
+                    "relese": 2024,
+                    "thumbnail": "/img/menejemen-surat/home.png",
+                    "title": "Mail Management",
+                    "slug": "manajemen-surat",
+                    "deskripsi": "Mail Management Freelancer",
+                    "content": [
+                        {
+                            "des_content": "Welcome to the **Mail Management** project with **Laravel** ||10 Sep 2024||"
+                        },
+                        {
+                            "des_content": "This application allows companies to record and manage incoming and outgoing mail in real-time, making it easier for administrative staff to monitor and manage mail. This application is also equipped with an automatic notification feature that notifies administrative staff about letters that need to be followed up, thus ensuring that letters are always managed properly. With the automatic notification feature, it is expected that companies can increase efficiency and productivity in mail management."
+                        },
+                        {
+                            "des_content": "%/img/menejemen-surat/home.png%"
+                        },
+                        {
+                            "des_content": "%/img/menejemen-surat/approval.png%"
+                        },
+                        {
+                            "des_content": "%/img/menejemen-surat/generate-pdf.png%"
+                        },
+                        {
+                            "des_content": "Thank you for taking the time to read this. I hope you enjoy this app 🚀✨."
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "experient": [
+        {
+            "caption": "Academic Association",
+            "image": "/img/experience/himpunan.png",
+            "tahun": "Juli 2022 - Juli 2023",
+            "deskripsi": "Active as a member of the Academic Division in the Student Association, responsible for organizing and conducting academic activities."
+        },
+        {
+            "caption": "Internship at ICT Pembangunan Jaya University",
+            "image": "/img/experience/Logo-UPJ.png",
+            "tahun": "Januari 2023 - Mei 2023",
+            "deskripsi": "Internship as a Web Developer, focusing on web application development at Pembangunan Jaya University."
+        },
+        {
+            "caption": "Internship at Stellar Jardin",
+            "image": "/img/experience/stellar.png",
+            "tahun": "Juni 2023 - September 2023",
+            "deskripsi": "Magang sebagai Fullstack Developer yang menggunakan Laravel, saya memiliki peran penting dalam pengembangan dan pemeliharaan sisi server web"
+        }
+    ]
+}
